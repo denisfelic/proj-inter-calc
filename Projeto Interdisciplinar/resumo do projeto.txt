@@ -1,0 +1,47 @@
+Classes total: 7 Minimo metodo por classe: 2
+
+-Classe Ponto (x y )
+Utilizar cordenadas x e y (pesquisar mais)
+=========== 
+-Triangulo
+Meoto Calculo Area
+Metodo Calculo Perimetro
+======================
+
+==============
+-Cone (reto)
+Calculo Area total
+Calculo Volume
+===================
+
+================
+-Parelepipedo
+Calculo Area total
+Calculo Volume
+================
+
+=================
+-Quadrado
+Meoto Calculo Area
+Metodo Calculo Perimetro
+=======================
+
+-Cilindro
+Calculo Area Total
+Calculo Volume
+===============
+===========================
+-Equação de 2 Grau (Bhaskara)
+Calculo do Determinante
+Calculo raiz x1 e x2 
+=============================
+
+****requisitos*****
+*Menu para escolher a funcionalidade requerida
+*Criar objetos de diferentes classes e armazenalos em arraylist
+*Vizualizar objetos criados
+*Gravar em arquivo ou carregar apartir de um arquivo os objetos cadastrados
+*Metodos gets, seters toString e construtores
+*Criar metodos que retornm e não retornem valor
+*Criar um fluxograma do programa
+

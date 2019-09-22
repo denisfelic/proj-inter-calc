@@ -1,0 +1,12 @@
+fonte utilizada century Gothic plan 
+24 para o title 10 sub t, 14 versão
+
+
+btn 14
+btn clicked color 68,68,68
+selecionado 
+btn default 56,55,55
+
+btn mouse em cima [68,68,68]
+
+
