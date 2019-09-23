@@ -97,9 +97,29 @@ public class Janela extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         painel2 = new javax.swing.JPanel();
+        painel3 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        respostaVolume = new javax.swing.JTextField();
+        txtLarguraVolume = new javax.swing.JTextField();
+        txtAlturaVolume = new javax.swing.JTextField();
+        botaoCalcularVolume = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        txtMostrar = new javax.swing.JTextPane();
+        botaoSalvar = new javax.swing.JButton();
+        botaoVizualizar = new javax.swing.JButton();
+        painel4 = new javax.swing.JPanel();
+        painel5 = new javax.swing.JPanel();
+        painel6 = new javax.swing.JPanel();
+        painel7 = new javax.swing.JPanel();
+        painel8 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Programa de Calculo");
+        setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         setLocation(new java.awt.Point(400, 90));
         setName("janelaPrincipal"); // NOI18N
         setResizable(false);
@@ -167,7 +187,7 @@ public class Janela extends javax.swing.JFrame {
 
         titulo1.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
         titulo1.setForeground(new java.awt.Color(204, 204, 204));
-        titulo1.setText("v1.02");
+        titulo1.setText("v0.03");
 
         titulo2.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
         titulo2.setForeground(new java.awt.Color(204, 204, 204));
@@ -568,22 +588,272 @@ public class Janela extends javax.swing.JFrame {
 
         painelFundo.add(PainelBotoes, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 440, 890));
 
-        painel1.setBackground(new java.awt.Color(144, 185, 144));
-        painel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        painel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 350, 210, -1));
-        painel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 310, 210, -1));
+        painel1.setBackground(new java.awt.Color(204, 255, 204));
 
         jLabel1.setText("Valor de Y: ");
-        painel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 350, 60, 20));
 
+        jLabel2.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
         jLabel2.setText("Valor de X:");
-        painel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 314, -1, 20));
+
+        javax.swing.GroupLayout painel1Layout = new javax.swing.GroupLayout(painel1);
+        painel1.setLayout(painel1Layout);
+        painel1Layout.setHorizontalGroup(
+            painel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(painel1Layout.createSequentialGroup()
+                .addGap(120, 120, 120)
+                .addGroup(painel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(painel1Layout.createSequentialGroup()
+                        .addComponent(jLabel2)
+                        .addGap(14, 14, 14)
+                        .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(painel1Layout.createSequentialGroup()
+                        .addGap(34, 34, 34)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(26, 26, 26)
+                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE))))
+        );
+        painel1Layout.setVerticalGroup(
+            painel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(painel1Layout.createSequentialGroup()
+                .addGap(310, 310, 310)
+                .addGroup(painel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(painel1Layout.createSequentialGroup()
+                        .addGap(4, 4, 4)
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(painel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)))
+        );
 
         painelFundo.add(painel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(439, 0, 700, 890));
 
         painel2.setBackground(new java.awt.Color(220, 173, 189));
-        painel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        javax.swing.GroupLayout painel2Layout = new javax.swing.GroupLayout(painel2);
+        painel2.setLayout(painel2Layout);
+        painel2Layout.setHorizontalGroup(
+            painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 700, Short.MAX_VALUE)
+        );
+        painel2Layout.setVerticalGroup(
+            painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 890, Short.MAX_VALUE)
+        );
+
         painelFundo.add(painel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(439, 0, 700, 890));
+
+        painel3.setBackground(new java.awt.Color(225, 225, 225));
+
+        jLabel3.setFont(new java.awt.Font("Calibri", 0, 36)); // NOI18N
+        jLabel3.setText("Volume");
+
+        jLabel4.setFont(new java.awt.Font("Calibri", 0, 36)); // NOI18N
+        jLabel4.setText("Area");
+
+        jLabel5.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
+        jLabel5.setText("(Y)   Altura:");
+
+        jLabel6.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
+        jLabel6.setText("(X) Largura:");
+
+        jLabel7.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
+        jLabel7.setText("Resultado: ");
+
+        respostaVolume.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                respostaVolumeActionPerformed(evt);
+            }
+        });
+
+        txtLarguraVolume.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtLarguraVolumeActionPerformed(evt);
+            }
+        });
+
+        txtAlturaVolume.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtAlturaVolumeActionPerformed(evt);
+            }
+        });
+
+        botaoCalcularVolume.setText("Calcular");
+        botaoCalcularVolume.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botaoCalcularVolumeActionPerformed(evt);
+            }
+        });
+
+        jScrollPane1.setViewportView(txtMostrar);
+
+        botaoSalvar.setText("Salvar");
+        botaoSalvar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botaoSalvarActionPerformed(evt);
+            }
+        });
+
+        botaoVizualizar.setText("Vizualizar");
+        botaoVizualizar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botaoVizualizarActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout painel3Layout = new javax.swing.GroupLayout(painel3);
+        painel3.setLayout(painel3Layout);
+        painel3Layout.setHorizontalGroup(
+            painel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(painel3Layout.createSequentialGroup()
+                .addGroup(painel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(painel3Layout.createSequentialGroup()
+                        .addGap(140, 140, 140)
+                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addGroup(painel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtLarguraVolume, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtAlturaVolume, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(painel3Layout.createSequentialGroup()
+                        .addGap(293, 293, 293)
+                        .addGroup(painel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel3)
+                            .addGroup(painel3Layout.createSequentialGroup()
+                                .addComponent(jLabel7)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(painel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(respostaVolume, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(botaoCalcularVolume)))))
+                    .addGroup(painel3Layout.createSequentialGroup()
+                        .addGap(101, 101, 101)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 232, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(69, 69, 69)
+                        .addGroup(painel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(botaoSalvar)
+                            .addComponent(botaoVizualizar))))
+                .addContainerGap(147, Short.MAX_VALUE))
+            .addGroup(painel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(painel3Layout.createSequentialGroup()
+                    .addGap(140, 140, 140)
+                    .addComponent(jLabel6)
+                    .addContainerGap(449, Short.MAX_VALUE)))
+        );
+        painel3Layout.setVerticalGroup(
+            painel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, painel3Layout.createSequentialGroup()
+                .addGap(29, 29, 29)
+                .addComponent(jLabel4)
+                .addGroup(painel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(painel3Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 330, Short.MAX_VALUE)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(67, 67, 67)
+                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(21, 21, 21)
+                        .addComponent(txtLarguraVolume, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(painel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtAlturaVolume, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(29, 29, 29)
+                        .addGroup(painel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(painel3Layout.createSequentialGroup()
+                                .addComponent(respostaVolume, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(botaoCalcularVolume)))
+                        .addGap(81, 81, 81))
+                    .addGroup(painel3Layout.createSequentialGroup()
+                        .addGap(346, 346, 346)
+                        .addComponent(botaoSalvar)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(botaoVizualizar)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+            .addGroup(painel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, painel3Layout.createSequentialGroup()
+                    .addContainerGap(651, Short.MAX_VALUE)
+                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(200, 200, 200)))
+        );
+
+        painelFundo.add(painel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(439, 0, 700, 890));
+
+        painel4.setBackground(new java.awt.Color(204, 204, 204));
+
+        javax.swing.GroupLayout painel4Layout = new javax.swing.GroupLayout(painel4);
+        painel4.setLayout(painel4Layout);
+        painel4Layout.setHorizontalGroup(
+            painel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 700, Short.MAX_VALUE)
+        );
+        painel4Layout.setVerticalGroup(
+            painel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 890, Short.MAX_VALUE)
+        );
+
+        painelFundo.add(painel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(439, 0, 700, 890));
+
+        painel5.setBackground(new java.awt.Color(153, 0, 0));
+
+        javax.swing.GroupLayout painel5Layout = new javax.swing.GroupLayout(painel5);
+        painel5.setLayout(painel5Layout);
+        painel5Layout.setHorizontalGroup(
+            painel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 700, Short.MAX_VALUE)
+        );
+        painel5Layout.setVerticalGroup(
+            painel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 890, Short.MAX_VALUE)
+        );
+
+        painelFundo.add(painel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(439, 0, 700, 890));
+
+        painel6.setBackground(new java.awt.Color(0, 0, 0));
+
+        javax.swing.GroupLayout painel6Layout = new javax.swing.GroupLayout(painel6);
+        painel6.setLayout(painel6Layout);
+        painel6Layout.setHorizontalGroup(
+            painel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 700, Short.MAX_VALUE)
+        );
+        painel6Layout.setVerticalGroup(
+            painel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 890, Short.MAX_VALUE)
+        );
+
+        painelFundo.add(painel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(439, 0, 700, 890));
+
+        painel7.setBackground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout painel7Layout = new javax.swing.GroupLayout(painel7);
+        painel7.setLayout(painel7Layout);
+        painel7Layout.setHorizontalGroup(
+            painel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 700, Short.MAX_VALUE)
+        );
+        painel7Layout.setVerticalGroup(
+            painel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 890, Short.MAX_VALUE)
+        );
+
+        painelFundo.add(painel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(439, 0, 700, 890));
+
+        painel8.setBackground(new java.awt.Color(204, 204, 255));
+
+        javax.swing.GroupLayout painel8Layout = new javax.swing.GroupLayout(painel8);
+        painel8.setLayout(painel8Layout);
+        painel8Layout.setHorizontalGroup(
+            painel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 700, Short.MAX_VALUE)
+        );
+        painel8Layout.setVerticalGroup(
+            painel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 890, Short.MAX_VALUE)
+        );
+
+        painelFundo.add(painel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(439, 0, 700, 890));
 
         getContentPane().add(painelFundo, java.awt.BorderLayout.CENTER);
 
@@ -641,6 +911,12 @@ public class Janela extends javax.swing.JFrame {
         //conteudo
         painel1.setVisible(true);
         painel2.setVisible(false);
+        painel3.setVisible(false);
+        painel4.setVisible(false);
+        painel5.setVisible(false);
+        painel6.setVisible(false);
+        painel7.setVisible(false);
+        painel8.setVisible(false);
 
     }//GEN-LAST:event_botao1MouseClicked
 
@@ -701,6 +977,14 @@ public class Janela extends javax.swing.JFrame {
         //conteudo
         painel2.setVisible(true);
         painel1.setVisible(false);
+        painel3.setVisible(false);
+        painel4.setVisible(false);
+        painel5.setVisible(false);
+        painel6.setVisible(false);
+        painel7.setVisible(false);
+        painel8.setVisible(false);
+
+
     }//GEN-LAST:event_botao2MouseClicked
 
     private void botao2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao2MouseEntered
@@ -756,6 +1040,15 @@ public class Janela extends javax.swing.JFrame {
         abaBotao8.setVisible(false);
 
         //conteudo
+        painel3.setVisible(true);
+        painel2.setVisible(false);
+        painel1.setVisible(false);
+        painel4.setVisible(false);
+        painel5.setVisible(false);
+        painel6.setVisible(false);
+        painel7.setVisible(false);
+        painel8.setVisible(false);
+
 
     }//GEN-LAST:event_botao3MouseClicked
 
@@ -809,6 +1102,15 @@ public class Janela extends javax.swing.JFrame {
         abaBotao8.setVisible(false);
 
         //conteudo
+        painel4.setVisible(true);
+        painel2.setVisible(false);
+        painel1.setVisible(false);
+        painel3.setVisible(false);
+        painel5.setVisible(false);
+        painel6.setVisible(false);
+        painel7.setVisible(false);
+        painel8.setVisible(false);
+
 
     }//GEN-LAST:event_botao4MouseClicked
 
@@ -864,6 +1166,16 @@ public class Janela extends javax.swing.JFrame {
         botao8Select.setVisible(false);
         abaBotao8.setVisible(false);
 
+        //painels conteudo
+        painel5.setVisible(true);
+        painel2.setVisible(false);
+        painel1.setVisible(false);
+        painel4.setVisible(false);
+        painel3.setVisible(false);
+        painel6.setVisible(false);
+        painel7.setVisible(false);
+        painel8.setVisible(false);
+
 
     }//GEN-LAST:event_botao5MouseClicked
 
@@ -874,7 +1186,7 @@ public class Janela extends javax.swing.JFrame {
 
     private void botao5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao5MouseExited
         resetarCorBotao(botao5);
-        
+
     }//GEN-LAST:event_botao5MouseExited
 
     private void botao6SelectMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao6SelectMouseClicked
@@ -891,7 +1203,7 @@ public class Janela extends javax.swing.JFrame {
 
     private void botao6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao6MouseClicked
         // TODO add your handling code here:
-        
+
         abaBotao6.setVisible(true);
         setarCorBotao(botao6);
         botao6Select.setVisible(true);
@@ -918,6 +1230,16 @@ public class Janela extends javax.swing.JFrame {
         //btn8
         botao8Select.setVisible(false);
         abaBotao8.setVisible(false);
+
+        //conteudo
+        painel6.setVisible(true);
+        painel2.setVisible(false);
+        painel1.setVisible(false);
+        painel4.setVisible(false);
+        painel5.setVisible(false);
+        painel3.setVisible(false);
+        painel7.setVisible(false);
+        painel8.setVisible(false);
     }//GEN-LAST:event_botao6MouseClicked
 
     private void botao6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao6MouseEntered
@@ -926,7 +1248,7 @@ public class Janela extends javax.swing.JFrame {
     }//GEN-LAST:event_botao6MouseEntered
 
     private void botao6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao6MouseExited
-            resetarCorBotao(botao6);
+        resetarCorBotao(botao6);
     }//GEN-LAST:event_botao6MouseExited
 
     private void botao7SelectMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao7SelectMouseClicked
@@ -942,7 +1264,7 @@ public class Janela extends javax.swing.JFrame {
     }//GEN-LAST:event_botao7SelectMouseExited
 
     private void botao7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao7MouseClicked
-            
+
         abaBotao7.setVisible(true);
         setarCorBotao(botao7);
         botao7Select.setVisible(true);
@@ -969,6 +1291,16 @@ public class Janela extends javax.swing.JFrame {
         //btn8
         botao8Select.setVisible(false);
         abaBotao8.setVisible(false);
+
+        //conteudo
+        painel7.setVisible(true);
+        painel2.setVisible(false);
+        painel1.setVisible(false);
+        painel4.setVisible(false);
+        painel5.setVisible(false);
+        painel6.setVisible(false);
+        painel3.setVisible(false);
+        painel8.setVisible(false);
     }//GEN-LAST:event_botao7MouseClicked
 
     private void botao7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao7MouseEntered
@@ -995,7 +1327,7 @@ public class Janela extends javax.swing.JFrame {
 
     private void botao8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao8MouseClicked
         // TODO add your handling code here:
-            
+
         abaBotao8.setVisible(true);
         setarCorBotao(botao8);
         botao8Select.setVisible(true);
@@ -1022,6 +1354,15 @@ public class Janela extends javax.swing.JFrame {
         //btn6
         botao6Select.setVisible(false);
         abaBotao6.setVisible(false);
+        //conteudo
+        painel8.setVisible(true);
+        painel2.setVisible(false);
+        painel1.setVisible(false);
+        painel4.setVisible(false);
+        painel5.setVisible(false);
+        painel6.setVisible(false);
+        painel7.setVisible(false);
+        painel3.setVisible(false);
     }//GEN-LAST:event_botao8MouseClicked
 
     private void botao8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao8MouseEntered
@@ -1034,37 +1375,48 @@ public class Janela extends javax.swing.JFrame {
         resetarCorBotao(botao8);
     }//GEN-LAST:event_botao8MouseExited
 
-    public static void main(String args[]) {
+    private void respostaVolumeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_respostaVolumeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_respostaVolumeActionPerformed
 
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Janela.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Janela.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Janela.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Janela.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
+    private void txtLarguraVolumeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtLarguraVolumeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtLarguraVolumeActionPerformed
 
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Janela().setVisible(true);
-            }
-        });
+    private void txtAlturaVolumeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAlturaVolumeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtAlturaVolumeActionPerformed
+
+    private void botaoCalcularVolumeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoCalcularVolumeActionPerformed
+        double valorA, valorB, res;
+        valorA = Double.parseDouble(txtAlturaVolume.getText());
+        valorB = Double.parseDouble(txtLarguraVolume.getText());
+
+       res = criarMetodo().calcularVolume(valorA, valorB);
+       String total = String.valueOf(res);
+
+       respostaVolume.setText(total);
+    }//GEN-LAST:event_botaoCalcularVolumeActionPerformed
+
+    private void botaoSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoSalvarActionPerformed
+        // TODO add your handling code here:
+        String valorX, valorY, valorResp;
+        valorX = txtAlturaVolume.getText();
+        valorY = txtLarguraVolume.getText();
+        valorResp = respostaVolume.getText();
+        criarMetodo().guardarObjetoEmArray(valorX, valorY, valorResp);
+        
+    }//GEN-LAST:event_botaoSalvarActionPerformed
+
+    private void botaoVizualizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoVizualizarActionPerformed
+        // TODO add your handling code here:
+    
+    }//GEN-LAST:event_botaoVizualizarActionPerformed
+
+    public PrototipoInterface criarMetodo() {
+        PrototipoInterface metodo = new PrototipoInterface();
+        return metodo;
+
     }
 
     public void setarCorBotao(JPanel panel) {
@@ -1102,14 +1454,30 @@ public class Janela extends javax.swing.JFrame {
     private javax.swing.JPanel botao7Select;
     private javax.swing.JPanel botao8;
     private javax.swing.JPanel botao8Select;
+    private javax.swing.JButton botaoCalcularVolume;
+    private javax.swing.JButton botaoSalvar;
+    private javax.swing.JButton botaoVizualizar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JPanel linhaHorizontalPainel;
     private javax.swing.JPanel painel1;
     private javax.swing.JPanel painel2;
+    private javax.swing.JPanel painel3;
+    private javax.swing.JPanel painel4;
+    private javax.swing.JPanel painel5;
+    private javax.swing.JPanel painel6;
+    private javax.swing.JPanel painel7;
+    private javax.swing.JPanel painel8;
     private javax.swing.JPanel painelFundo;
+    private javax.swing.JTextField respostaVolume;
     private javax.swing.JLabel textoBotao1;
     private javax.swing.JLabel textoBotao2;
     private javax.swing.JLabel textoBotao3;
@@ -1123,6 +1491,7 @@ public class Janela extends javax.swing.JFrame {
     private javax.swing.JLabel titulo3;
     private javax.swing.JLabel titulo5;
     private javax.swing.JLabel titulo6;
+    private javax.swing.JTextField txtAlturaVolume;
     private javax.swing.JLabel txtBotaoSelect1;
     private javax.swing.JLabel txtBotaoSelect2;
     private javax.swing.JLabel txtBotaoSelect3;
@@ -1131,5 +1500,7 @@ public class Janela extends javax.swing.JFrame {
     private javax.swing.JLabel txtBotaoSelect6;
     private javax.swing.JLabel txtBotaoSelect7;
     private javax.swing.JLabel txtBotaoSelect8;
+    private javax.swing.JTextField txtLarguraVolume;
+    private javax.swing.JTextPane txtMostrar;
     // End of variables declaration//GEN-END:variables
 }
