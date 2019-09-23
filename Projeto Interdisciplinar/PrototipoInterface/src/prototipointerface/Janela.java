@@ -10,8 +10,27 @@ public class Janela extends javax.swing.JFrame {
         initComponents();
         abaBotao1.setVisible(false);
         botao1Select.setVisible(false);
+        //btn2
         abaBotao2.setVisible(false);
         botao2Select.setVisible(false);
+        //btn3
+        abaBotao3.setVisible(false);
+        botao3Select.setVisible(false);
+        //btn4
+        abaBotao4.setVisible(false);
+        botao4Select.setVisible(false);
+        //btn5
+        abaBotao5.setVisible(false);
+        botao5Select.setVisible(false);
+        //btn6
+        abaBotao6.setVisible(false);
+        botao6Select.setVisible(false);
+        //btn7
+        abaBotao7.setVisible(false);
+        botao7Select.setVisible(false);
+        //btn8
+        abaBotao8.setVisible(false);
+        botao8Select.setVisible(false);
 
     }
 
@@ -31,22 +50,57 @@ public class Janela extends javax.swing.JFrame {
         textoBotao1 = new javax.swing.JLabel();
         abaBotao1 = new javax.swing.JPanel();
         botao1Select = new javax.swing.JPanel();
-        textoBotao2 = new javax.swing.JLabel();
+        txtBotaoSelect1 = new javax.swing.JLabel();
         titulo1 = new javax.swing.JLabel();
         titulo2 = new javax.swing.JLabel();
         titulo3 = new javax.swing.JLabel();
         titulo5 = new javax.swing.JLabel();
         titulo6 = new javax.swing.JLabel();
         botao2 = new javax.swing.JPanel();
-        textoBotao3 = new javax.swing.JLabel();
+        textoBotao2 = new javax.swing.JLabel();
         abaBotao2 = new javax.swing.JPanel();
         botao2Select = new javax.swing.JPanel();
+        txtBotaoSelect2 = new javax.swing.JLabel();
+        botao3 = new javax.swing.JPanel();
+        abaBotao3 = new javax.swing.JPanel();
+        botao3Select = new javax.swing.JPanel();
+        txtBotaoSelect3 = new javax.swing.JLabel();
+        textoBotao3 = new javax.swing.JLabel();
+        botao4 = new javax.swing.JPanel();
+        abaBotao4 = new javax.swing.JPanel();
+        botao4Select = new javax.swing.JPanel();
+        txtBotaoSelect4 = new javax.swing.JLabel();
         textoBotao4 = new javax.swing.JLabel();
+        botao5 = new javax.swing.JPanel();
+        abaBotao5 = new javax.swing.JPanel();
+        botao5Select = new javax.swing.JPanel();
+        txtBotaoSelect5 = new javax.swing.JLabel();
+        textoBotao5 = new javax.swing.JLabel();
+        botao6 = new javax.swing.JPanel();
+        abaBotao6 = new javax.swing.JPanel();
+        botao6Select = new javax.swing.JPanel();
+        txtBotaoSelect6 = new javax.swing.JLabel();
+        textoBotao6 = new javax.swing.JLabel();
+        botao7 = new javax.swing.JPanel();
+        abaBotao7 = new javax.swing.JPanel();
+        botao7Select = new javax.swing.JPanel();
+        txtBotaoSelect7 = new javax.swing.JLabel();
+        textoBotao7 = new javax.swing.JLabel();
+        botao8 = new javax.swing.JPanel();
+        abaBotao8 = new javax.swing.JPanel();
+        botao8Select = new javax.swing.JPanel();
+        txtBotaoSelect8 = new javax.swing.JLabel();
+        textoBotao8 = new javax.swing.JLabel();
         painel1 = new javax.swing.JPanel();
+        jTextField1 = new javax.swing.JTextField();
+        jTextField2 = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        painel2 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Programa de Calculo");
-        setLocation(new java.awt.Point(400, 120));
+        setLocation(new java.awt.Point(400, 90));
         setName("janelaPrincipal"); // NOI18N
         setResizable(false);
 
@@ -66,7 +120,7 @@ public class Janela extends javax.swing.JFrame {
             .addGap(0, 1, Short.MAX_VALUE)
         );
 
-        botao1.setBackground(new java.awt.Color(68, 68, 68));
+        botao1.setBackground(new java.awt.Color(56, 55, 55));
         botao1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 botao1MouseClicked(evt);
@@ -85,12 +139,12 @@ public class Janela extends javax.swing.JFrame {
         textoBotao1.setText("Matriz X e Y (Coordenadas)");
         botao1.add(textoBotao1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 25, -1, -1));
 
-        abaBotao1.setBackground(new java.awt.Color(153, 153, 153));
+        abaBotao1.setBackground(new java.awt.Color(121, 121, 121));
         abaBotao1.setPreferredSize(new java.awt.Dimension(4, 76));
         abaBotao1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         botao1.add(abaBotao1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 8, -1));
 
-        botao1Select.setBackground(new java.awt.Color(102, 102, 102));
+        botao1Select.setBackground(new java.awt.Color(83, 83, 83));
         botao1Select.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 botao1SelectMouseClicked(evt);
@@ -104,10 +158,10 @@ public class Janela extends javax.swing.JFrame {
         });
         botao1Select.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        textoBotao2.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
-        textoBotao2.setForeground(new java.awt.Color(204, 204, 204));
-        textoBotao2.setText("Matriz X e Y (Coordenadas)");
-        botao1Select.add(textoBotao2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 25, -1, -1));
+        txtBotaoSelect1.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
+        txtBotaoSelect1.setForeground(new java.awt.Color(204, 204, 204));
+        txtBotaoSelect1.setText("Matriz X e Y (Coordenadas)");
+        botao1Select.add(txtBotaoSelect1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 25, -1, -1));
 
         botao1.add(botao1Select, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 440, 76));
 
@@ -131,7 +185,7 @@ public class Janela extends javax.swing.JFrame {
         titulo6.setForeground(new java.awt.Color(204, 204, 204));
         titulo6.setText("Geometria");
 
-        botao2.setBackground(new java.awt.Color(68, 68, 68));
+        botao2.setBackground(new java.awt.Color(56, 55, 55));
         botao2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 botao2MouseClicked(evt);
@@ -145,17 +199,17 @@ public class Janela extends javax.swing.JFrame {
         });
         botao2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        textoBotao3.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
-        textoBotao3.setForeground(new java.awt.Color(204, 204, 204));
-        textoBotao3.setText("Triangulo");
-        botao2.add(textoBotao3, new org.netbeans.lib.awtextra.AbsoluteConstraints(145, 25, -1, -1));
+        textoBotao2.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
+        textoBotao2.setForeground(new java.awt.Color(204, 204, 204));
+        textoBotao2.setText("Triangulo");
+        botao2.add(textoBotao2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 25, -1, -1));
 
-        abaBotao2.setBackground(new java.awt.Color(153, 153, 153));
+        abaBotao2.setBackground(new java.awt.Color(121, 121, 121));
         abaBotao2.setPreferredSize(new java.awt.Dimension(4, 76));
         abaBotao2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         botao2.add(abaBotao2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 8, -1));
 
-        botao2Select.setBackground(new java.awt.Color(102, 102, 102));
+        botao2Select.setBackground(new java.awt.Color(83, 83, 83));
         botao2Select.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 botao2SelectMouseClicked(evt);
@@ -169,12 +223,282 @@ public class Janela extends javax.swing.JFrame {
         });
         botao2Select.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        textoBotao4.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
-        textoBotao4.setForeground(new java.awt.Color(204, 204, 204));
-        textoBotao4.setText("Triangulo");
-        botao2Select.add(textoBotao4, new org.netbeans.lib.awtextra.AbsoluteConstraints(145, 25, -1, -1));
+        txtBotaoSelect2.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
+        txtBotaoSelect2.setForeground(new java.awt.Color(204, 204, 204));
+        txtBotaoSelect2.setText("Triangulo");
+        botao2Select.add(txtBotaoSelect2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 25, -1, -1));
 
         botao2.add(botao2Select, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 440, 76));
+
+        botao3.setBackground(new java.awt.Color(56, 55, 55));
+        botao3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                botao3MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                botao3MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                botao3MouseExited(evt);
+            }
+        });
+        botao3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        abaBotao3.setBackground(new java.awt.Color(121, 121, 121));
+        abaBotao3.setPreferredSize(new java.awt.Dimension(4, 76));
+        abaBotao3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        botao3.add(abaBotao3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 8, -1));
+
+        botao3Select.setBackground(new java.awt.Color(83, 83, 83));
+        botao3Select.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                botao3SelectMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                botao3SelectMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                botao3SelectMouseExited(evt);
+            }
+        });
+        botao3Select.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        txtBotaoSelect3.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
+        txtBotaoSelect3.setForeground(new java.awt.Color(204, 204, 204));
+        txtBotaoSelect3.setText("Cone");
+        botao3Select.add(txtBotaoSelect3, new org.netbeans.lib.awtextra.AbsoluteConstraints(185, 25, -1, -1));
+
+        botao3.add(botao3Select, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 440, 76));
+
+        textoBotao3.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
+        textoBotao3.setForeground(new java.awt.Color(204, 204, 204));
+        textoBotao3.setText("Cone");
+        botao3.add(textoBotao3, new org.netbeans.lib.awtextra.AbsoluteConstraints(185, 25, -1, -1));
+
+        botao4.setBackground(new java.awt.Color(56, 55, 55));
+        botao4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                botao4MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                botao4MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                botao4MouseExited(evt);
+            }
+        });
+        botao4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        abaBotao4.setBackground(new java.awt.Color(121, 121, 121));
+        abaBotao4.setPreferredSize(new java.awt.Dimension(4, 76));
+        abaBotao4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        botao4.add(abaBotao4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 8, -1));
+
+        botao4Select.setBackground(new java.awt.Color(83, 83, 83));
+        botao4Select.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                botao4SelectMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                botao4SelectMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                botao4SelectMouseExited(evt);
+            }
+        });
+        botao4Select.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        txtBotaoSelect4.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
+        txtBotaoSelect4.setForeground(new java.awt.Color(204, 204, 204));
+        txtBotaoSelect4.setText("Paralelepipedo");
+        botao4Select.add(txtBotaoSelect4, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 25, -1, -1));
+
+        botao4.add(botao4Select, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 440, 76));
+
+        textoBotao4.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
+        textoBotao4.setForeground(new java.awt.Color(204, 204, 204));
+        textoBotao4.setText("Paralelepipedo");
+        botao4.add(textoBotao4, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 25, -1, -1));
+
+        botao5.setBackground(new java.awt.Color(56, 55, 55));
+        botao5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                botao5MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                botao5MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                botao5MouseExited(evt);
+            }
+        });
+        botao5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        abaBotao5.setBackground(new java.awt.Color(121, 121, 121));
+        abaBotao5.setPreferredSize(new java.awt.Dimension(4, 76));
+        abaBotao5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        botao5.add(abaBotao5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 8, -1));
+
+        botao5Select.setBackground(new java.awt.Color(83, 83, 83));
+        botao5Select.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                botao5SelectMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                botao5SelectMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                botao5SelectMouseExited(evt);
+            }
+        });
+        botao5Select.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        txtBotaoSelect5.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
+        txtBotaoSelect5.setForeground(new java.awt.Color(204, 204, 204));
+        txtBotaoSelect5.setText("Quadrado");
+        botao5Select.add(txtBotaoSelect5, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 25, -1, -1));
+
+        botao5.add(botao5Select, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 440, 76));
+
+        textoBotao5.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
+        textoBotao5.setForeground(new java.awt.Color(204, 204, 204));
+        textoBotao5.setText("Quadrado");
+        botao5.add(textoBotao5, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 25, -1, -1));
+
+        botao6.setBackground(new java.awt.Color(56, 55, 55));
+        botao6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                botao6MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                botao6MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                botao6MouseExited(evt);
+            }
+        });
+        botao6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        abaBotao6.setBackground(new java.awt.Color(121, 121, 121));
+        abaBotao6.setPreferredSize(new java.awt.Dimension(4, 76));
+        abaBotao6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        botao6.add(abaBotao6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 8, -1));
+
+        botao6Select.setBackground(new java.awt.Color(83, 83, 83));
+        botao6Select.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                botao6SelectMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                botao6SelectMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                botao6SelectMouseExited(evt);
+            }
+        });
+        botao6Select.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        txtBotaoSelect6.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
+        txtBotaoSelect6.setForeground(new java.awt.Color(204, 204, 204));
+        txtBotaoSelect6.setText("Cilindro");
+        botao6Select.add(txtBotaoSelect6, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 25, -1, -1));
+
+        botao6.add(botao6Select, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 440, 76));
+
+        textoBotao6.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
+        textoBotao6.setForeground(new java.awt.Color(204, 204, 204));
+        textoBotao6.setText("Cilindro");
+        botao6.add(textoBotao6, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 25, -1, -1));
+
+        botao7.setBackground(new java.awt.Color(56, 55, 55));
+        botao7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                botao7MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                botao7MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                botao7MouseExited(evt);
+            }
+        });
+        botao7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        abaBotao7.setBackground(new java.awt.Color(121, 121, 121));
+        abaBotao7.setPreferredSize(new java.awt.Dimension(4, 76));
+        abaBotao7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        botao7.add(abaBotao7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 8, -1));
+
+        botao7Select.setBackground(new java.awt.Color(83, 83, 83));
+        botao7Select.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                botao7SelectMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                botao7SelectMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                botao7SelectMouseExited(evt);
+            }
+        });
+        botao7Select.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        txtBotaoSelect7.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
+        txtBotaoSelect7.setForeground(new java.awt.Color(204, 204, 204));
+        txtBotaoSelect7.setText("Equação de Segundo Grau");
+        botao7Select.add(txtBotaoSelect7, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 25, -1, -1));
+
+        botao7.add(botao7Select, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 440, 76));
+
+        textoBotao7.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
+        textoBotao7.setForeground(new java.awt.Color(204, 204, 204));
+        textoBotao7.setText("Equação de Segundo Grau");
+        botao7.add(textoBotao7, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 25, -1, -1));
+
+        botao8.setBackground(new java.awt.Color(56, 55, 55));
+        botao8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                botao8MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                botao8MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                botao8MouseExited(evt);
+            }
+        });
+        botao8.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        abaBotao8.setBackground(new java.awt.Color(121, 121, 121));
+        abaBotao8.setPreferredSize(new java.awt.Dimension(4, 76));
+        abaBotao8.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        botao8.add(abaBotao8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 8, -1));
+
+        botao8Select.setBackground(new java.awt.Color(83, 83, 83));
+        botao8Select.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                botao8SelectMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                botao8SelectMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                botao8SelectMouseExited(evt);
+            }
+        });
+        botao8Select.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        txtBotaoSelect8.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
+        txtBotaoSelect8.setForeground(new java.awt.Color(204, 204, 204));
+        txtBotaoSelect8.setText("Sobre");
+        botao8Select.add(txtBotaoSelect8, new org.netbeans.lib.awtextra.AbsoluteConstraints(185, 25, -1, -1));
+
+        botao8.add(botao8Select, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 440, 76));
+
+        textoBotao8.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
+        textoBotao8.setForeground(new java.awt.Color(204, 204, 204));
+        textoBotao8.setText("Sobre");
+        botao8.add(textoBotao8, new org.netbeans.lib.awtextra.AbsoluteConstraints(185, 25, -1, -1));
 
         javax.swing.GroupLayout PainelBotoesLayout = new javax.swing.GroupLayout(PainelBotoes);
         PainelBotoes.setLayout(PainelBotoesLayout);
@@ -192,18 +516,21 @@ public class Janela extends javax.swing.JFrame {
                                 .addGap(14, 14, 14)
                                 .addComponent(titulo5)
                                 .addGap(18, 18, 18)
-                                .addComponent(titulo6)
-                                .addGap(67, 67, 67))
+                                .addComponent(titulo6))
                             .addComponent(titulo2)))
-                    .addGroup(PainelBotoesLayout.createSequentialGroup()
-                        .addComponent(linhaHorizontalPainel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
+                    .addComponent(linhaHorizontalPainel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PainelBotoesLayout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(titulo1)
                 .addGap(52, 52, 52))
             .addComponent(botao2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(botao3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(botao4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(botao5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(botao6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(botao7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(botao8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         PainelBotoesLayout.setVerticalGroup(
             PainelBotoesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -224,13 +551,39 @@ public class Janela extends javax.swing.JFrame {
                 .addComponent(botao1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(botao2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(501, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(botao3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(botao4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(botao5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(botao6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(botao7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(botao8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(49, Short.MAX_VALUE))
         );
 
-        painelFundo.add(PainelBotoes, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 440, 850));
+        painelFundo.add(PainelBotoes, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 440, 890));
 
+        painel1.setBackground(new java.awt.Color(144, 185, 144));
         painel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        painelFundo.add(painel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(439, 0, 700, 850));
+        painel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 350, 210, -1));
+        painel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 310, 210, -1));
+
+        jLabel1.setText("Valor de Y: ");
+        painel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 350, 60, 20));
+
+        jLabel2.setText("Valor de X:");
+        painel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 314, -1, 20));
+
+        painelFundo.add(painel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(439, 0, 700, 890));
+
+        painel2.setBackground(new java.awt.Color(220, 173, 189));
+        painel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        painelFundo.add(painel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(439, 0, 700, 890));
 
         getContentPane().add(painelFundo, java.awt.BorderLayout.CENTER);
 
@@ -249,12 +602,45 @@ public class Janela extends javax.swing.JFrame {
     }//GEN-LAST:event_botao1MouseExited
 
     private void botao1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao1MouseClicked
-
+        /*
         abaBotao1.setVisible(true);
         setarCorBotao(botao1);
         botao1Select.setVisible(true);
         botao2Select.setVisible(false);
         abaBotao2.setVisible(false);
+        painel1.setVisible(true);
+        painel2.setVisible(false);*/
+
+        abaBotao1.setVisible(true);
+        setarCorBotao(botao1);
+        botao1Select.setVisible(true);
+
+        //outros botoes
+        //btn2
+        botao2Select.setVisible(false);
+        abaBotao2.setVisible(false);
+        //btn3
+        botao3Select.setVisible(false);
+        abaBotao3.setVisible(false);
+        //btn4
+        botao4Select.setVisible(false);
+        abaBotao4.setVisible(false);
+        //btn5
+        botao5Select.setVisible(false);
+        abaBotao5.setVisible(false);
+        //btn6
+        botao6Select.setVisible(false);
+        abaBotao6.setVisible(false);
+        //btn7
+        botao7Select.setVisible(false);
+        abaBotao7.setVisible(false);
+        //btn8
+        botao8Select.setVisible(false);
+        abaBotao8.setVisible(false);
+
+        //conteudo
+        painel1.setVisible(true);
+        painel2.setVisible(false);
 
     }//GEN-LAST:event_botao1MouseClicked
 
@@ -272,7 +658,7 @@ public class Janela extends javax.swing.JFrame {
 
     private void botao2SelectMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao2SelectMouseClicked
         // TODO add your handling code here:
-       
+
     }//GEN-LAST:event_botao2SelectMouseClicked
 
     private void botao2SelectMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao2SelectMouseEntered
@@ -284,12 +670,37 @@ public class Janela extends javax.swing.JFrame {
     }//GEN-LAST:event_botao2SelectMouseExited
 
     private void botao2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao2MouseClicked
-        // TODO add your handling code here:
-         abaBotao2.setVisible(true);
+        //botoes
+        abaBotao2.setVisible(true);
         setarCorBotao(botao2);
         botao2Select.setVisible(true);
+
+        //outros botoes
+        //btn1
         botao1Select.setVisible(false);
         abaBotao1.setVisible(false);
+        //btn3
+        botao3Select.setVisible(false);
+        abaBotao3.setVisible(false);
+        //btn4
+        botao4Select.setVisible(false);
+        abaBotao4.setVisible(false);
+        //btn5
+        botao5Select.setVisible(false);
+        abaBotao5.setVisible(false);
+        //btn6
+        botao6Select.setVisible(false);
+        abaBotao6.setVisible(false);
+        //btn7
+        botao7Select.setVisible(false);
+        abaBotao7.setVisible(false);
+        //btn8
+        botao8Select.setVisible(false);
+        abaBotao8.setVisible(false);
+
+        //conteudo
+        painel2.setVisible(true);
+        painel1.setVisible(false);
     }//GEN-LAST:event_botao2MouseClicked
 
     private void botao2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao2MouseEntered
@@ -303,6 +714,325 @@ public class Janela extends javax.swing.JFrame {
         // TODO add your handling code here:
         resetarCorBotao(botao2);
     }//GEN-LAST:event_botao2MouseExited
+
+    private void botao3SelectMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao3SelectMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botao3SelectMouseClicked
+
+    private void botao3SelectMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao3SelectMouseEntered
+    }//GEN-LAST:event_botao3SelectMouseEntered
+
+    private void botao3SelectMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao3SelectMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botao3SelectMouseExited
+
+    private void botao3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao3MouseClicked
+        //botoes
+        abaBotao3.setVisible(true);
+        setarCorBotao(botao3);
+        botao3Select.setVisible(true);
+
+        //outros botoes
+        //btn2
+        botao2Select.setVisible(false);
+        abaBotao2.setVisible(false);
+        //btn1
+        botao1Select.setVisible(false);
+        abaBotao1.setVisible(false);
+        //btn4
+        botao4Select.setVisible(false);
+        abaBotao4.setVisible(false);
+        //btn5
+        botao5Select.setVisible(false);
+        abaBotao5.setVisible(false);
+        //btn6
+        botao6Select.setVisible(false);
+        abaBotao6.setVisible(false);
+        //btn7
+        botao7Select.setVisible(false);
+        abaBotao7.setVisible(false);
+        //btn8
+        botao8Select.setVisible(false);
+        abaBotao8.setVisible(false);
+
+        //conteudo
+
+    }//GEN-LAST:event_botao3MouseClicked
+
+    private void botao3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao3MouseEntered
+        setarCorBotao(botao3);
+    }//GEN-LAST:event_botao3MouseEntered
+
+    private void botao3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao3MouseExited
+        resetarCorBotao(botao3);
+
+    }//GEN-LAST:event_botao3MouseExited
+
+    private void botao4SelectMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao4SelectMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botao4SelectMouseClicked
+
+    private void botao4SelectMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao4SelectMouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botao4SelectMouseEntered
+
+    private void botao4SelectMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao4SelectMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botao4SelectMouseExited
+
+    private void botao4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao4MouseClicked
+        abaBotao4.setVisible(true);
+        setarCorBotao(botao4);
+        botao4Select.setVisible(true);
+
+        //outros botoes
+        //btn2
+        botao2Select.setVisible(false);
+        abaBotao2.setVisible(false);
+        //btn1
+        botao1Select.setVisible(false);
+        abaBotao1.setVisible(false);
+        //btn3
+        botao3Select.setVisible(false);
+        abaBotao3.setVisible(false);
+        //btn5
+        botao5Select.setVisible(false);
+        abaBotao5.setVisible(false);
+        //btn6
+        botao6Select.setVisible(false);
+        abaBotao6.setVisible(false);
+        //btn7
+        botao7Select.setVisible(false);
+        abaBotao7.setVisible(false);
+        //btn8
+        botao8Select.setVisible(false);
+        abaBotao8.setVisible(false);
+
+        //conteudo
+
+    }//GEN-LAST:event_botao4MouseClicked
+
+    private void botao4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao4MouseEntered
+        // TODO add your handling code here:
+        setarCorBotao(botao4);
+    }//GEN-LAST:event_botao4MouseEntered
+
+    private void botao4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao4MouseExited
+        // TODO add your handling code here:
+        resetarCorBotao(botao4);
+    }//GEN-LAST:event_botao4MouseExited
+
+    private void botao5SelectMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao5SelectMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botao5SelectMouseClicked
+
+    private void botao5SelectMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao5SelectMouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botao5SelectMouseEntered
+
+    private void botao5SelectMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao5SelectMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botao5SelectMouseExited
+
+    private void botao5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao5MouseClicked
+        // TODO add your handling code here:
+
+        abaBotao5.setVisible(true);
+        setarCorBotao(botao5);
+        botao5Select.setVisible(true);
+
+        //outros botoes
+        //btn2
+        botao2Select.setVisible(false);
+        abaBotao2.setVisible(false);
+        //btn3
+        botao3Select.setVisible(false);
+        abaBotao3.setVisible(false);
+        //btn4
+        botao4Select.setVisible(false);
+        abaBotao4.setVisible(false);
+        //btn1
+        botao1Select.setVisible(false);
+        abaBotao1.setVisible(false);
+        //btn6
+        botao6Select.setVisible(false);
+        abaBotao6.setVisible(false);
+        //btn7
+        botao7Select.setVisible(false);
+        abaBotao7.setVisible(false);
+        //btn8
+        botao8Select.setVisible(false);
+        abaBotao8.setVisible(false);
+
+
+    }//GEN-LAST:event_botao5MouseClicked
+
+    private void botao5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao5MouseEntered
+
+        setarCorBotao(botao5);
+    }//GEN-LAST:event_botao5MouseEntered
+
+    private void botao5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao5MouseExited
+        resetarCorBotao(botao5);
+        
+    }//GEN-LAST:event_botao5MouseExited
+
+    private void botao6SelectMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao6SelectMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botao6SelectMouseClicked
+
+    private void botao6SelectMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao6SelectMouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botao6SelectMouseEntered
+
+    private void botao6SelectMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao6SelectMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botao6SelectMouseExited
+
+    private void botao6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao6MouseClicked
+        // TODO add your handling code here:
+        
+        abaBotao6.setVisible(true);
+        setarCorBotao(botao6);
+        botao6Select.setVisible(true);
+
+        //outros botoes
+        //btn2
+        botao2Select.setVisible(false);
+        abaBotao2.setVisible(false);
+        //btn3
+        botao3Select.setVisible(false);
+        abaBotao3.setVisible(false);
+        //btn4
+        botao4Select.setVisible(false);
+        abaBotao4.setVisible(false);
+        //btn1
+        botao1Select.setVisible(false);
+        abaBotao1.setVisible(false);
+        //btn5
+        botao5Select.setVisible(false);
+        abaBotao5.setVisible(false);
+        //btn7
+        botao7Select.setVisible(false);
+        abaBotao7.setVisible(false);
+        //btn8
+        botao8Select.setVisible(false);
+        abaBotao8.setVisible(false);
+    }//GEN-LAST:event_botao6MouseClicked
+
+    private void botao6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao6MouseEntered
+        // TODO add your handling code here:
+        setarCorBotao(botao6);
+    }//GEN-LAST:event_botao6MouseEntered
+
+    private void botao6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao6MouseExited
+            resetarCorBotao(botao6);
+    }//GEN-LAST:event_botao6MouseExited
+
+    private void botao7SelectMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao7SelectMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botao7SelectMouseClicked
+
+    private void botao7SelectMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao7SelectMouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botao7SelectMouseEntered
+
+    private void botao7SelectMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao7SelectMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botao7SelectMouseExited
+
+    private void botao7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao7MouseClicked
+            
+        abaBotao7.setVisible(true);
+        setarCorBotao(botao7);
+        botao7Select.setVisible(true);
+
+        //outros botoes
+        //btn2
+        botao2Select.setVisible(false);
+        abaBotao2.setVisible(false);
+        //btn3
+        botao3Select.setVisible(false);
+        abaBotao3.setVisible(false);
+        //btn4
+        botao4Select.setVisible(false);
+        abaBotao4.setVisible(false);
+        //btn1
+        botao1Select.setVisible(false);
+        abaBotao1.setVisible(false);
+        //btn5
+        botao5Select.setVisible(false);
+        abaBotao5.setVisible(false);
+        //btn6
+        botao6Select.setVisible(false);
+        abaBotao6.setVisible(false);
+        //btn8
+        botao8Select.setVisible(false);
+        abaBotao8.setVisible(false);
+    }//GEN-LAST:event_botao7MouseClicked
+
+    private void botao7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao7MouseEntered
+        // TODO add your handling code here:
+        setarCorBotao(botao7);
+    }//GEN-LAST:event_botao7MouseEntered
+
+    private void botao7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao7MouseExited
+        // TODO add your handling code here:
+        resetarCorBotao(botao7);
+    }//GEN-LAST:event_botao7MouseExited
+
+    private void botao8SelectMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao8SelectMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botao8SelectMouseClicked
+
+    private void botao8SelectMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao8SelectMouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botao8SelectMouseEntered
+
+    private void botao8SelectMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao8SelectMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botao8SelectMouseExited
+
+    private void botao8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao8MouseClicked
+        // TODO add your handling code here:
+            
+        abaBotao8.setVisible(true);
+        setarCorBotao(botao8);
+        botao8Select.setVisible(true);
+
+        //outros botoes
+        //btn2
+        botao2Select.setVisible(false);
+        abaBotao2.setVisible(false);
+        //btn3
+        botao3Select.setVisible(false);
+        abaBotao3.setVisible(false);
+        //btn4
+        botao4Select.setVisible(false);
+        abaBotao4.setVisible(false);
+        //btn1
+        botao1Select.setVisible(false);
+        abaBotao1.setVisible(false);
+        //btn6
+        botao5Select.setVisible(false);
+        abaBotao5.setVisible(false);
+        //btn7
+        botao7Select.setVisible(false);
+        abaBotao7.setVisible(false);
+        //btn6
+        botao6Select.setVisible(false);
+        abaBotao6.setVisible(false);
+    }//GEN-LAST:event_botao8MouseClicked
+
+    private void botao8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao8MouseEntered
+        // TODO add your handling code here:
+        setarCorBotao(botao8);
+    }//GEN-LAST:event_botao8MouseEntered
+
+    private void botao8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao8MouseExited
+        // TODO add your handling code here:
+        resetarCorBotao(botao8);
+    }//GEN-LAST:event_botao8MouseExited
 
     public static void main(String args[]) {
 
@@ -350,21 +1080,56 @@ public class Janela extends javax.swing.JFrame {
     private javax.swing.JPanel PainelBotoes;
     private javax.swing.JPanel abaBotao1;
     private javax.swing.JPanel abaBotao2;
+    private javax.swing.JPanel abaBotao3;
+    private javax.swing.JPanel abaBotao4;
+    private javax.swing.JPanel abaBotao5;
+    private javax.swing.JPanel abaBotao6;
+    private javax.swing.JPanel abaBotao7;
+    private javax.swing.JPanel abaBotao8;
     private javax.swing.JPanel botao1;
     private javax.swing.JPanel botao1Select;
     private javax.swing.JPanel botao2;
     private javax.swing.JPanel botao2Select;
+    private javax.swing.JPanel botao3;
+    private javax.swing.JPanel botao3Select;
+    private javax.swing.JPanel botao4;
+    private javax.swing.JPanel botao4Select;
+    private javax.swing.JPanel botao5;
+    private javax.swing.JPanel botao5Select;
+    private javax.swing.JPanel botao6;
+    private javax.swing.JPanel botao6Select;
+    private javax.swing.JPanel botao7;
+    private javax.swing.JPanel botao7Select;
+    private javax.swing.JPanel botao8;
+    private javax.swing.JPanel botao8Select;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
     private javax.swing.JPanel linhaHorizontalPainel;
     private javax.swing.JPanel painel1;
+    private javax.swing.JPanel painel2;
     private javax.swing.JPanel painelFundo;
     private javax.swing.JLabel textoBotao1;
     private javax.swing.JLabel textoBotao2;
     private javax.swing.JLabel textoBotao3;
     private javax.swing.JLabel textoBotao4;
+    private javax.swing.JLabel textoBotao5;
+    private javax.swing.JLabel textoBotao6;
+    private javax.swing.JLabel textoBotao7;
+    private javax.swing.JLabel textoBotao8;
     private javax.swing.JLabel titulo1;
     private javax.swing.JLabel titulo2;
     private javax.swing.JLabel titulo3;
     private javax.swing.JLabel titulo5;
     private javax.swing.JLabel titulo6;
+    private javax.swing.JLabel txtBotaoSelect1;
+    private javax.swing.JLabel txtBotaoSelect2;
+    private javax.swing.JLabel txtBotaoSelect3;
+    private javax.swing.JLabel txtBotaoSelect4;
+    private javax.swing.JLabel txtBotaoSelect5;
+    private javax.swing.JLabel txtBotaoSelect6;
+    private javax.swing.JLabel txtBotaoSelect7;
+    private javax.swing.JLabel txtBotaoSelect8;
     // End of variables declaration//GEN-END:variables
 }
