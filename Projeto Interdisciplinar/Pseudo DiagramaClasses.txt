@@ -1,0 +1,56 @@
+Abstract Class Ponto()
+abstract x,y;
+=
+public Class Cone extends Ponto()
+private double diametro,volume,raio;
+
+
+Triangulo extends Ponto
+-ladoA: Double
+-ladoB: Double
+-ladoC: Double
+-perimetro:Double
+-AreaTot: Double
++construtor()
++construtor(ladoA,ladoB,ladoC)
++calcularArea(ladoA,ladoB,ladoC):Double
+//3 tipos equilatero, escaleno, isosceles
+
++calcularPerimetro(ladoA,ladoB,ladoC):Double
+this.perimetro = A+B+C
++Getter/Setters()
++toString()
+
+=====================
+Quadrado extends Ponto
+-ladoA: Double
+-perimetro:Double
+-areaTot: Double
+
++construtor(LadoA)
++calcularArea(LadoA,LadoB):Double
+areaTot = LadoA*ladoA
+
++calcularPerimetro(LadoA):Double
+perimetro = LadoA*4
+
++Getter/Setters()
++toString()
+=====================
+Cone  extends Ponto
+-geratriz:Double
+-altura: Double
+-areaBase:Double
+-areaLatel:Double
+-diametro : Double
+-raio : Double
+-volume : Double
+
++CalcularGeratriz(raio,altura):double
++contrutor()
++calcularAreaTot(raio, CalcularGeratriz): Double
++calcularVolume(raio) : Double
+volume = (pi*raio*altura)/3
++geters / setters
++toString()
+=====================
