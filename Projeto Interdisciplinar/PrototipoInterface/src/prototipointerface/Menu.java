@@ -25,6 +25,54 @@ public class Menu {
     public static void PrototipoInterface() {  // Método para deixar a interface Visivel
         Janela janela = new Janela();
         janela.setVisible(true);
+
+    }
+
+    public double calcularEquacao(String opc, double a, double b, double c) {
+        ((Equacao) ArrayObjetos.get(cont)).calcularEquacao(a, b, c);
+        if (opc.equalsIgnoreCase("x1")) {
+            return ((Equacao) ArrayObjetos.get(cont)).getX1();
+        } else if (opc.equalsIgnoreCase("x2")) {
+            return ((Equacao) ArrayObjetos.get(cont)).getX2();
+        } else if (opc.equalsIgnoreCase("Delta")) {
+            return ((Equacao) ArrayObjetos.get(cont)).getDelta();
+        } else {
+            return 0;
+        }
+    }
+
+    public double quadrado_calcularArea(double ladoA) {
+        ((Quadrado) ArrayObjetos.get(cont)).calcularArea(ladoA);
+        return ((Quadrado) ArrayObjetos.get(cont)).getArea();
+    }
+
+    public double quadrado_calcularPerimetro(double ladoA) {
+        ((Quadrado) ArrayObjetos.get(cont)).calcularPerimetro(ladoA);
+        return ((Quadrado) ArrayObjetos.get(cont)).getPerimetro();
+    }
+
+    public double cilindro_calcularArea(double raio, double altura) {
+        ((Cilindro) ArrayObjetos.get(cont)).calcularAreaTotal(raio, altura);
+        return ((Cilindro) ArrayObjetos.get(cont)).getArea();
+    }
+
+    public double cilindro_calcularVolume(double raio, double altura) {
+        ((Cilindro) ArrayObjetos.get(cont)).calcularVolume(raio, altura);
+        return ((Cilindro) ArrayObjetos.get(cont)).getVolume();
+    }
+
+    public double cone_calcularVolume(double raio, double altura) {
+        ((Cone) ArrayObjetos.get(cont)).calcularVolume(raio, altura);
+        System.out.println("Volume cone: " + ((Cone) ArrayObjetos.get(cont)).getVolume());
+        return ((Cone) ArrayObjetos.get(cont)).getVolume();
+
+    }
+
+    public double cone_calcularArea(double raio, double geratriz) {
+        ((Cone) ArrayObjetos.get(cont)).calcularArea(raio, geratriz);
+        System.out.println("Area Cone: " + ((Cone) ArrayObjetos.get(cont)).getArea());
+        return ((Cone) ArrayObjetos.get(cont)).getArea();
+
     }
 
     public double triangulo_calcularPerimetro(double ladoA, double ladoB, double ladoC) { // calcula o perimetro do triangulo
@@ -59,6 +107,18 @@ public class Menu {
                 ((Paralelepipedo) ArrayObjetos.get(cont)).setEixoX(x);
                 ((Paralelepipedo) ArrayObjetos.get(cont)).setEixoY(y);
                 break;
+            case "Cone":
+                ((Cone) ArrayObjetos.get(cont)).setEixoX(x);
+                ((Cone) ArrayObjetos.get(cont)).setEixoY(y);
+                break;
+            case "Cilindro":
+                ((Cilindro) ArrayObjetos.get(cont)).setEixoX(x);
+                ((Cilindro) ArrayObjetos.get(cont)).setEixoY(y);
+                break;
+            case "Quadrado":
+                ((Quadrado) ArrayObjetos.get(cont)).setEixoX(x);
+                ((Quadrado) ArrayObjetos.get(cont)).setEixoY(y);
+                break;
             default:
                 JOptionPane.showMessageDialog(null, "Erro ao definir o ponto da classe" + obj);
                 break;
@@ -73,11 +133,23 @@ public class Menu {
             case "Paralelepipedo":
                 ArrayObjetos.add(new Paralelepipedo());
                 break;
+            case "Cone":
+                ArrayObjetos.add(new Cone());
+                break;
+            case "Equacao":
+                ArrayObjetos.add(new Equacao());
+                break;
+            case "Cilindro":
+                ArrayObjetos.add(new Cilindro());
+                break;
+            case "Quadrado":
+                ArrayObjetos.add(new Quadrado());
+                break;
+
             default:
                 JOptionPane.showMessageDialog(null, "Erro, paramentros invalidos.");
                 break;
         }
-
         cont++;
     }
 

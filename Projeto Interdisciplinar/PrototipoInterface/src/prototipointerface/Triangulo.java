@@ -34,7 +34,7 @@ public class Triangulo extends Ponto implements Serializable {
     public void calcularArea(double base, double altura) {
         this.altura = altura;
         this.base = base;
-        this.setArea(base * altura / 2);
+        this.area = (base * altura) / 2;
 
     }
 

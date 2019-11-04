@@ -3,6 +3,7 @@ package prototipointerface;
 import java.io.Serializable;
 
 public class Paralelepipedo extends Ponto implements Serializable {
+
     private double comprimento, largura, altura;
     private double volume, area;
 
@@ -15,29 +16,32 @@ public class Paralelepipedo extends Ponto implements Serializable {
         this.largura = largura;
         this.altura = altura;
     }
-    
-    
-    public void CalculoVolumeDoParalelepipedo(double comprimento, double altura, double largura){
+
+    public void CalculoVolumeDoParalelepipedo(double comprimento, double altura, double largura) {
         this.comprimento = comprimento;
         this.altura = altura;
         this.largura = largura;
-        this.volume = comprimento*largura*altura;
-       
+        this.volume = comprimento * largura * altura;
+
     }
-    
-    public void calcularAreaTot(double comprimento, double altura, double largura){
-       this.area = ((largura*comprimento)+(comprimento*altura)+(largura*comprimento));
-        
+
+    public void calcularAreaTot(double comprimento, double altura, double largura) {
+        this.comprimento = comprimento;
+        this.altura = altura;
+        this.largura = largura;
+        this.area = 2*((largura*comprimento)+(largura*altura)+(comprimento*altura));
+
+        System.out.println("Comprimento: " + this.comprimento);
+        System.out.println("largura: " + this.largura);
+        System.out.println("altura: " + this.altura);
+        System.out.println("area: " + this.area);
+
     }
 
     @Override
     public String toString() {
-        return "Paralelepipedo{ " +super.toString()+ ", comprimento=" + comprimento + ", largura=" + largura + ", altura=" + altura + ", volume=" + volume + ", area=" + area + '}';
+        return "Paralelepipedo{ " + super.toString() + ", comprimento=" + comprimento + ", largura=" + largura + ", altura=" + altura + ", volume=" + volume + ", area=" + area + '}';
     }
-
-     
-
-    
 
     public double getComprimento() {
         return comprimento;
@@ -78,7 +82,5 @@ public class Paralelepipedo extends Ponto implements Serializable {
     public void setArea(double area) {
         this.area = area;
     }
-    
-    
-    
+
 }

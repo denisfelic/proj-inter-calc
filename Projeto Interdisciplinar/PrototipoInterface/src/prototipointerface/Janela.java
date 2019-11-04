@@ -1,6 +1,7 @@
 package prototipointerface;
 
 import java.awt.Color;
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
@@ -116,7 +117,7 @@ public class Janela extends javax.swing.JFrame {
         triangulo_resp_perimetro = new javax.swing.JTextField();
         triangulo_btn_calcPerimetro = new javax.swing.JButton();
         triangulo_alturaTxt = new javax.swing.JTextField();
-        triangulo_btn_calcPerimetro1 = new javax.swing.JButton();
+        triangulo_btn_calcArea = new javax.swing.JButton();
         jLabel14 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         triangulo_baseTxt = new javax.swing.JTextField();
@@ -128,22 +129,36 @@ public class Janela extends javax.swing.JFrame {
         jLabel19 = new javax.swing.JLabel();
         triangulo_eixoY = new javax.swing.JTextField();
         triangulo_salvarObjeto = new javax.swing.JButton();
-        jLabel28 = new javax.swing.JLabel();
         criarObjeto_Triangulo = new javax.swing.JButton();
+        jLabel43 = new javax.swing.JLabel();
+        jLabel50 = new javax.swing.JLabel();
+        jLabel53 = new javax.swing.JLabel();
         painel3 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
+        labelcone = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        respostaVolume = new javax.swing.JTextField();
-        txtLarguraVolume = new javax.swing.JTextField();
-        txtAlturaVolume = new javax.swing.JTextField();
-        botaoCalcularVolume = new javax.swing.JButton();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        txtMostrar = new javax.swing.JTextPane();
-        botaoSalvar = new javax.swing.JButton();
-        botaoVizualizar = new javax.swing.JButton();
+        cone_respVol = new javax.swing.JTextField();
+        cone_raioVol = new javax.swing.JTextField();
+        cone_alturaVol = new javax.swing.JTextField();
+        cone_btnVol = new javax.swing.JButton();
+        jLabel31 = new javax.swing.JLabel();
+        jLabel33 = new javax.swing.JLabel();
+        cone_areaTotal = new javax.swing.JTextField();
+        cone_areaRaio = new javax.swing.JTextField();
+        cone_areaGeratriz = new javax.swing.JTextField();
+        cone_criarObjeto = new javax.swing.JButton();
+        cone_salvarObj = new javax.swing.JButton();
+        cone_btnAreaTot = new javax.swing.JButton();
+        jLabel34 = new javax.swing.JLabel();
+        cone_eixoY = new javax.swing.JTextField();
+        cone_eixoX = new javax.swing.JTextField();
+        jLabel36 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        jLabel44 = new javax.swing.JLabel();
+        jLabel47 = new javax.swing.JLabel();
+        jLabel52 = new javax.swing.JLabel();
         painel4 = new javax.swing.JPanel();
         paralelepipedo_btnCalcArea = new javax.swing.JButton();
         paralelepipedo_alturaArea = new javax.swing.JTextField();
@@ -169,33 +184,109 @@ public class Janela extends javax.swing.JFrame {
         paralelepipedo_EixoX = new javax.swing.JTextField();
         paralelepipedo_EixoY = new javax.swing.JTextField();
         jLabel30 = new javax.swing.JLabel();
+        jLabel54 = new javax.swing.JLabel();
+        jLabel55 = new javax.swing.JLabel();
+        jLabel56 = new javax.swing.JLabel();
+        jLabel57 = new javax.swing.JLabel();
+        jLabel60 = new javax.swing.JLabel();
+        jLabel61 = new javax.swing.JLabel();
         painel5 = new javax.swing.JPanel();
+        jLabel46 = new javax.swing.JLabel();
+        labelcone8 = new javax.swing.JLabel();
+        jLabel48 = new javax.swing.JLabel();
+        quad_salvarObj = new javax.swing.JButton();
+        quad_respPer = new javax.swing.JTextField();
+        quad_per_LadoA = new javax.swing.JTextField();
+        quad_btnPerimetro = new javax.swing.JButton();
+        labelcone9 = new javax.swing.JLabel();
+        quad_eixoX = new javax.swing.JTextField();
+        labelcone10 = new javax.swing.JLabel();
+        quad_eixoY = new javax.swing.JTextField();
+        quad_CriarObj = new javax.swing.JButton();
+        labelcone11 = new javax.swing.JLabel();
+        quad_btnArea = new javax.swing.JButton();
+        jLabel49 = new javax.swing.JLabel();
+        jLabel51 = new javax.swing.JLabel();
+        labelcone12 = new javax.swing.JLabel();
+        quad_respArea = new javax.swing.JTextField();
+        quad_areaLadoA = new javax.swing.JTextField();
+        jLabel66 = new javax.swing.JLabel();
+        jLabel67 = new javax.swing.JLabel();
         painel6 = new javax.swing.JPanel();
+        jLabel28 = new javax.swing.JLabel();
+        labelcone4 = new javax.swing.JLabel();
+        jLabel35 = new javax.swing.JLabel();
+        cilindro_salvarObj = new javax.swing.JButton();
+        cilindro_respArea = new javax.swing.JTextField();
+        cilindro_areaTxtRaio = new javax.swing.JTextField();
+        cilindro_areaTxtArea = new javax.swing.JTextField();
+        cilindro_btnArea = new javax.swing.JButton();
+        cilindro_eixoX = new javax.swing.JTextField();
+        labelcone5 = new javax.swing.JLabel();
+        cilindro_eixoY = new javax.swing.JTextField();
+        labelcone6 = new javax.swing.JLabel();
+        cilindro_criarObj = new javax.swing.JButton();
+        jLabel37 = new javax.swing.JLabel();
+        labelcone7 = new javax.swing.JLabel();
+        jLabel45 = new javax.swing.JLabel();
+        cilindro_respVol = new javax.swing.JTextField();
+        cilindro_volRaio = new javax.swing.JTextField();
+        cilindro_volAlt = new javax.swing.JTextField();
+        cilindro_btnVolume = new javax.swing.JButton();
+        jLabel58 = new javax.swing.JLabel();
+        jLabel59 = new javax.swing.JLabel();
+        jLabel62 = new javax.swing.JLabel();
+        jLabel63 = new javax.swing.JLabel();
         painel7 = new javax.swing.JPanel();
+        jLabel6 = new javax.swing.JLabel();
+        labelcone1 = new javax.swing.JLabel();
+        jLabel38 = new javax.swing.JLabel();
+        equacao_x1 = new javax.swing.JTextField();
+        equacao_A = new javax.swing.JTextField();
+        equacao_salvarObj = new javax.swing.JButton();
+        equacao_calcular = new javax.swing.JButton();
+        jLabel39 = new javax.swing.JLabel();
+        labelcone2 = new javax.swing.JLabel();
+        equacao_B = new javax.swing.JTextField();
+        equacao_C = new javax.swing.JTextField();
+        labelcone3 = new javax.swing.JLabel();
+        jLabel40 = new javax.swing.JLabel();
+        equacao_x2 = new javax.swing.JTextField();
+        jLabel41 = new javax.swing.JLabel();
+        equacao_Delta = new javax.swing.JTextField();
+        equacao_criarObj = new javax.swing.JButton();
+        jLabel42 = new javax.swing.JLabel();
+        jLabel64 = new javax.swing.JLabel();
+        jLabel65 = new javax.swing.JLabel();
         painel8 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Programa de Calculo");
         setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         setLocation(new java.awt.Point(400, 90));
-        setMinimumSize(new java.awt.Dimension(1090, 840));
+        setMaximumSize(new java.awt.Dimension(720, 560));
+        setMinimumSize(new java.awt.Dimension(820, 560));
         setName("janelaPrincipal"); // NOI18N
-        setPreferredSize(new java.awt.Dimension(1100, 810));
+        setPreferredSize(new java.awt.Dimension(710, 550));
         setResizable(false);
+        setSize(new java.awt.Dimension(710, 550));
 
         painelFundo.setBackground(new java.awt.Color(255, 255, 255));
+        painelFundo.setMinimumSize(new java.awt.Dimension(820, 550));
+        painelFundo.setPreferredSize(new java.awt.Dimension(820, 550));
         painelFundo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         PainelBotoes.setBackground(new java.awt.Color(56, 55, 55));
 
         linhaHorizontalPainel.setBackground(new java.awt.Color(153, 153, 153));
-        linhaHorizontalPainel.setPreferredSize(new java.awt.Dimension(350, 2));
+        linhaHorizontalPainel.setPreferredSize(new java.awt.Dimension(240, 2));
+        linhaHorizontalPainel.setRequestFocusEnabled(false);
 
         javax.swing.GroupLayout linhaHorizontalPainelLayout = new javax.swing.GroupLayout(linhaHorizontalPainel);
         linhaHorizontalPainel.setLayout(linhaHorizontalPainelLayout);
         linhaHorizontalPainelLayout.setHorizontalGroup(
             linhaHorizontalPainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 350, Short.MAX_VALUE)
+            .addGap(0, 248, Short.MAX_VALUE)
         );
         linhaHorizontalPainelLayout.setVerticalGroup(
             linhaHorizontalPainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -203,6 +294,7 @@ public class Janela extends javax.swing.JFrame {
         );
 
         botao1.setBackground(new java.awt.Color(56, 55, 55));
+        botao1.setPreferredSize(new java.awt.Dimension(150, 76));
         botao1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 botao1MouseClicked(evt);
@@ -219,7 +311,7 @@ public class Janela extends javax.swing.JFrame {
         textoBotao1.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
         textoBotao1.setForeground(new java.awt.Color(204, 204, 204));
         textoBotao1.setText("Objetos Salvos");
-        botao1.add(textoBotao1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 25, -1, -1));
+        botao1.add(textoBotao1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 7, -1, -1));
 
         abaBotao1.setBackground(new java.awt.Color(121, 121, 121));
         abaBotao1.setPreferredSize(new java.awt.Dimension(4, 76));
@@ -227,6 +319,7 @@ public class Janela extends javax.swing.JFrame {
         botao1.add(abaBotao1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 8, -1));
 
         botao1Select.setBackground(new java.awt.Color(83, 83, 83));
+        botao1Select.setPreferredSize(new java.awt.Dimension(150, 55));
         botao1Select.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 botao1SelectMouseClicked(evt);
@@ -243,9 +336,9 @@ public class Janela extends javax.swing.JFrame {
         txtBotaoSelect1.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
         txtBotaoSelect1.setForeground(new java.awt.Color(204, 204, 204));
         txtBotaoSelect1.setText("Objetos Salvos");
-        botao1Select.add(txtBotaoSelect1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 25, -1, -1));
+        botao1Select.add(txtBotaoSelect1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 7, -1, -1));
 
-        botao1.add(botao1Select, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 380, 76));
+        botao1.add(botao1Select, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 260, 40));
 
         titulo1.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
         titulo1.setForeground(new java.awt.Color(204, 204, 204));
@@ -253,11 +346,11 @@ public class Janela extends javax.swing.JFrame {
 
         titulo2.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
         titulo2.setForeground(new java.awt.Color(204, 204, 204));
-        titulo2.setText("Funções Matematicas ");
+        titulo2.setText("Funções Matemáticas ");
 
         titulo3.setFont(new java.awt.Font("Calibri", 1, 36)); // NOI18N
         titulo3.setForeground(new java.awt.Color(204, 204, 204));
-        titulo3.setText("Calculos ");
+        titulo3.setText("Cálculos ");
 
         titulo5.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
         titulo5.setForeground(new java.awt.Color(204, 204, 204));
@@ -268,6 +361,7 @@ public class Janela extends javax.swing.JFrame {
         titulo6.setText("Geometria");
 
         botao2.setBackground(new java.awt.Color(56, 55, 55));
+        botao2.setPreferredSize(new java.awt.Dimension(300, 76));
         botao2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 botao2MouseClicked(evt);
@@ -284,7 +378,7 @@ public class Janela extends javax.swing.JFrame {
         textoBotao2.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
         textoBotao2.setForeground(new java.awt.Color(204, 204, 204));
         textoBotao2.setText("Triangulo");
-        botao2.add(textoBotao2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 25, -1, -1));
+        botao2.add(textoBotao2, new org.netbeans.lib.awtextra.AbsoluteConstraints(85, 7, -1, -1));
 
         abaBotao2.setBackground(new java.awt.Color(121, 121, 121));
         abaBotao2.setPreferredSize(new java.awt.Dimension(4, 76));
@@ -308,9 +402,9 @@ public class Janela extends javax.swing.JFrame {
         txtBotaoSelect2.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
         txtBotaoSelect2.setForeground(new java.awt.Color(204, 204, 204));
         txtBotaoSelect2.setText("Triangulo");
-        botao_aba_Triangulo.add(txtBotaoSelect2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 25, -1, -1));
+        botao_aba_Triangulo.add(txtBotaoSelect2, new org.netbeans.lib.awtextra.AbsoluteConstraints(85, 7, -1, -1));
 
-        botao2.add(botao_aba_Triangulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 380, 76));
+        botao2.add(botao_aba_Triangulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 260, 40));
 
         botao3.setBackground(new java.awt.Color(56, 55, 55));
         botao3.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -348,14 +442,14 @@ public class Janela extends javax.swing.JFrame {
         txtBotaoSelect3.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
         txtBotaoSelect3.setForeground(new java.awt.Color(204, 204, 204));
         txtBotaoSelect3.setText("Cone");
-        botao3Select.add(txtBotaoSelect3, new org.netbeans.lib.awtextra.AbsoluteConstraints(185, 25, -1, -1));
+        botao3Select.add(txtBotaoSelect3, new org.netbeans.lib.awtextra.AbsoluteConstraints(105, 7, -1, -1));
 
-        botao3.add(botao3Select, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 380, 76));
+        botao3.add(botao3Select, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 260, 40));
 
         textoBotao3.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
         textoBotao3.setForeground(new java.awt.Color(204, 204, 204));
         textoBotao3.setText("Cone");
-        botao3.add(textoBotao3, new org.netbeans.lib.awtextra.AbsoluteConstraints(185, 25, -1, -1));
+        botao3.add(textoBotao3, new org.netbeans.lib.awtextra.AbsoluteConstraints(105, 7, -1, -1));
 
         botao4.setBackground(new java.awt.Color(56, 55, 55));
         botao4.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -392,15 +486,15 @@ public class Janela extends javax.swing.JFrame {
 
         txtBotaoSelect4.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
         txtBotaoSelect4.setForeground(new java.awt.Color(204, 204, 204));
-        txtBotaoSelect4.setText("Paralelepipedo");
-        botao4Select.add(txtBotaoSelect4, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 25, -1, -1));
+        txtBotaoSelect4.setText("Paralelepípedo");
+        botao4Select.add(txtBotaoSelect4, new org.netbeans.lib.awtextra.AbsoluteConstraints(55, 7, -1, -1));
 
-        botao4.add(botao4Select, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 380, 76));
+        botao4.add(botao4Select, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 260, 40));
 
         textoBotao4.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
         textoBotao4.setForeground(new java.awt.Color(204, 204, 204));
-        textoBotao4.setText("Paralelepipedo");
-        botao4.add(textoBotao4, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 25, -1, -1));
+        textoBotao4.setText("Paralelepípedo");
+        botao4.add(textoBotao4, new org.netbeans.lib.awtextra.AbsoluteConstraints(55, 7, -1, -1));
 
         botao5.setBackground(new java.awt.Color(56, 55, 55));
         botao5.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -438,14 +532,14 @@ public class Janela extends javax.swing.JFrame {
         txtBotaoSelect5.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
         txtBotaoSelect5.setForeground(new java.awt.Color(204, 204, 204));
         txtBotaoSelect5.setText("Quadrado");
-        botao5Select.add(txtBotaoSelect5, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 25, -1, -1));
+        botao5Select.add(txtBotaoSelect5, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 7, -1, -1));
 
-        botao5.add(botao5Select, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 380, 76));
+        botao5.add(botao5Select, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 260, 40));
 
         textoBotao5.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
         textoBotao5.setForeground(new java.awt.Color(204, 204, 204));
         textoBotao5.setText("Quadrado");
-        botao5.add(textoBotao5, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 25, -1, -1));
+        botao5.add(textoBotao5, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 7, -1, -1));
 
         botao6.setBackground(new java.awt.Color(56, 55, 55));
         botao6.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -483,14 +577,14 @@ public class Janela extends javax.swing.JFrame {
         txtBotaoSelect6.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
         txtBotaoSelect6.setForeground(new java.awt.Color(204, 204, 204));
         txtBotaoSelect6.setText("Cilindro");
-        botao6Select.add(txtBotaoSelect6, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 25, -1, -1));
+        botao6Select.add(txtBotaoSelect6, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 7, -1, -1));
 
-        botao6.add(botao6Select, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 380, 76));
+        botao6.add(botao6Select, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 260, 40));
 
         textoBotao6.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
         textoBotao6.setForeground(new java.awt.Color(204, 204, 204));
         textoBotao6.setText("Cilindro");
-        botao6.add(textoBotao6, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 25, -1, -1));
+        botao6.add(textoBotao6, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 7, -1, -1));
 
         botao7.setBackground(new java.awt.Color(56, 55, 55));
         botao7.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -527,17 +621,18 @@ public class Janela extends javax.swing.JFrame {
 
         txtBotaoSelect7.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
         txtBotaoSelect7.setForeground(new java.awt.Color(204, 204, 204));
-        txtBotaoSelect7.setText("Equação de Segundo Grau");
-        botao7Select.add(txtBotaoSelect7, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 25, -1, -1));
+        txtBotaoSelect7.setText("Equação (Bhaskara)");
+        botao7Select.add(txtBotaoSelect7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 7, -1, -1));
 
-        botao7.add(botao7Select, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 380, 76));
+        botao7.add(botao7Select, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 260, 40));
 
         textoBotao7.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
         textoBotao7.setForeground(new java.awt.Color(204, 204, 204));
-        textoBotao7.setText("Equação de Segundo Grau");
-        botao7.add(textoBotao7, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 25, -1, -1));
+        textoBotao7.setText("Equação (Bhaskara)");
+        botao7.add(textoBotao7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 7, -1, -1));
 
         botao8.setBackground(new java.awt.Color(56, 55, 55));
+        botao8.setPreferredSize(new java.awt.Dimension(260, 40));
         botao8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 botao8MouseClicked(evt);
@@ -573,94 +668,97 @@ public class Janela extends javax.swing.JFrame {
         txtBotaoSelect8.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
         txtBotaoSelect8.setForeground(new java.awt.Color(204, 204, 204));
         txtBotaoSelect8.setText("Sobre");
-        botao8Select.add(txtBotaoSelect8, new org.netbeans.lib.awtextra.AbsoluteConstraints(185, 25, -1, -1));
+        botao8Select.add(txtBotaoSelect8, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 7, -1, -1));
 
-        botao8.add(botao8Select, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 380, 76));
+        botao8.add(botao8Select, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 260, 40));
 
         textoBotao8.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
         textoBotao8.setForeground(new java.awt.Color(204, 204, 204));
         textoBotao8.setText("Sobre");
-        botao8.add(textoBotao8, new org.netbeans.lib.awtextra.AbsoluteConstraints(185, 25, -1, -1));
+        botao8.add(textoBotao8, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 7, -1, -1));
 
         javax.swing.GroupLayout PainelBotoesLayout = new javax.swing.GroupLayout(PainelBotoes);
         PainelBotoes.setLayout(PainelBotoesLayout);
         PainelBotoesLayout.setHorizontalGroup(
             PainelBotoesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(botao1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(botao2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(botao3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(botao4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(botao5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(botao6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(botao7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(botao8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(PainelBotoesLayout.createSequentialGroup()
-                .addGap(51, 51, 51)
                 .addGroup(PainelBotoesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(PainelBotoesLayout.createSequentialGroup()
-                        .addComponent(titulo3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(titulo1)
-                        .addGap(78, 78, 78))
+                        .addGap(53, 53, 53)
+                        .addComponent(titulo5)
+                        .addGap(18, 18, 18)
+                        .addComponent(titulo6))
                     .addGroup(PainelBotoesLayout.createSequentialGroup()
-                        .addGap(25, 25, 25)
+                        .addGap(18, 18, 18)
                         .addGroup(PainelBotoesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(titulo2)
                             .addGroup(PainelBotoesLayout.createSequentialGroup()
-                                .addGap(14, 14, 14)
-                                .addComponent(titulo5)
-                                .addGap(18, 18, 18)
-                                .addComponent(titulo6))
-                            .addComponent(titulo2))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                                .addComponent(titulo3)
+                                .addGap(50, 50, 50)
+                                .addComponent(titulo1)))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(PainelBotoesLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(linhaHorizontalPainel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(PainelBotoesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(PainelBotoesLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(linhaHorizontalPainel, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(botao1, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botao8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botao7, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botao6, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botao5, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botao4, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(PainelBotoesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(botao2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                        .addComponent(botao3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         PainelBotoesLayout.setVerticalGroup(
             PainelBotoesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PainelBotoesLayout.createSequentialGroup()
-                .addGap(23, 23, 23)
                 .addGroup(PainelBotoesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PainelBotoesLayout.createSequentialGroup()
-                        .addComponent(titulo1)
-                        .addGap(86, 86, 86))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PainelBotoesLayout.createSequentialGroup()
-                        .addComponent(titulo3, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(titulo2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(PainelBotoesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(titulo6)
-                            .addComponent(titulo5))))
+                    .addGroup(PainelBotoesLayout.createSequentialGroup()
+                        .addGap(27, 27, 27)
+                        .addComponent(titulo3, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(PainelBotoesLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(titulo1)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(titulo2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(11, 11, 11)
+                .addGroup(PainelBotoesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(titulo6)
+                    .addComponent(titulo5))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(linhaHorizontalPainel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(botao1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(botao1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(botao2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(botao2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(botao3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(botao3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(botao4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(botao4, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(botao5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(botao5, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(botao6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(botao6, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(botao7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(botao7, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(botao8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(30, Short.MAX_VALUE))
         );
 
-        painelFundo.add(PainelBotoes, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 380, 810));
+        painelFundo.add(PainelBotoes, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 260, 550));
 
-        painel1.setBackground(new java.awt.Color(204, 255, 204));
+        painel1.setBackground(new java.awt.Color(220, 123, 103));
         painel1.setPreferredSize(new java.awt.Dimension(710, 810));
 
         caminhoObjetos.setText("C:/Users/denis/Desktop/objetosGeometricos.dat");
 
-        jLabel2.setFont(new java.awt.Font("Calibri", 0, 36)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(70, 70, 70));
         jLabel2.setText("Objetos Salvos ");
 
         telaObjetos.setColumns(20);
@@ -669,7 +767,8 @@ public class Janela extends javax.swing.JFrame {
 
         jLabel1.setText("Caminho: ");
 
-        jLabel15.setText("Ex:  (\"C:/Users/Desktop/arquivo.dat\")");
+        jLabel15.setFont(new java.awt.Font("Calibri Light", 0, 11)); // NOI18N
+        jLabel15.setText("Utilize por exemplo:  (\"C:/Users/Desktop/arquivo.dat\")");
 
         btnCarregarObjetos.setText("Carregar Arquivo");
         btnCarregarObjetos.addActionListener(new java.awt.event.ActionListener() {
@@ -685,7 +784,7 @@ public class Janela extends javax.swing.JFrame {
             }
         });
 
-        salvar_objetos.setText("Salvar Objetos");
+        salvar_objetos.setText("Gravar Objeto");
         salvar_objetos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 salvar_objetosActionPerformed(evt);
@@ -699,26 +798,29 @@ public class Janela extends javax.swing.JFrame {
             .addGroup(painel1Layout.createSequentialGroup()
                 .addGroup(painel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(painel1Layout.createSequentialGroup()
-                        .addGap(25, 25, 25)
-                        .addGroup(painel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(painel1Layout.createSequentialGroup()
-                                .addComponent(btnCarregarObjetos)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(limparCampo))
-                            .addGroup(painel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 554, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 318, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(painel1Layout.createSequentialGroup()
-                        .addGap(68, 68, 68)
-                        .addGroup(painel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(salvar_objetos)
+                        .addContainerGap()
+                        .addGroup(painel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(painel1Layout.createSequentialGroup()
                                 .addComponent(jLabel1)
-                                .addGap(18, 18, 18)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(painel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(caminhoObjetos, javax.swing.GroupLayout.PREFERRED_SIZE, 465, javax.swing.GroupLayout.PREFERRED_SIZE))))))
-                .addContainerGap(109, Short.MAX_VALUE))
+                                    .addGroup(painel1Layout.createSequentialGroup()
+                                        .addGap(0, 0, Short.MAX_VALUE)
+                                        .addComponent(caminhoObjetos, javax.swing.GroupLayout.PREFERRED_SIZE, 427, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(painel1Layout.createSequentialGroup()
+                                        .addComponent(jLabel15)
+                                        .addGap(0, 0, Short.MAX_VALUE))))
+                            .addGroup(painel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addGroup(painel1Layout.createSequentialGroup()
+                                    .addComponent(btnCarregarObjetos)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(limparCampo))
+                                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 481, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(salvar_objetos))))
+                    .addGroup(painel1Layout.createSequentialGroup()
+                        .addGap(112, 112, 112)
+                        .addComponent(jLabel2)))
+                .addContainerGap(67, Short.MAX_VALUE))
         );
         painel1Layout.setVerticalGroup(
             painel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -732,21 +834,24 @@ public class Janela extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(salvar_objetos)
                 .addGap(52, 52, 52)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(painel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(limparCampo)
                     .addComponent(btnCarregarObjetos))
                 .addContainerGap())
         );
 
-        painelFundo.add(painel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 0, 710, 810));
+        painelFundo.add(painel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 0, 560, 550));
 
-        painel2.setBackground(new java.awt.Color(220, 173, 189));
-        painel2.setPreferredSize(new java.awt.Dimension(710, 810));
+        painel2.setBackground(new java.awt.Color(220, 123, 103));
+        painel2.setMaximumSize(new java.awt.Dimension(820, 560));
+        painel2.setMinimumSize(new java.awt.Dimension(820, 560));
+        painel2.setPreferredSize(new java.awt.Dimension(820, 550));
 
+        jLabel8.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         jLabel8.setText("Calcular Perimetro");
 
         jLabel11.setText("Lado A:");
@@ -755,19 +860,19 @@ public class Janela extends javax.swing.JFrame {
 
         jLabel13.setText("Lado B:");
 
-        jLabel9.setText("Resposta:");
+        jLabel9.setText("Perimetro:");
 
-        triangulo_btn_calcPerimetro.setText("Calcular Perimetro");
+        triangulo_btn_calcPerimetro.setText("Calcular");
         triangulo_btn_calcPerimetro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 triangulo_btn_calcPerimetroActionPerformed(evt);
             }
         });
 
-        triangulo_btn_calcPerimetro1.setText("Calcular Perimetro");
-        triangulo_btn_calcPerimetro1.addActionListener(new java.awt.event.ActionListener() {
+        triangulo_btn_calcArea.setText("Calcular");
+        triangulo_btn_calcArea.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                triangulo_btn_calcPerimetro1ActionPerformed(evt);
+                triangulo_btn_calcAreaActionPerformed(evt);
             }
         });
 
@@ -775,8 +880,9 @@ public class Janela extends javax.swing.JFrame {
 
         jLabel16.setText("Base:");
 
-        jLabel10.setText("Resposta:");
+        jLabel10.setText("Area:");
 
+        jLabel17.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         jLabel17.setText("Calcular Area");
 
         jLabel18.setText("Eixo X: ");
@@ -796,14 +902,20 @@ public class Janela extends javax.swing.JFrame {
             }
         });
 
-        jLabel28.setText("Antes de iniciar, crie um um objeto.");
-
         criarObjeto_Triangulo.setText("Criar Objeto");
         criarObjeto_Triangulo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 criarObjeto_TrianguloActionPerformed(evt);
             }
         });
+
+        jLabel43.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        jLabel43.setText("Crie um objeto antes de iniciar.");
+
+        jLabel50.setIcon(new javax.swing.ImageIcon(getClass().getResource("/prototipointerface/formula_area-triangulo.png"))); // NOI18N
+
+        jLabel53.setFont(new java.awt.Font("Calibri Light", 3, 24)); // NOI18N
+        jLabel53.setText("P = ( a + b + c )");
 
         javax.swing.GroupLayout painel2Layout = new javax.swing.GroupLayout(painel2);
         painel2.setLayout(painel2Layout);
@@ -812,47 +924,60 @@ public class Janela extends javax.swing.JFrame {
             .addGroup(painel2Layout.createSequentialGroup()
                 .addGroup(painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(painel2Layout.createSequentialGroup()
-                        .addGap(140, 140, 140)
+                        .addGap(57, 57, 57)
                         .addGroup(painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(painel2Layout.createSequentialGroup()
                                 .addGroup(painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel13)
-                                    .addComponent(jLabel12))
+                                    .addComponent(jLabel12)
+                                    .addComponent(jLabel11, javax.swing.GroupLayout.Alignment.TRAILING))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(triangulo_ladoAtxt, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(triangulo_ladoBtxt, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(triangulo_ladoCtxt, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(triangulo_ladoCtxt, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(painel2Layout.createSequentialGroup()
+                                        .addGroup(painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(triangulo_ladoAtxt, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(triangulo_ladoBtxt, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGap(48, 48, 48)
+                                        .addComponent(jLabel53, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE))))
                             .addGroup(painel2Layout.createSequentialGroup()
-                                .addGap(176, 176, 176)
-                                .addComponent(jLabel10)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(triangulo_respAreaTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(painel2Layout.createSequentialGroup()
-                                .addGroup(painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(triangulo_btn_calcPerimetro)
-                                    .addGroup(painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGroup(painel2Layout.createSequentialGroup()
-                                            .addGap(3, 3, 3)
-                                            .addGroup(painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                .addComponent(jLabel16)
-                                                .addComponent(jLabel14))
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                            .addGroup(painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(triangulo_baseTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addComponent(triangulo_alturaTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addComponent(triangulo_btn_calcPerimetro)
                                 .addGap(70, 70, 70)
                                 .addComponent(jLabel9)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(triangulo_resp_perimetro, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(painel2Layout.createSequentialGroup()
-                        .addGap(111, 111, 111)
-                        .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(painel2Layout.createSequentialGroup()
+                                .addGap(39, 39, 39)
+                                .addGroup(painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(triangulo_btn_calcArea)
+                                    .addGroup(painel2Layout.createSequentialGroup()
+                                        .addGroup(painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(jLabel16)
+                                            .addComponent(jLabel14))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(triangulo_baseTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(triangulo_alturaTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addGap(38, 38, 38))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, painel2Layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)))
+                        .addComponent(jLabel50, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(painel2Layout.createSequentialGroup()
-                        .addGap(45, 45, 45)
+                        .addGap(181, 181, 181)
+                        .addComponent(jLabel10)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(triangulo_respAreaTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(painel2Layout.createSequentialGroup()
+                        .addGap(375, 375, 375)
+                        .addComponent(triangulo_salvarObjeto))
+                    .addGroup(painel2Layout.createSequentialGroup()
+                        .addGap(47, 47, 47)
                         .addGroup(painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(triangulo_btn_calcPerimetro1)
+                            .addComponent(jLabel43)
                             .addGroup(painel2Layout.createSequentialGroup()
                                 .addComponent(jLabel18)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -860,44 +985,42 @@ public class Janela extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jLabel19)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(triangulo_eixoY, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addComponent(triangulo_eixoY, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(36, 36, 36)
+                        .addComponent(criarObjeto_Triangulo))
                     .addGroup(painel2Layout.createSequentialGroup()
-                        .addGap(40, 40, 40)
-                        .addComponent(jLabel28, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(criarObjeto_Triangulo)))
-                .addContainerGap(241, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, painel2Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(triangulo_salvarObjeto)
-                .addGap(66, 66, 66))
-            .addGroup(painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(painel2Layout.createSequentialGroup()
-                    .addGap(141, 141, 141)
-                    .addComponent(jLabel11)
-                    .addContainerGap(532, Short.MAX_VALUE)))
+                        .addGap(32, 32, 32)
+                        .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(346, Short.MAX_VALUE))
         );
         painel2Layout.setVerticalGroup(
             painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(painel2Layout.createSequentialGroup()
-                .addGap(24, 24, 24)
+                .addGap(26, 26, 26)
                 .addGroup(painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel28, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(criarObjeto_Triangulo))
-                .addGap(71, 71, 71)
+                    .addComponent(criarObjeto_Triangulo)
+                    .addComponent(jLabel43, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel19)
                     .addComponent(triangulo_eixoY, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(triangulo_eixoX, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addGap(25, 25, 25)
                 .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(triangulo_ladoAtxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(7, 7, 7)
-                .addGroup(painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(triangulo_ladoBtxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(painel2Layout.createSequentialGroup()
+                        .addGroup(painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(triangulo_ladoAtxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(3, 3, 3)
+                        .addGroup(painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(triangulo_ladoBtxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(painel2Layout.createSequentialGroup()
+                        .addGap(7, 7, 7)
+                        .addComponent(jLabel53, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -907,171 +1030,212 @@ public class Janela extends javax.swing.JFrame {
                     .addComponent(triangulo_btn_calcPerimetro)
                     .addComponent(jLabel9)
                     .addComponent(triangulo_resp_perimetro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(160, 160, 160)
-                .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(triangulo_alturaTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(triangulo_baseTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(39, 39, 39)
-                .addGroup(painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel10)
-                    .addComponent(triangulo_respAreaTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(triangulo_btn_calcPerimetro1))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 113, Short.MAX_VALUE)
-                .addComponent(triangulo_salvarObjeto)
-                .addGap(29, 29, 29))
-            .addGroup(painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(painel2Layout.createSequentialGroup()
-                    .addGap(195, 195, 195)
-                    .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(587, Short.MAX_VALUE)))
-        );
-
-        painelFundo.add(painel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(379, 0, 710, 810));
-
-        painel3.setBackground(new java.awt.Color(225, 225, 225));
-
-        jLabel3.setFont(new java.awt.Font("Calibri", 0, 36)); // NOI18N
-        jLabel3.setText("Volume");
-
-        jLabel4.setFont(new java.awt.Font("Calibri", 0, 36)); // NOI18N
-        jLabel4.setText("Area");
-
-        jLabel5.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
-        jLabel5.setText("(Y)   Altura:");
-
-        jLabel6.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
-        jLabel6.setText("(X) Largura:");
-
-        jLabel7.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
-        jLabel7.setText("Resultado: ");
-
-        respostaVolume.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                respostaVolumeActionPerformed(evt);
-            }
-        });
-
-        txtLarguraVolume.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtLarguraVolumeActionPerformed(evt);
-            }
-        });
-
-        txtAlturaVolume.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtAlturaVolumeActionPerformed(evt);
-            }
-        });
-
-        botaoCalcularVolume.setText("Calcular");
-        botaoCalcularVolume.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botaoCalcularVolumeActionPerformed(evt);
-            }
-        });
-
-        jScrollPane1.setViewportView(txtMostrar);
-
-        botaoSalvar.setText("Salvar");
-        botaoSalvar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botaoSalvarActionPerformed(evt);
-            }
-        });
-
-        botaoVizualizar.setText("Vizualizar");
-        botaoVizualizar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botaoVizualizarActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout painel3Layout = new javax.swing.GroupLayout(painel3);
-        painel3.setLayout(painel3Layout);
-        painel3Layout.setHorizontalGroup(
-            painel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(painel3Layout.createSequentialGroup()
-                .addGroup(painel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(painel3Layout.createSequentialGroup()
-                        .addGap(140, 140, 140)
-                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addGroup(painel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtLarguraVolume, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtAlturaVolume, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(painel3Layout.createSequentialGroup()
-                        .addGap(293, 293, 293)
-                        .addGroup(painel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel3)
-                            .addGroup(painel3Layout.createSequentialGroup()
-                                .addComponent(jLabel7)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(painel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(respostaVolume, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(botaoCalcularVolume)))))
-                    .addGroup(painel3Layout.createSequentialGroup()
-                        .addGap(101, 101, 101)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 232, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(69, 69, 69)
-                        .addGroup(painel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(botaoSalvar)
-                            .addComponent(botaoVizualizar))))
-                .addContainerGap(157, Short.MAX_VALUE))
-            .addGroup(painel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(painel3Layout.createSequentialGroup()
-                    .addGap(140, 140, 140)
-                    .addComponent(jLabel6)
-                    .addContainerGap(459, Short.MAX_VALUE)))
-        );
-        painel3Layout.setVerticalGroup(
-            painel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, painel3Layout.createSequentialGroup()
-                .addGap(29, 29, 29)
-                .addComponent(jLabel4)
-                .addGroup(painel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(painel3Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 250, Short.MAX_VALUE)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(67, 67, 67)
-                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(21, 21, 21)
-                        .addComponent(txtLarguraVolume, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(painel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtAlturaVolume, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(29, 29, 29)
-                        .addGroup(painel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(painel3Layout.createSequentialGroup()
-                                .addComponent(respostaVolume, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(botaoCalcularVolume)))
-                        .addGap(81, 81, 81))
-                    .addGroup(painel3Layout.createSequentialGroup()
-                        .addGap(346, 346, 346)
-                        .addComponent(botaoSalvar)
+                .addGap(80, 80, 80)
+                .addGroup(painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(painel2Layout.createSequentialGroup()
+                        .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(botaoVizualizar)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-            .addGroup(painel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, painel3Layout.createSequentialGroup()
-                    .addContainerGap(571, Short.MAX_VALUE)
-                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(200, 200, 200)))
+                        .addGroup(painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(triangulo_alturaTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(triangulo_baseTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(7, 7, 7)
+                        .addGroup(painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(triangulo_respAreaTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel10)
+                            .addComponent(triangulo_btn_calcArea)
+                            .addComponent(triangulo_salvarObjeto)))
+                    .addComponent(jLabel50))
+                .addContainerGap(63, Short.MAX_VALUE))
         );
 
-        painelFundo.add(painel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(379, 0, 710, 810));
+        painelFundo.add(painel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 0, 820, 550));
 
-        painel4.setBackground(new java.awt.Color(204, 204, 204));
+        painel3.setBackground(new java.awt.Color(220, 123, 103));
+        painel3.setLayout(null);
+
+        jLabel3.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        jLabel3.setText("Calcular Volume");
+        painel3.add(jLabel3);
+        jLabel3.setBounds(40, 340, 170, 23);
+
+        jLabel4.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        jLabel4.setText("Calcular Area");
+        painel3.add(jLabel4);
+        jLabel4.setBounds(40, 100, 160, 23);
+
+        jLabel5.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        jLabel5.setText("Altura:");
+        painel3.add(jLabel5);
+        jLabel5.setBounds(41, 436, 49, 34);
+
+        labelcone.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        labelcone.setText("Raio:");
+        painel3.add(labelcone);
+        labelcone.setBounds(52, 391, 38, 39);
+
+        jLabel7.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        jLabel7.setText("Volume:");
+        painel3.add(jLabel7);
+        jLabel7.setBounds(26, 481, 61, 39);
+
+        cone_respVol.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cone_respVolActionPerformed(evt);
+            }
+        });
+        painel3.add(cone_respVol);
+        cone_respVol.setBounds(97, 489, 74, 20);
+
+        cone_raioVol.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cone_raioVolActionPerformed(evt);
+            }
+        });
+        painel3.add(cone_raioVol);
+        cone_raioVol.setBounds(94, 399, 72, 20);
+
+        cone_alturaVol.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cone_alturaVolActionPerformed(evt);
+            }
+        });
+        painel3.add(cone_alturaVol);
+        cone_alturaVol.setBounds(94, 442, 72, 20);
+
+        cone_btnVol.setText("Calcular");
+        cone_btnVol.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cone_btnVolActionPerformed(evt);
+            }
+        });
+        painel3.add(cone_btnVol);
+        cone_btnVol.setBounds(198, 488, 73, 23);
+
+        jLabel31.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        jLabel31.setText("Geratriz: ");
+        painel3.add(jLabel31);
+        jLabel31.setBounds(26, 183, 77, 34);
+
+        jLabel33.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        jLabel33.setText("Area Total: ");
+        painel3.add(jLabel33);
+        jLabel33.setBounds(26, 228, 85, 39);
+
+        cone_areaTotal.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cone_areaTotalActionPerformed(evt);
+            }
+        });
+        painel3.add(cone_areaTotal);
+        cone_areaTotal.setBounds(115, 236, 74, 20);
+
+        cone_areaRaio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cone_areaRaioActionPerformed(evt);
+            }
+        });
+        cone_areaRaio.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+            public void propertyChange(java.beans.PropertyChangeEvent evt) {
+                cone_areaRaioPropertyChange(evt);
+            }
+        });
+        painel3.add(cone_areaRaio);
+        cone_areaRaio.setBounds(107, 154, 72, 20);
+
+        cone_areaGeratriz.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cone_areaGeratrizActionPerformed(evt);
+            }
+        });
+        painel3.add(cone_areaGeratriz);
+        cone_areaGeratriz.setBounds(107, 189, 72, 20);
+
+        cone_criarObjeto.setText("criar objeto");
+        cone_criarObjeto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cone_criarObjetoActionPerformed(evt);
+            }
+        });
+        painel3.add(cone_criarObjeto);
+        cone_criarObjeto.setBounds(213, 40, 89, 23);
+
+        cone_salvarObj.setText("Salvar Objeto");
+        cone_salvarObj.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cone_salvarObjActionPerformed(evt);
+            }
+        });
+        painel3.add(cone_salvarObj);
+        cone_salvarObj.setBounds(409, 488, 99, 23);
+
+        cone_btnAreaTot.setText("Calcular");
+        cone_btnAreaTot.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cone_btnAreaTotActionPerformed(evt);
+            }
+        });
+        painel3.add(cone_btnAreaTot);
+        cone_btnAreaTot.setBounds(213, 235, 73, 23);
+
+        jLabel34.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        jLabel34.setText("Raio:");
+        painel3.add(jLabel34);
+        jLabel34.setBounds(52, 154, 38, 23);
+
+        cone_eixoY.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cone_eixoYActionPerformed(evt);
+            }
+        });
+        cone_eixoY.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+            public void propertyChange(java.beans.PropertyChangeEvent evt) {
+                cone_eixoYPropertyChange(evt);
+            }
+        });
+        painel3.add(cone_eixoY);
+        cone_eixoY.setBounds(416, 78, 72, 20);
+
+        cone_eixoX.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cone_eixoXActionPerformed(evt);
+            }
+        });
+        painel3.add(cone_eixoX);
+        cone_eixoX.setBounds(416, 41, 72, 20);
+
+        jLabel36.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        jLabel36.setText("Eixo Y:");
+        painel3.add(jLabel36);
+        jLabel36.setBounds(352, 70, 49, 39);
+
+        jLabel32.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        jLabel32.setText("Eixo X:");
+        painel3.add(jLabel32);
+        jLabel32.setBounds(349, 41, 49, 23);
+
+        jLabel44.setFont(new java.awt.Font("Calibri Light", 0, 12)); // NOI18N
+        jLabel44.setText("Crie um objeto antes de iniciar.");
+        painel3.add(jLabel44);
+        jLabel44.setBounds(41, 43, 153, 20);
+
+        jLabel47.setIcon(new javax.swing.ImageIcon(getClass().getResource("/prototipointerface/formula_volumeCone.png"))); // NOI18N
+        painel3.add(jLabel47);
+        jLabel47.setBounds(290, 390, 190, 60);
+
+        jLabel52.setIcon(new javax.swing.ImageIcon(getClass().getResource("/prototipointerface/formula_areaCone.png"))); // NOI18N
+        jLabel52.setText("jLabel47");
+        painel3.add(jLabel52);
+        jLabel52.setBounds(300, 170, 190, 40);
+
+        painelFundo.add(painel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 0, 560, 550));
+
+        painel4.setBackground(new java.awt.Color(220, 123, 103));
         painel4.setPreferredSize(new java.awt.Dimension(710, 810));
+        painel4.setLayout(null);
 
         paralelepipedo_btnCalcArea.setText(" Calcular  Area");
         paralelepipedo_btnCalcArea.addActionListener(new java.awt.event.ActionListener() {
@@ -1079,22 +1243,61 @@ public class Janela extends javax.swing.JFrame {
                 paralelepipedo_btnCalcAreaActionPerformed(evt);
             }
         });
+        painel4.add(paralelepipedo_btnCalcArea);
+        paralelepipedo_btnCalcArea.setBounds(56, 247, 105, 23);
+        painel4.add(paralelepipedo_alturaArea);
+        paralelepipedo_alturaArea.setBounds(84, 144, 77, 20);
 
         jLabel20.setText("Altura:");
+        painel4.add(jLabel20);
+        jLabel20.setBounds(46, 140, 34, 28);
+        painel4.add(paralelepipedo_largArea);
+        paralelepipedo_largArea.setBounds(84, 212, 77, 20);
 
         jLabel21.setText("Largura:");
+        painel4.add(jLabel21);
+        jLabel21.setBounds(39, 208, 41, 28);
+        painel4.add(paralelepipedo_compArea);
+        paralelepipedo_compArea.setBounds(84, 178, 77, 20);
 
         jLabel22.setText("Cumprimento:");
+        painel4.add(jLabel22);
+        jLabel22.setBounds(10, 174, 70, 28);
 
-        jLabel23.setText("Resposta:");
+        jLabel23.setFont(new java.awt.Font("Calibri Light", 1, 18)); // NOI18N
+        jLabel23.setText("Calcular Volume");
+        painel4.add(jLabel23);
+        jLabel23.setBounds(70, 320, 170, 23);
+
+        paralelepipedo_respArea.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                paralelepipedo_respAreaActionPerformed(evt);
+            }
+        });
+        painel4.add(paralelepipedo_respArea);
+        paralelepipedo_respArea.setBounds(245, 212, 77, 20);
 
         jLabel24.setText("Altura:");
+        painel4.add(jLabel24);
+        jLabel24.setBounds(40, 350, 34, 28);
+        painel4.add(paralelepipedo_volLarg);
+        paralelepipedo_volLarg.setBounds(80, 430, 77, 20);
 
         jLabel25.setText("Largura:");
+        painel4.add(jLabel25);
+        jLabel25.setBounds(40, 420, 41, 28);
+        painel4.add(paralelepipedo_VolComp);
+        paralelepipedo_VolComp.setBounds(80, 390, 77, 20);
 
         jLabel26.setText("Cumprimento:");
+        painel4.add(jLabel26);
+        jLabel26.setBounds(10, 390, 70, 28);
 
-        jLabel27.setText("Resposta:");
+        jLabel27.setText("Volume");
+        painel4.add(jLabel27);
+        jLabel27.setBounds(190, 420, 40, 28);
+        painel4.add(paralelepipedo_volResp);
+        paralelepipedo_volResp.setBounds(240, 430, 77, 20);
 
         paralelepipedo_btnCalcVol.setText(" Calcular  Volume");
         paralelepipedo_btnCalcVol.addActionListener(new java.awt.event.ActionListener() {
@@ -1102,12 +1305,16 @@ public class Janela extends javax.swing.JFrame {
                 paralelepipedo_btnCalcVolActionPerformed(evt);
             }
         });
+        painel4.add(paralelepipedo_btnCalcVol);
+        paralelepipedo_btnCalcVol.setBounds(80, 460, 119, 23);
 
         paralelepipedo_volAltura.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 paralelepipedo_volAlturaActionPerformed(evt);
             }
         });
+        painel4.add(paralelepipedo_volAltura);
+        paralelepipedo_volAltura.setBounds(80, 360, 77, 20);
 
         criarParalelepipedo.setText("Criar Objeto");
         criarParalelepipedo.addActionListener(new java.awt.event.ActionListener() {
@@ -1115,6 +1322,8 @@ public class Janela extends javax.swing.JFrame {
                 criarParalelepipedoActionPerformed(evt);
             }
         });
+        painel4.add(criarParalelepipedo);
+        criarParalelepipedo.setBounds(75, 36, 93, 23);
 
         paralelepipedo_salvarObjeto.setText("Salvar Objeto");
         paralelepipedo_salvarObjeto.addActionListener(new java.awt.event.ActionListener() {
@@ -1122,206 +1331,1109 @@ public class Janela extends javax.swing.JFrame {
                 paralelepipedo_salvarObjetoActionPerformed(evt);
             }
         });
+        painel4.add(paralelepipedo_salvarObjeto);
+        paralelepipedo_salvarObjeto.setBounds(370, 480, 99, 23);
 
         jLabel29.setText("Eixo X: ");
+        painel4.add(jLabel29);
+        jLabel29.setBounds(214, 36, 36, 28);
+        painel4.add(paralelepipedo_EixoX);
+        paralelepipedo_EixoX.setBounds(254, 40, 77, 20);
+        painel4.add(paralelepipedo_EixoY);
+        paralelepipedo_EixoY.setBounds(389, 40, 77, 20);
 
         jLabel30.setText("Eixo Y: ");
+        painel4.add(jLabel30);
+        jLabel30.setBounds(349, 36, 36, 28);
 
-        javax.swing.GroupLayout painel4Layout = new javax.swing.GroupLayout(painel4);
-        painel4.setLayout(painel4Layout);
-        painel4Layout.setHorizontalGroup(
-            painel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(painel4Layout.createSequentialGroup()
-                .addGroup(painel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(painel4Layout.createSequentialGroup()
-                        .addGap(62, 62, 62)
-                        .addGroup(painel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(painel4Layout.createSequentialGroup()
-                                .addGroup(painel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(paralelepipedo_btnCalcArea)
-                                    .addGroup(painel4Layout.createSequentialGroup()
-                                        .addComponent(jLabel20)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(paralelepipedo_alturaArea, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(painel4Layout.createSequentialGroup()
-                                        .addComponent(jLabel22)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(paralelepipedo_compArea, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(painel4Layout.createSequentialGroup()
-                                        .addComponent(jLabel21)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(paralelepipedo_largArea, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addGap(31, 31, 31)
-                                .addComponent(jLabel23)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(paralelepipedo_respArea, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(painel4Layout.createSequentialGroup()
-                                .addGap(29, 29, 29)
-                                .addGroup(painel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(painel4Layout.createSequentialGroup()
-                                        .addGroup(painel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addGroup(painel4Layout.createSequentialGroup()
-                                                .addComponent(jLabel24)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(paralelepipedo_volAltura, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addGroup(painel4Layout.createSequentialGroup()
-                                                .addComponent(jLabel26)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(paralelepipedo_VolComp, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addGroup(painel4Layout.createSequentialGroup()
-                                                .addComponent(jLabel25)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(paralelepipedo_volLarg, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                        .addGap(31, 31, 31)
-                                        .addComponent(jLabel27)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(paralelepipedo_volResp, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(painel4Layout.createSequentialGroup()
-                                        .addGap(74, 74, 74)
-                                        .addComponent(paralelepipedo_btnCalcVol))))))
-                    .addGroup(painel4Layout.createSequentialGroup()
-                        .addGap(75, 75, 75)
-                        .addComponent(criarParalelepipedo)
-                        .addGap(46, 46, 46)
-                        .addComponent(jLabel29)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(paralelepipedo_EixoX, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel30)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(paralelepipedo_EixoY, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(244, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, painel4Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(paralelepipedo_salvarObjeto)
-                .addGap(94, 94, 94))
-        );
-        painel4Layout.setVerticalGroup(
-            painel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(painel4Layout.createSequentialGroup()
-                .addGap(36, 36, 36)
-                .addGroup(painel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(criarParalelepipedo)
-                    .addGroup(painel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel29, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(paralelepipedo_EixoX, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(painel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel30, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(paralelepipedo_EixoY, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(35, 35, 35)
-                .addGroup(painel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(paralelepipedo_alturaArea, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(painel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(paralelepipedo_compArea, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(painel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(paralelepipedo_largArea, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(paralelepipedo_respArea, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(paralelepipedo_btnCalcArea)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 273, Short.MAX_VALUE)
-                .addGroup(painel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(paralelepipedo_volAltura, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(painel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(paralelepipedo_VolComp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(painel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(paralelepipedo_volLarg, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(paralelepipedo_volResp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(paralelepipedo_btnCalcVol)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(paralelepipedo_salvarObjeto)
-                .addGap(144, 144, 144))
-        );
+        jLabel54.setText("Area:");
+        painel4.add(jLabel54);
+        jLabel54.setBounds(202, 200, 27, 28);
 
-        painelFundo.add(painel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(379, 0, 710, 810));
+        jLabel55.setFont(new java.awt.Font("Calibri Light", 1, 18)); // NOI18N
+        jLabel55.setText("Calcular Area");
+        painel4.add(jLabel55);
+        jLabel55.setBounds(70, 90, 170, 23);
 
-        painel5.setBackground(new java.awt.Color(153, 0, 0));
+        jLabel56.setFont(new java.awt.Font("Calibri Light", 3, 24)); // NOI18N
+        jLabel56.setText(" .");
+        painel4.add(jLabel56);
+        jLabel56.setBounds(350, 360, 60, 30);
 
-        javax.swing.GroupLayout painel5Layout = new javax.swing.GroupLayout(painel5);
-        painel5.setLayout(painel5Layout);
-        painel5Layout.setHorizontalGroup(
-            painel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 710, Short.MAX_VALUE)
-        );
-        painel5Layout.setVerticalGroup(
-            painel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 810, Short.MAX_VALUE)
-        );
+        jLabel57.setFont(new java.awt.Font("Calibri Light", 3, 24)); // NOI18N
+        jLabel57.setText("V = ( a    b     c  )");
+        painel4.add(jLabel57);
+        jLabel57.setBounds(240, 350, 180, 50);
 
-        painelFundo.add(painel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(379, 0, 710, 810));
+        jLabel60.setFont(new java.awt.Font("Calibri Light", 3, 24)); // NOI18N
+        jLabel60.setText("AT = 2    (ab +ac + bc)");
+        painel4.add(jLabel60);
+        jLabel60.setBounds(230, 140, 270, 50);
 
-        painel6.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel61.setFont(new java.awt.Font("Calibri Light", 3, 24)); // NOI18N
+        jLabel61.setText(" .");
+        painel4.add(jLabel61);
+        jLabel61.setBounds(310, 360, 60, 30);
+
+        painelFundo.add(painel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 0, 560, 550));
+
+        painel5.setBackground(new java.awt.Color(220, 123, 103));
+        painel5.setLayout(null);
+
+        jLabel46.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        jLabel46.setText("Calcular Perimetro");
+        painel5.add(jLabel46);
+        jLabel46.setBounds(30, 360, 139, 23);
+
+        labelcone8.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        labelcone8.setText("Crie um objeto antes de iniciar os calculos");
+        painel5.add(labelcone8);
+        labelcone8.setBounds(35, 35, 306, 23);
+
+        jLabel48.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        jLabel48.setText("Perimetro:");
+        painel5.add(jLabel48);
+        jLabel48.setBounds(16, 475, 78, 39);
+
+        quad_salvarObj.setText("Salvar Objeto");
+        quad_salvarObj.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                quad_salvarObjActionPerformed(evt);
+            }
+        });
+        painel5.add(quad_salvarObj);
+        quad_salvarObj.setBounds(399, 480, 120, 23);
+
+        quad_respPer.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                quad_respPerActionPerformed(evt);
+            }
+        });
+        painel5.add(quad_respPer);
+        quad_respPer.setBounds(98, 483, 74, 20);
+
+        quad_per_LadoA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                quad_per_LadoAActionPerformed(evt);
+            }
+        });
+        painel5.add(quad_per_LadoA);
+        quad_per_LadoA.setBounds(100, 410, 72, 20);
+
+        quad_btnPerimetro.setText("Calcular");
+        quad_btnPerimetro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                quad_btnPerimetroActionPerformed(evt);
+            }
+        });
+        painel5.add(quad_btnPerimetro);
+        quad_btnPerimetro.setBounds(199, 482, 73, 23);
+
+        labelcone9.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        labelcone9.setText("Eixo X:");
+        painel5.add(labelcone9);
+        labelcone9.setBounds(164, 64, 49, 39);
+
+        quad_eixoX.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                quad_eixoXActionPerformed(evt);
+            }
+        });
+        painel5.add(quad_eixoX);
+        quad_eixoX.setBounds(217, 72, 72, 20);
+
+        labelcone10.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        labelcone10.setText("Eixo Y:");
+        painel5.add(labelcone10);
+        labelcone10.setBounds(299, 64, 49, 39);
+
+        quad_eixoY.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                quad_eixoYActionPerformed(evt);
+            }
+        });
+        painel5.add(quad_eixoY);
+        quad_eixoY.setBounds(352, 72, 72, 20);
+
+        quad_CriarObj.setText("Criar objeto");
+        quad_CriarObj.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                quad_CriarObjActionPerformed(evt);
+            }
+        });
+        painel5.add(quad_CriarObj);
+        quad_CriarObj.setBounds(35, 71, 91, 23);
+
+        labelcone11.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        labelcone11.setText("Lado A:");
+        painel5.add(labelcone11);
+        labelcone11.setBounds(40, 400, 55, 39);
+
+        quad_btnArea.setText("Calcular");
+        quad_btnArea.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                quad_btnAreaActionPerformed(evt);
+            }
+        });
+        painel5.add(quad_btnArea);
+        quad_btnArea.setBounds(230, 260, 73, 23);
+
+        jLabel49.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        jLabel49.setText("Calcular Area");
+        painel5.add(jLabel49);
+        jLabel49.setBounds(45, 121, 99, 29);
+
+        jLabel51.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        jLabel51.setText("Area Total:");
+        painel5.add(jLabel51);
+        jLabel51.setBounds(30, 250, 81, 39);
+
+        labelcone12.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        labelcone12.setText("Lado A:");
+        painel5.add(labelcone12);
+        labelcone12.setBounds(63, 168, 55, 39);
+
+        quad_respArea.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                quad_respAreaActionPerformed(evt);
+            }
+        });
+        painel5.add(quad_respArea);
+        quad_respArea.setBounds(130, 260, 74, 20);
+
+        quad_areaLadoA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                quad_areaLadoAActionPerformed(evt);
+            }
+        });
+        painel5.add(quad_areaLadoA);
+        quad_areaLadoA.setBounds(128, 176, 72, 20);
+
+        jLabel66.setFont(new java.awt.Font("Calibri Light", 3, 24)); // NOI18N
+        jLabel66.setText("A =  ( L . L . L . L)");
+        painel5.add(jLabel66);
+        jLabel66.setBounds(230, 400, 210, 50);
+
+        jLabel67.setFont(new java.awt.Font("Calibri Light", 3, 24)); // NOI18N
+        jLabel67.setText("P = ( L . L )");
+        painel5.add(jLabel67);
+        jLabel67.setBounds(260, 160, 120, 50);
+
+        painelFundo.add(painel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 0, 560, 550));
+
+        painel6.setBackground(new java.awt.Color(220, 123, 103));
+
+        jLabel28.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        jLabel28.setText("Altura:");
+
+        labelcone4.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        labelcone4.setText("Raio:");
+
+        jLabel35.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        jLabel35.setText("Area Total:");
+
+        cilindro_salvarObj.setText("Salvar Objeto");
+        cilindro_salvarObj.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cilindro_salvarObjActionPerformed(evt);
+            }
+        });
+
+        cilindro_respArea.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cilindro_respAreaActionPerformed(evt);
+            }
+        });
+
+        cilindro_areaTxtRaio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cilindro_areaTxtRaioActionPerformed(evt);
+            }
+        });
+
+        cilindro_areaTxtArea.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cilindro_areaTxtAreaActionPerformed(evt);
+            }
+        });
+
+        cilindro_btnArea.setText("Calcular");
+        cilindro_btnArea.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cilindro_btnAreaActionPerformed(evt);
+            }
+        });
+
+        cilindro_eixoX.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cilindro_eixoXActionPerformed(evt);
+            }
+        });
+
+        labelcone5.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        labelcone5.setText("Eixo X: ");
+
+        cilindro_eixoY.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cilindro_eixoYActionPerformed(evt);
+            }
+        });
+
+        labelcone6.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        labelcone6.setText("Eixo Y: ");
+
+        cilindro_criarObj.setText("Criar Objeto");
+        cilindro_criarObj.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cilindro_criarObjActionPerformed(evt);
+            }
+        });
+
+        jLabel37.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        jLabel37.setText("Altura:");
+
+        labelcone7.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        labelcone7.setText("Raio:");
+
+        jLabel45.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        jLabel45.setText("Volume:");
+
+        cilindro_respVol.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cilindro_respVolActionPerformed(evt);
+            }
+        });
+
+        cilindro_volRaio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cilindro_volRaioActionPerformed(evt);
+            }
+        });
+
+        cilindro_volAlt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cilindro_volAltActionPerformed(evt);
+            }
+        });
+
+        cilindro_btnVolume.setText("Calcular");
+        cilindro_btnVolume.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cilindro_btnVolumeActionPerformed(evt);
+            }
+        });
+
+        jLabel58.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        jLabel58.setText("Calcular Area");
+
+        jLabel59.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        jLabel59.setText("Calcular Volume");
+
+        jLabel62.setFont(new java.awt.Font("Calibri Light", 3, 24)); // NOI18N
+        jLabel62.setText(" A = 2 . pi  . r ( r + h )");
+
+        jLabel63.setFont(new java.awt.Font("Calibri Light", 3, 24)); // NOI18N
+        jLabel63.setText("V = pi . r² . h");
 
         javax.swing.GroupLayout painel6Layout = new javax.swing.GroupLayout(painel6);
         painel6.setLayout(painel6Layout);
         painel6Layout.setHorizontalGroup(
             painel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 710, Short.MAX_VALUE)
+            .addGroup(painel6Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(painel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(painel6Layout.createSequentialGroup()
+                        .addGroup(painel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(painel6Layout.createSequentialGroup()
+                                .addGroup(painel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(jLabel28, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(labelcone4))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(painel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(cilindro_areaTxtRaio, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(cilindro_areaTxtArea, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(painel6Layout.createSequentialGroup()
+                                .addComponent(jLabel35)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(cilindro_respArea, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(painel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(painel6Layout.createSequentialGroup()
+                                .addGap(27, 27, 27)
+                                .addComponent(cilindro_btnArea))
+                            .addGroup(painel6Layout.createSequentialGroup()
+                                .addGap(41, 41, 41)
+                                .addComponent(jLabel62, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, painel6Layout.createSequentialGroup()
+                        .addComponent(cilindro_criarObj)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 87, Short.MAX_VALUE)
+                        .addComponent(labelcone5)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(cilindro_eixoX, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(26, 26, 26)
+                        .addComponent(labelcone6)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(cilindro_eixoY, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(86, 86, 86))))
+            .addGroup(painel6Layout.createSequentialGroup()
+                .addGap(31, 31, 31)
+                .addComponent(jLabel58, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(painel6Layout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addGroup(painel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(painel6Layout.createSequentialGroup()
+                        .addComponent(jLabel59, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap())
+                    .addGroup(painel6Layout.createSequentialGroup()
+                        .addGroup(painel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(painel6Layout.createSequentialGroup()
+                                .addGroup(painel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(jLabel37, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(labelcone7))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(painel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(cilindro_volRaio, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(cilindro_volAlt, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(painel6Layout.createSequentialGroup()
+                                .addComponent(jLabel45)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(cilindro_respVol, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(painel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(painel6Layout.createSequentialGroup()
+                                .addGap(27, 27, 27)
+                                .addComponent(cilindro_btnVolume)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(cilindro_salvarObj)
+                                .addGap(26, 26, 26))
+                            .addGroup(painel6Layout.createSequentialGroup()
+                                .addGap(54, 54, 54)
+                                .addComponent(jLabel63, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))))
         );
         painel6Layout.setVerticalGroup(
             painel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 810, Short.MAX_VALUE)
+            .addGroup(painel6Layout.createSequentialGroup()
+                .addGap(15, 15, 15)
+                .addGroup(painel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(cilindro_criarObj)
+                    .addComponent(cilindro_eixoX, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(labelcone5, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cilindro_eixoY, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(labelcone6, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(41, 41, 41)
+                .addComponent(jLabel58)
+                .addGroup(painel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(painel6Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(painel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(cilindro_areaTxtRaio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(labelcone4, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(painel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel28, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cilindro_areaTxtArea, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(painel6Layout.createSequentialGroup()
+                        .addGap(27, 27, 27)
+                        .addComponent(jLabel62, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(painel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel35, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cilindro_respArea, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cilindro_btnArea))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 83, Short.MAX_VALUE)
+                .addComponent(jLabel59)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(painel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(cilindro_salvarObj)
+                    .addGroup(painel6Layout.createSequentialGroup()
+                        .addGroup(painel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(painel6Layout.createSequentialGroup()
+                                .addGroup(painel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(cilindro_volRaio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(labelcone7, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(painel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel37, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(cilindro_volAlt, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, painel6Layout.createSequentialGroup()
+                                .addGap(9, 9, 9)
+                                .addComponent(jLabel63, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(painel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel45, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cilindro_respVol, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cilindro_btnVolume))))
+                .addGap(51, 51, 51))
         );
 
-        painelFundo.add(painel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(379, 0, 710, 810));
+        painelFundo.add(painel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 0, 560, 550));
 
-        painel7.setBackground(new java.awt.Color(255, 255, 255));
+        painel7.setBackground(new java.awt.Color(220, 123, 103));
+        painel7.setPreferredSize(new java.awt.Dimension(710, 560));
+        painel7.setLayout(null);
 
-        javax.swing.GroupLayout painel7Layout = new javax.swing.GroupLayout(painel7);
-        painel7.setLayout(painel7Layout);
-        painel7Layout.setHorizontalGroup(
-            painel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 710, Short.MAX_VALUE)
-        );
-        painel7Layout.setVerticalGroup(
-            painel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 810, Short.MAX_VALUE)
-        );
+        jLabel6.setFont(new java.awt.Font("Calibri", 0, 36)); // NOI18N
+        jLabel6.setText("(Bhaskara)");
+        painel7.add(jLabel6);
+        jLabel6.setBounds(107, 142, 155, 54);
 
-        painelFundo.add(painel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(379, 0, 710, 810));
+        labelcone1.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        labelcone1.setText("A: ");
+        painel7.add(labelcone1);
+        labelcone1.setBounds(50, 240, 19, 20);
 
-        painel8.setBackground(new java.awt.Color(204, 204, 255));
+        jLabel38.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        jLabel38.setText("X1:");
+        painel7.add(jLabel38);
+        jLabel38.setBounds(54, 453, 23, 23);
+
+        equacao_x1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                equacao_x1ActionPerformed(evt);
+            }
+        });
+        painel7.add(equacao_x1);
+        equacao_x1.setBounds(87, 453, 74, 20);
+
+        equacao_A.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                equacao_AActionPerformed(evt);
+            }
+        });
+        painel7.add(equacao_A);
+        equacao_A.setBounds(90, 240, 72, 20);
+
+        equacao_salvarObj.setText("Salvar Objeto");
+        equacao_salvarObj.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                equacao_salvarObjActionPerformed(evt);
+            }
+        });
+        painel7.add(equacao_salvarObj);
+        equacao_salvarObj.setBounds(358, 482, 99, 23);
+
+        equacao_calcular.setText("Calcular");
+        equacao_calcular.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                equacao_calcularActionPerformed(evt);
+            }
+        });
+        painel7.add(equacao_calcular);
+        equacao_calcular.setBounds(199, 482, 73, 23);
+
+        jLabel39.setFont(new java.awt.Font("Calibri", 0, 36)); // NOI18N
+        jLabel39.setText("Equação de Segundo Grau");
+        painel7.add(jLabel39);
+        jLabel39.setBounds(72, 82, 385, 54);
+
+        labelcone2.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        labelcone2.setText("B: ");
+        painel7.add(labelcone2);
+        labelcone2.setBounds(50, 270, 19, 20);
+
+        equacao_B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                equacao_BActionPerformed(evt);
+            }
+        });
+        painel7.add(equacao_B);
+        equacao_B.setBounds(90, 270, 72, 20);
+
+        equacao_C.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                equacao_CActionPerformed(evt);
+            }
+        });
+        painel7.add(equacao_C);
+        equacao_C.setBounds(90, 300, 72, 20);
+
+        labelcone3.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        labelcone3.setText("C: ");
+        painel7.add(labelcone3);
+        labelcone3.setBounds(50, 300, 19, 20);
+
+        jLabel40.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        jLabel40.setText("X2:");
+        painel7.add(jLabel40);
+        jLabel40.setBounds(54, 484, 23, 20);
+
+        equacao_x2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                equacao_x2ActionPerformed(evt);
+            }
+        });
+        painel7.add(equacao_x2);
+        equacao_x2.setBounds(87, 483, 74, 20);
+
+        jLabel41.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        jLabel41.setText("Delta:");
+        painel7.add(jLabel41);
+        jLabel41.setBounds(33, 422, 44, 20);
+
+        equacao_Delta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                equacao_DeltaActionPerformed(evt);
+            }
+        });
+        painel7.add(equacao_Delta);
+        equacao_Delta.setBounds(87, 421, 74, 20);
+
+        equacao_criarObj.setText("criar objeto");
+        equacao_criarObj.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                equacao_criarObjActionPerformed(evt);
+            }
+        });
+        painel7.add(equacao_criarObj);
+        equacao_criarObj.setBounds(288, 30, 89, 23);
+
+        jLabel42.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        jLabel42.setText("Crie um objeto antes de iniciar.");
+        painel7.add(jLabel42);
+        jLabel42.setBounds(51, 32, 227, 20);
+
+        jLabel64.setIcon(new javax.swing.ImageIcon(getClass().getResource("/prototipointerface/bhaskara.png"))); // NOI18N
+        painel7.add(jLabel64);
+        jLabel64.setBounds(180, 240, 360, 98);
+
+        jLabel65.setIcon(new javax.swing.ImageIcon(getClass().getResource("/prototipointerface/delta.png"))); // NOI18N
+        painel7.add(jLabel65);
+        jLabel65.setBounds(250, 350, 280, 60);
+
+        painelFundo.add(painel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 0, 820, 550));
+
+        painel8.setBackground(new java.awt.Color(220, 123, 103));
 
         javax.swing.GroupLayout painel8Layout = new javax.swing.GroupLayout(painel8);
         painel8.setLayout(painel8Layout);
         painel8Layout.setHorizontalGroup(
             painel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 710, Short.MAX_VALUE)
+            .addGap(0, 560, Short.MAX_VALUE)
         );
         painel8Layout.setVerticalGroup(
             painel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 810, Short.MAX_VALUE)
+            .addGap(0, 550, Short.MAX_VALUE)
         );
 
-        painelFundo.add(painel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(379, 0, 710, 810));
+        painelFundo.add(painel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 0, 560, 550));
 
-        getContentPane().add(painelFundo, java.awt.BorderLayout.CENTER);
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(painelFundo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(painelFundo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void botao1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao1MouseEntered
-        setarCorBotao(botao1);
+    private void salvar_objetosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salvar_objetosActionPerformed
+        // TODO add your handling code here:
+        String caminho;
+        caminho = caminhoObjetos.getText();
+        menu.gravarObjeto(caminho);
+    }//GEN-LAST:event_salvar_objetosActionPerformed
+
+    private void limparCampoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_limparCampoActionPerformed
+        // TODO add your handling code here:
+        telaObjetos.setText("");
+    }//GEN-LAST:event_limparCampoActionPerformed
+
+    private void btnCarregarObjetosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCarregarObjetosActionPerformed
+        // TODO add your handling code here:
+        try {
+
+            String caminho;
+            caminho = caminhoObjetos.getText();
+            menu.serializarArquivo(caminho);
+
+            telaObjetos.setText(menu.carregarArquivo());
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e.getMessage());
+        }
+    }//GEN-LAST:event_btnCarregarObjetosActionPerformed
+
+    private void cone_btnVolActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cone_btnVolActionPerformed
+        try {
+            double altura = 0, raio = 0;
+
+            raio = Double.parseDouble(cone_raioVol.getText());
+            altura = Double.parseDouble(cone_alturaVol.getText());
+            cone_respVol.setText(String.valueOf(menu.cone_calcularVolume(raio, altura)));
+
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e.getMessage());
+
+        }
 
 
-    }//GEN-LAST:event_botao1MouseEntered
+    }//GEN-LAST:event_cone_btnVolActionPerformed
+
+    private void cone_alturaVolActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cone_alturaVolActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cone_alturaVolActionPerformed
+
+    private void cone_raioVolActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cone_raioVolActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cone_raioVolActionPerformed
+
+    private void cone_respVolActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cone_respVolActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cone_respVolActionPerformed
+
+    private void botao8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao8MouseExited
+        // TODO add your handling code here:
+        resetarCorBotao(botao8);
+    }//GEN-LAST:event_botao8MouseExited
+
+    private void botao8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao8MouseEntered
+        // TODO add your handling code here:
+        setarCorBotao(botao8);
+    }//GEN-LAST:event_botao8MouseEntered
+
+    private void botao8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao8MouseClicked
+        // TODO add your handling code here:
+
+        abaBotao8.setVisible(true);
+        setarCorBotao(botao8);
+        botao8Select.setVisible(true);
+
+        //outros botoes
+        //btn2
+        botao_aba_Triangulo.setVisible(false);
+        abaBotao2.setVisible(false);
+        //btn3
+        botao3Select.setVisible(false);
+        abaBotao3.setVisible(false);
+        //btn4
+        botao4Select.setVisible(false);
+        abaBotao4.setVisible(false);
+        //btn1
+        botao1Select.setVisible(false);
+        abaBotao1.setVisible(false);
+        //btn6
+        botao5Select.setVisible(false);
+        abaBotao5.setVisible(false);
+        //btn7
+        botao7Select.setVisible(false);
+        abaBotao7.setVisible(false);
+        //btn6
+        botao6Select.setVisible(false);
+        abaBotao6.setVisible(false);
+        //conteudo
+        painel8.setVisible(true);
+        painel2.setVisible(false);
+        painel1.setVisible(false);
+        painel4.setVisible(false);
+        painel5.setVisible(false);
+        painel6.setVisible(false);
+        painel7.setVisible(false);
+        painel3.setVisible(false);
+    }//GEN-LAST:event_botao8MouseClicked
+
+    private void botao8SelectMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao8SelectMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botao8SelectMouseExited
+
+    private void botao8SelectMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao8SelectMouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botao8SelectMouseEntered
+
+    private void botao8SelectMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao8SelectMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botao8SelectMouseClicked
+
+    private void botao7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao7MouseExited
+        // TODO add your handling code here:
+        resetarCorBotao(botao7);
+    }//GEN-LAST:event_botao7MouseExited
+
+    private void botao7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao7MouseEntered
+        // TODO add your handling code here:
+        setarCorBotao(botao7);
+    }//GEN-LAST:event_botao7MouseEntered
+
+    private void botao7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao7MouseClicked
+
+        abaBotao7.setVisible(true);
+        setarCorBotao(botao7);
+        botao7Select.setVisible(true);
+
+        //outros botoes
+        //btn2
+        botao_aba_Triangulo.setVisible(false);
+        abaBotao2.setVisible(false);
+        //btn3
+        botao3Select.setVisible(false);
+        abaBotao3.setVisible(false);
+        //btn4
+        botao4Select.setVisible(false);
+        abaBotao4.setVisible(false);
+        //btn1
+        botao1Select.setVisible(false);
+        abaBotao1.setVisible(false);
+        //btn5
+        botao5Select.setVisible(false);
+        abaBotao5.setVisible(false);
+        //btn6
+        botao6Select.setVisible(false);
+        abaBotao6.setVisible(false);
+        //btn8
+        botao8Select.setVisible(false);
+        abaBotao8.setVisible(false);
+
+        //conteudo
+        painel7.setVisible(true);
+        painel2.setVisible(false);
+        painel1.setVisible(false);
+        painel4.setVisible(false);
+        painel5.setVisible(false);
+        painel6.setVisible(false);
+        painel3.setVisible(false);
+        painel8.setVisible(false);
+    }//GEN-LAST:event_botao7MouseClicked
+
+    private void botao7SelectMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao7SelectMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botao7SelectMouseExited
+
+    private void botao7SelectMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao7SelectMouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botao7SelectMouseEntered
+
+    private void botao7SelectMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao7SelectMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botao7SelectMouseClicked
+
+    private void botao6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao6MouseExited
+        resetarCorBotao(botao6);
+    }//GEN-LAST:event_botao6MouseExited
+
+    private void botao6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao6MouseEntered
+        // TODO add your handling code here:
+        setarCorBotao(botao6);
+    }//GEN-LAST:event_botao6MouseEntered
+
+    private void botao6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao6MouseClicked
+        // TODO add your handling code here:
+
+        abaBotao6.setVisible(true);
+        setarCorBotao(botao6);
+        botao6Select.setVisible(true);
+
+        //outros botoes
+        //btn2
+        botao_aba_Triangulo.setVisible(false);
+        abaBotao2.setVisible(false);
+        //btn3
+        botao3Select.setVisible(false);
+        abaBotao3.setVisible(false);
+        //btn4
+        botao4Select.setVisible(false);
+        abaBotao4.setVisible(false);
+        //btn1
+        botao1Select.setVisible(false);
+        abaBotao1.setVisible(false);
+        //btn5
+        botao5Select.setVisible(false);
+        abaBotao5.setVisible(false);
+        //btn7
+        botao7Select.setVisible(false);
+        abaBotao7.setVisible(false);
+        //btn8
+        botao8Select.setVisible(false);
+        abaBotao8.setVisible(false);
+
+        //conteudo
+        painel6.setVisible(true);
+        painel2.setVisible(false);
+        painel1.setVisible(false);
+        painel4.setVisible(false);
+        painel5.setVisible(false);
+        painel3.setVisible(false);
+        painel7.setVisible(false);
+        painel8.setVisible(false);
+    }//GEN-LAST:event_botao6MouseClicked
+
+    private void botao6SelectMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao6SelectMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botao6SelectMouseExited
+
+    private void botao6SelectMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao6SelectMouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botao6SelectMouseEntered
+
+    private void botao6SelectMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao6SelectMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botao6SelectMouseClicked
+
+    private void botao5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao5MouseExited
+        resetarCorBotao(botao5);
+    }//GEN-LAST:event_botao5MouseExited
+
+    private void botao5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao5MouseEntered
+
+        setarCorBotao(botao5);
+    }//GEN-LAST:event_botao5MouseEntered
+
+    private void botao5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao5MouseClicked
+        // TODO add your handling code here:
+
+        abaBotao5.setVisible(true);
+        setarCorBotao(botao5);
+        botao5Select.setVisible(true);
+
+        //outros botoes
+        //btn2
+        botao_aba_Triangulo.setVisible(false);
+        abaBotao2.setVisible(false);
+        //btn3
+        botao3Select.setVisible(false);
+        abaBotao3.setVisible(false);
+        //btn4
+        botao4Select.setVisible(false);
+        abaBotao4.setVisible(false);
+        //btn1
+        botao1Select.setVisible(false);
+        abaBotao1.setVisible(false);
+        //btn6
+        botao6Select.setVisible(false);
+        abaBotao6.setVisible(false);
+        //btn7
+        botao7Select.setVisible(false);
+        abaBotao7.setVisible(false);
+        //btn8
+        botao8Select.setVisible(false);
+        abaBotao8.setVisible(false);
+
+        //painels conteudo
+        painel5.setVisible(true);
+        painel2.setVisible(false);
+        painel1.setVisible(false);
+        painel4.setVisible(false);
+        painel3.setVisible(false);
+        painel6.setVisible(false);
+        painel7.setVisible(false);
+        painel8.setVisible(false);
+
+    }//GEN-LAST:event_botao5MouseClicked
+
+    private void botao5SelectMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao5SelectMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botao5SelectMouseExited
+
+    private void botao5SelectMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao5SelectMouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botao5SelectMouseEntered
+
+    private void botao5SelectMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao5SelectMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botao5SelectMouseClicked
+
+    private void botao4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao4MouseExited
+        // TODO add your handling code here:
+        resetarCorBotao(botao4);
+    }//GEN-LAST:event_botao4MouseExited
+
+    private void botao4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao4MouseEntered
+        // TODO add your handling code here:
+        setarCorBotao(botao4);
+    }//GEN-LAST:event_botao4MouseEntered
+
+    private void botao4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao4MouseClicked
+        //BOTAO PARALELEPIPEDO
+
+        abaBotao4.setVisible(true);
+        setarCorBotao(botao4);
+        botao4Select.setVisible(true);
+
+        //outros botoes
+        //btn2
+        botao_aba_Triangulo.setVisible(false);
+        abaBotao2.setVisible(false);
+        //btn1
+        botao1Select.setVisible(false);
+        abaBotao1.setVisible(false);
+        //btn3
+        botao3Select.setVisible(false);
+        abaBotao3.setVisible(false);
+        //btn5
+        botao5Select.setVisible(false);
+        abaBotao5.setVisible(false);
+        //btn6
+        botao6Select.setVisible(false);
+        abaBotao6.setVisible(false);
+        //btn7
+        botao7Select.setVisible(false);
+        abaBotao7.setVisible(false);
+        //btn8
+        botao8Select.setVisible(false);
+        abaBotao8.setVisible(false);
+
+        //conteudo
+        painel4.setVisible(true);
+        painel2.setVisible(false);
+        painel1.setVisible(false);
+        painel3.setVisible(false);
+        painel5.setVisible(false);
+        painel6.setVisible(false);
+        painel7.setVisible(false);
+        painel8.setVisible(false);
+
+    }//GEN-LAST:event_botao4MouseClicked
+
+    private void botao4SelectMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao4SelectMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botao4SelectMouseExited
+
+    private void botao4SelectMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao4SelectMouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botao4SelectMouseEntered
+
+    private void botao4SelectMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao4SelectMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botao4SelectMouseClicked
+
+    private void botao3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao3MouseExited
+        resetarCorBotao(botao3);
+    }//GEN-LAST:event_botao3MouseExited
+
+    private void botao3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao3MouseEntered
+        setarCorBotao(botao3);
+    }//GEN-LAST:event_botao3MouseEntered
+
+    private void botao3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao3MouseClicked
+        //botoes
+        abaBotao3.setVisible(true);
+        setarCorBotao(botao3);
+        botao3Select.setVisible(true);
+
+        //outros botoes
+        //btn2
+        botao_aba_Triangulo.setVisible(false);
+        abaBotao2.setVisible(false);
+        //btn1
+        botao1Select.setVisible(false);
+        abaBotao1.setVisible(false);
+        //btn4
+        botao4Select.setVisible(false);
+        abaBotao4.setVisible(false);
+        //btn5
+        botao5Select.setVisible(false);
+        abaBotao5.setVisible(false);
+        //btn6
+        botao6Select.setVisible(false);
+        abaBotao6.setVisible(false);
+        //btn7
+        botao7Select.setVisible(false);
+        abaBotao7.setVisible(false);
+        //btn8
+        botao8Select.setVisible(false);
+        abaBotao8.setVisible(false);
+
+        //conteudo
+        painel3.setVisible(true);
+        painel2.setVisible(false);
+        painel1.setVisible(false);
+        painel4.setVisible(false);
+        painel5.setVisible(false);
+        painel6.setVisible(false);
+        painel7.setVisible(false);
+        painel8.setVisible(false);
+
+    }//GEN-LAST:event_botao3MouseClicked
+
+    private void botao3SelectMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao3SelectMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botao3SelectMouseExited
+
+    private void botao3SelectMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao3SelectMouseEntered
+
+    }//GEN-LAST:event_botao3SelectMouseEntered
+
+    private void botao3SelectMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao3SelectMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botao3SelectMouseClicked
+
+    private void botao2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao2MouseExited
+        // TODO add your handling code here:
+        resetarCorBotao(botao2);
+    }//GEN-LAST:event_botao2MouseExited
+
+    private void botao2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao2MouseEntered
+        // TODO add your handling code here
+        setarCorBotao(botao2);
+
+    }//GEN-LAST:event_botao2MouseEntered
+
+    private void botao2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao2MouseClicked
+        //botoes  BOTAO TRIANGULO
+
+        abaBotao2.setVisible(true);
+        setarCorBotao(botao2);
+        botao_aba_Triangulo.setVisible(true);
+
+        //outros botoes
+        //btn1
+        botao1Select.setVisible(false);
+        abaBotao1.setVisible(false);
+        //btn3
+        botao3Select.setVisible(false);
+        abaBotao3.setVisible(false);
+        //btn4
+        botao4Select.setVisible(false);
+        abaBotao4.setVisible(false);
+        //btn5
+        botao5Select.setVisible(false);
+        abaBotao5.setVisible(false);
+        //btn6
+        botao6Select.setVisible(false);
+        abaBotao6.setVisible(false);
+        //btn7
+        botao7Select.setVisible(false);
+        abaBotao7.setVisible(false);
+        //btn8
+        botao8Select.setVisible(false);
+        abaBotao8.setVisible(false);
+
+        //conteudo
+        painel2.setVisible(true);
+        painel1.setVisible(false);
+        painel3.setVisible(false);
+        painel4.setVisible(false);
+        painel5.setVisible(false);
+        painel6.setVisible(false);
+        painel7.setVisible(false);
+        painel8.setVisible(false);
+
+    }//GEN-LAST:event_botao2MouseClicked
+
+    private void botao_aba_TrianguloMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao_aba_TrianguloMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botao_aba_TrianguloMouseExited
+
+    private void botao_aba_TrianguloMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao_aba_TrianguloMouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botao_aba_TrianguloMouseEntered
+
+    private void botao_aba_TrianguloMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao_aba_TrianguloMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botao_aba_TrianguloMouseClicked
 
     private void botao1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao1MouseExited
         // TODO add your handling code here:
         resetarCorBotao(botao1);
     }//GEN-LAST:event_botao1MouseExited
+
+    private void botao1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao1MouseEntered
+        setarCorBotao(botao1);
+
+    }//GEN-LAST:event_botao1MouseEntered
 
     private void botao1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao1MouseClicked
         /*
@@ -1369,494 +2481,334 @@ public class Janela extends javax.swing.JFrame {
         painel6.setVisible(false);
         painel7.setVisible(false);
         painel8.setVisible(false);
-
     }//GEN-LAST:event_botao1MouseClicked
-
-    private void botao1SelectMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao1SelectMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_botao1SelectMouseClicked
-
-    private void botao1SelectMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao1SelectMouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_botao1SelectMouseEntered
 
     private void botao1SelectMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao1SelectMouseExited
         // TODO add your handling code here:
     }//GEN-LAST:event_botao1SelectMouseExited
 
-    private void botao_aba_TrianguloMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao_aba_TrianguloMouseClicked
+    private void botao1SelectMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao1SelectMouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botao1SelectMouseEntered
+
+    private void botao1SelectMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao1SelectMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botao1SelectMouseClicked
+
+    private void cone_areaTotalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cone_areaTotalActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cone_areaTotalActionPerformed
+
+    private void cone_areaRaioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cone_areaRaioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cone_areaRaioActionPerformed
+
+    private void cone_areaGeratrizActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cone_areaGeratrizActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cone_areaGeratrizActionPerformed
+
+    private void cone_criarObjetoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cone_criarObjetoActionPerformed
+        // TODO add your handling code here:
+        menu.criarObjeto(("Cone"));
+        JOptionPane.showMessageDialog(null, "Objeto criado.");
+    }//GEN-LAST:event_cone_criarObjetoActionPerformed
+
+    private void cone_salvarObjActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cone_salvarObjActionPerformed
+        // TODO add your handling code here:
+        try {
+            float pontoX = 0, pontoY = 0;
+            pontoX = Float.parseFloat(cone_eixoX.getText());   // adiciona os eixos
+            pontoY = Float.parseFloat(cone_eixoY.getText());
+            menu.criarObjeto("Cone");
+            menu.adicionarEixos("Cone", pontoX, pontoY);
+            JOptionPane.showMessageDialog(null, "Objeto salvo.");
+            limparCampos();
+        } catch (Exception e) {
+
+            JOptionPane.showMessageDialog(null, e.getMessage());
+
+        }
+
+    }//GEN-LAST:event_cone_salvarObjActionPerformed
+
+    private void cone_btnAreaTotActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cone_btnAreaTotActionPerformed
+        // TODO add your handling code here:
+        try {
+            double raio = 0, geratriz = 0;
+            raio = Double.parseDouble(cone_areaRaio.getText());
+            geratriz = Double.parseDouble(cone_areaGeratriz.getText());
+            cone_areaTotal.setText(String.valueOf((menu.cone_calcularArea(raio, geratriz))));
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e.getMessage());
+        }
+
+    }//GEN-LAST:event_cone_btnAreaTotActionPerformed
+
+    private void cone_areaRaioPropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_cone_areaRaioPropertyChange
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cone_areaRaioPropertyChange
+
+    private void cone_eixoYActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cone_eixoYActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cone_eixoYActionPerformed
+
+    private void cone_eixoYPropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_cone_eixoYPropertyChange
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cone_eixoYPropertyChange
+
+    private void cone_eixoXActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cone_eixoXActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cone_eixoXActionPerformed
+
+    private void equacao_x1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_equacao_x1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_equacao_x1ActionPerformed
+
+    private void equacao_AActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_equacao_AActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_equacao_AActionPerformed
+
+    private void equacao_salvarObjActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_equacao_salvarObjActionPerformed
+        // TODO add your handling code here: menu.criarObjeto("Cone");
+        try {
+            menu.criarObjeto("Equacao");
+            JOptionPane.showMessageDialog(null, "Objeto salvo.");
+            limparCampos();
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e.getMessage());
+        }
+    }//GEN-LAST:event_equacao_salvarObjActionPerformed
+
+    private void equacao_calcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_equacao_calcularActionPerformed
+        // TODO add your handling code here:
+        try {
+            double x1, x2, delta, a, b, c;
+            a = Double.parseDouble(equacao_A.getText());
+            b = Double.parseDouble(equacao_B.getText());
+            c = Double.parseDouble(equacao_C.getText());
+
+            equacao_x1.setText(String.valueOf(menu.calcularEquacao("x1", a, b, c)));
+            equacao_x2.setText(String.valueOf(menu.calcularEquacao("x2", a, b, c)));
+            equacao_Delta.setText(String.valueOf(menu.calcularEquacao("Delta", a, b, c)));
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e.getMessage());
+        }
+    }//GEN-LAST:event_equacao_calcularActionPerformed
+
+    private void equacao_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_equacao_BActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_equacao_BActionPerformed
+
+    private void equacao_CActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_equacao_CActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_equacao_CActionPerformed
+
+    private void equacao_x2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_equacao_x2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_equacao_x2ActionPerformed
+
+    private void equacao_DeltaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_equacao_DeltaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_equacao_DeltaActionPerformed
+
+    private void equacao_criarObjActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_equacao_criarObjActionPerformed
+
+        menu.criarObjeto("Equacao");
+        JOptionPane.showMessageDialog(null, "Objeto criado");
+    }//GEN-LAST:event_equacao_criarObjActionPerformed
+
+    private void cilindro_salvarObjActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cilindro_salvarObjActionPerformed
         // TODO add your handling code here:
 
-    }//GEN-LAST:event_botao_aba_TrianguloMouseClicked
+        try {
+            float pontoX = 0, pontoY = 0;
+            pontoX = Float.parseFloat(cilindro_eixoX.getText());   // adiciona os eixos
+            pontoY = Float.parseFloat(cilindro_eixoY.getText());
+            menu.adicionarEixos("Cilindro", pontoX, pontoY);
+            menu.criarObjeto("Cilindro");
+            JOptionPane.showMessageDialog(null, "Objeto salvo.");
+            limparCampos();
 
-    private void botao_aba_TrianguloMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao_aba_TrianguloMouseEntered
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e.getMessage());
+        }
+    }//GEN-LAST:event_cilindro_salvarObjActionPerformed
+
+    private void cilindro_respAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cilindro_respAreaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_botao_aba_TrianguloMouseEntered
+    }//GEN-LAST:event_cilindro_respAreaActionPerformed
 
-    private void botao_aba_TrianguloMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao_aba_TrianguloMouseExited
+    private void cilindro_areaTxtRaioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cilindro_areaTxtRaioActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_botao_aba_TrianguloMouseExited
+    }//GEN-LAST:event_cilindro_areaTxtRaioActionPerformed
 
-    private void botao2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao2MouseClicked
-        //botoes  BOTAO TRIANGULO
-
-        abaBotao2.setVisible(true);
-        setarCorBotao(botao2);
-        botao_aba_Triangulo.setVisible(true);
-
-        //outros botoes
-        //btn1
-        botao1Select.setVisible(false);
-        abaBotao1.setVisible(false);
-        //btn3
-        botao3Select.setVisible(false);
-        abaBotao3.setVisible(false);
-        //btn4
-        botao4Select.setVisible(false);
-        abaBotao4.setVisible(false);
-        //btn5
-        botao5Select.setVisible(false);
-        abaBotao5.setVisible(false);
-        //btn6
-        botao6Select.setVisible(false);
-        abaBotao6.setVisible(false);
-        //btn7
-        botao7Select.setVisible(false);
-        abaBotao7.setVisible(false);
-        //btn8
-        botao8Select.setVisible(false);
-        abaBotao8.setVisible(false);
-
-        //conteudo
-        painel2.setVisible(true);
-        painel1.setVisible(false);
-        painel3.setVisible(false);
-        painel4.setVisible(false);
-        painel5.setVisible(false);
-        painel6.setVisible(false);
-        painel7.setVisible(false);
-        painel8.setVisible(false);
-
-
-    }//GEN-LAST:event_botao2MouseClicked
-
-    private void botao2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao2MouseEntered
-        // TODO add your handling code here
-        setarCorBotao(botao2);
-
-
-    }//GEN-LAST:event_botao2MouseEntered
-
-    private void botao2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao2MouseExited
+    private void cilindro_areaTxtAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cilindro_areaTxtAreaActionPerformed
         // TODO add your handling code here:
-        resetarCorBotao(botao2);
-    }//GEN-LAST:event_botao2MouseExited
+    }//GEN-LAST:event_cilindro_areaTxtAreaActionPerformed
 
-    private void botao3SelectMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao3SelectMouseClicked
+    private void cilindro_btnAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cilindro_btnAreaActionPerformed
+
         // TODO add your handling code here:
-    }//GEN-LAST:event_botao3SelectMouseClicked
+        try {
+            double area, raio;
+            area = Double.parseDouble(cilindro_areaTxtArea.getText());
+            raio = Double.parseDouble(cilindro_areaTxtRaio.getText());
 
-    private void botao3SelectMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao3SelectMouseEntered
-    }//GEN-LAST:event_botao3SelectMouseEntered
+            cilindro_respArea.setText(String.valueOf(menu.cilindro_calcularArea(raio, area)));
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e.getMessage());
+        }
+    }//GEN-LAST:event_cilindro_btnAreaActionPerformed
 
-    private void botao3SelectMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao3SelectMouseExited
+    private void cilindro_eixoXActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cilindro_eixoXActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_botao3SelectMouseExited
+    }//GEN-LAST:event_cilindro_eixoXActionPerformed
 
-    private void botao3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao3MouseClicked
-        //botoes
-        abaBotao3.setVisible(true);
-        setarCorBotao(botao3);
-        botao3Select.setVisible(true);
-
-        //outros botoes
-        //btn2
-        botao_aba_Triangulo.setVisible(false);
-        abaBotao2.setVisible(false);
-        //btn1
-        botao1Select.setVisible(false);
-        abaBotao1.setVisible(false);
-        //btn4
-        botao4Select.setVisible(false);
-        abaBotao4.setVisible(false);
-        //btn5
-        botao5Select.setVisible(false);
-        abaBotao5.setVisible(false);
-        //btn6
-        botao6Select.setVisible(false);
-        abaBotao6.setVisible(false);
-        //btn7
-        botao7Select.setVisible(false);
-        abaBotao7.setVisible(false);
-        //btn8
-        botao8Select.setVisible(false);
-        abaBotao8.setVisible(false);
-
-        //conteudo
-        painel3.setVisible(true);
-        painel2.setVisible(false);
-        painel1.setVisible(false);
-        painel4.setVisible(false);
-        painel5.setVisible(false);
-        painel6.setVisible(false);
-        painel7.setVisible(false);
-        painel8.setVisible(false);
-
-
-    }//GEN-LAST:event_botao3MouseClicked
-
-    private void botao3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao3MouseEntered
-        setarCorBotao(botao3);
-    }//GEN-LAST:event_botao3MouseEntered
-
-    private void botao3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao3MouseExited
-        resetarCorBotao(botao3);
-
-    }//GEN-LAST:event_botao3MouseExited
-
-    private void botao4SelectMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao4SelectMouseClicked
+    private void cilindro_eixoYActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cilindro_eixoYActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_botao4SelectMouseClicked
+    }//GEN-LAST:event_cilindro_eixoYActionPerformed
 
-    private void botao4SelectMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao4SelectMouseEntered
+    private void cilindro_criarObjActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cilindro_criarObjActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_botao4SelectMouseEntered
+        menu.criarObjeto("Cilindro");
+        JOptionPane.showMessageDialog(null, "Objeto Criado");
 
-    private void botao4SelectMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao4SelectMouseExited
+
+    }//GEN-LAST:event_cilindro_criarObjActionPerformed
+
+    private void cilindro_respVolActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cilindro_respVolActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_botao4SelectMouseExited
+    }//GEN-LAST:event_cilindro_respVolActionPerformed
 
-    private void botao4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao4MouseClicked
-        //BOTAO PARALELEPIPEDO
-
-        abaBotao4.setVisible(true);
-        setarCorBotao(botao4);
-        botao4Select.setVisible(true);
-
-        //outros botoes
-        //btn2
-        botao_aba_Triangulo.setVisible(false);
-        abaBotao2.setVisible(false);
-        //btn1
-        botao1Select.setVisible(false);
-        abaBotao1.setVisible(false);
-        //btn3
-        botao3Select.setVisible(false);
-        abaBotao3.setVisible(false);
-        //btn5
-        botao5Select.setVisible(false);
-        abaBotao5.setVisible(false);
-        //btn6
-        botao6Select.setVisible(false);
-        abaBotao6.setVisible(false);
-        //btn7
-        botao7Select.setVisible(false);
-        abaBotao7.setVisible(false);
-        //btn8
-        botao8Select.setVisible(false);
-        abaBotao8.setVisible(false);
-
-        //conteudo
-        painel4.setVisible(true);
-        painel2.setVisible(false);
-        painel1.setVisible(false);
-        painel3.setVisible(false);
-        painel5.setVisible(false);
-        painel6.setVisible(false);
-        painel7.setVisible(false);
-        painel8.setVisible(false);
-
-
-    }//GEN-LAST:event_botao4MouseClicked
-
-    private void botao4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao4MouseEntered
+    private void cilindro_volRaioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cilindro_volRaioActionPerformed
         // TODO add your handling code here:
-        setarCorBotao(botao4);
-    }//GEN-LAST:event_botao4MouseEntered
+    }//GEN-LAST:event_cilindro_volRaioActionPerformed
 
-    private void botao4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao4MouseExited
+    private void cilindro_volAltActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cilindro_volAltActionPerformed
         // TODO add your handling code here:
-        resetarCorBotao(botao4);
-    }//GEN-LAST:event_botao4MouseExited
+    }//GEN-LAST:event_cilindro_volAltActionPerformed
 
-    private void botao5SelectMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao5SelectMouseClicked
+    private void cilindro_btnVolumeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cilindro_btnVolumeActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_botao5SelectMouseClicked
+        try {
+            double altura, raio;
+            altura = Double.parseDouble(cilindro_volAlt.getText());
+            raio = Double.parseDouble(cilindro_volRaio.getText());
+            cilindro_respVol.setText(String.valueOf(menu.cilindro_calcularVolume(raio, altura)));
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e.getMessage());
+        }
 
-    private void botao5SelectMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao5SelectMouseEntered
+    }//GEN-LAST:event_cilindro_btnVolumeActionPerformed
+
+    private void quad_salvarObjActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quad_salvarObjActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_botao5SelectMouseEntered
+        try {
+            float pontoX = 0, pontoY = 0;
+            pontoX = Float.parseFloat(quad_eixoX.getText());   // adiciona os eixos
+            pontoY = Float.parseFloat(quad_eixoY.getText());
+            menu.criarObjeto("Quadrado");
+            menu.adicionarEixos("Quadrado", pontoX, pontoY);
+            JOptionPane.showMessageDialog(null, "Objeto salvo.");
+            limparCampos();
 
-    private void botao5SelectMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao5SelectMouseExited
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e.getMessage());
+        }
+    }//GEN-LAST:event_quad_salvarObjActionPerformed
+
+    private void quad_respPerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quad_respPerActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_botao5SelectMouseExited
+    }//GEN-LAST:event_quad_respPerActionPerformed
 
-    private void botao5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao5MouseClicked
+    private void quad_per_LadoAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quad_per_LadoAActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_quad_per_LadoAActionPerformed
+
+    private void quad_btnPerimetroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quad_btnPerimetroActionPerformed
+        // TODO add your handling code here:
+        try {
+            double ladoA;
+            ladoA = Double.parseDouble(quad_per_LadoA.getText());
+
+            quad_respPer.setText(String.valueOf(menu.quadrado_calcularPerimetro(ladoA)));
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e.getMessage());
+        }
+
+    }//GEN-LAST:event_quad_btnPerimetroActionPerformed
+
+    private void quad_eixoXActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quad_eixoXActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_quad_eixoXActionPerformed
+
+    private void quad_eixoYActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quad_eixoYActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_quad_eixoYActionPerformed
+
+    private void quad_CriarObjActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quad_CriarObjActionPerformed
+        // TODO add your handling code here:
+        menu.criarObjeto("Quadrado");
+        JOptionPane.showMessageDialog(null, "Objeto criado.");
+
+    }//GEN-LAST:event_quad_CriarObjActionPerformed
+
+    private void quad_btnAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quad_btnAreaActionPerformed
+        // TODO add your handling code here:
+        try {
+            double ladoA;
+            ladoA = Double.parseDouble(quad_areaLadoA.getText());
+            quad_respArea.setText(String.valueOf(menu.quadrado_calcularArea(ladoA)));
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e.getMessage());
+        }
+    }//GEN-LAST:event_quad_btnAreaActionPerformed
+
+    private void quad_respAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quad_respAreaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_quad_respAreaActionPerformed
+
+    private void quad_areaLadoAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quad_areaLadoAActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_quad_areaLadoAActionPerformed
+
+    private void criarObjeto_TrianguloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_criarObjeto_TrianguloActionPerformed
+        // TODO add your handling code here:
+        menu.criarObjeto("Triangulo");
+        JOptionPane.showMessageDialog(null, "Objeto criado.");
+    }//GEN-LAST:event_criarObjeto_TrianguloActionPerformed
+
+    private void triangulo_salvarObjetoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_triangulo_salvarObjetoActionPerformed
         // TODO add your handling code here:
 
-        abaBotao5.setVisible(true);
-        setarCorBotao(botao5);
-        botao5Select.setVisible(true);
+        try {
+            float pontoX = 0, pontoY = 0;
+            pontoX = Float.parseFloat(triangulo_eixoX.getText());   // adiciona os eixos
+            pontoY = Float.parseFloat(triangulo_eixoY.getText());
+            menu.criarObjeto("Triangulo");
+            menu.adicionarEixos("Triangulo", pontoX, pontoY);
+            JOptionPane.showMessageDialog(null, "Objeto salvo.");
+            limparCampos();
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e.getMessage());
+        }
+    }//GEN-LAST:event_triangulo_salvarObjetoActionPerformed
 
-        //outros botoes
-        //btn2
-        botao_aba_Triangulo.setVisible(false);
-        abaBotao2.setVisible(false);
-        //btn3
-        botao3Select.setVisible(false);
-        abaBotao3.setVisible(false);
-        //btn4
-        botao4Select.setVisible(false);
-        abaBotao4.setVisible(false);
-        //btn1
-        botao1Select.setVisible(false);
-        abaBotao1.setVisible(false);
-        //btn6
-        botao6Select.setVisible(false);
-        abaBotao6.setVisible(false);
-        //btn7
-        botao7Select.setVisible(false);
-        abaBotao7.setVisible(false);
-        //btn8
-        botao8Select.setVisible(false);
-        abaBotao8.setVisible(false);
-
-        //painels conteudo
-        painel5.setVisible(true);
-        painel2.setVisible(false);
-        painel1.setVisible(false);
-        painel4.setVisible(false);
-        painel3.setVisible(false);
-        painel6.setVisible(false);
-        painel7.setVisible(false);
-        painel8.setVisible(false);
-
-
-    }//GEN-LAST:event_botao5MouseClicked
-
-    private void botao5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao5MouseEntered
-
-        setarCorBotao(botao5);
-    }//GEN-LAST:event_botao5MouseEntered
-
-    private void botao5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao5MouseExited
-        resetarCorBotao(botao5);
-
-    }//GEN-LAST:event_botao5MouseExited
-
-    private void botao6SelectMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao6SelectMouseClicked
+    private void triangulo_eixoYActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_triangulo_eixoYActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_botao6SelectMouseClicked
+    }//GEN-LAST:event_triangulo_eixoYActionPerformed
 
-    private void botao6SelectMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao6SelectMouseEntered
+    private void triangulo_btn_calcAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_triangulo_btn_calcAreaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_botao6SelectMouseEntered
-
-    private void botao6SelectMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao6SelectMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_botao6SelectMouseExited
-
-    private void botao6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao6MouseClicked
-        // TODO add your handling code here:
-
-        abaBotao6.setVisible(true);
-        setarCorBotao(botao6);
-        botao6Select.setVisible(true);
-
-        //outros botoes
-        //btn2
-        botao_aba_Triangulo.setVisible(false);
-        abaBotao2.setVisible(false);
-        //btn3
-        botao3Select.setVisible(false);
-        abaBotao3.setVisible(false);
-        //btn4
-        botao4Select.setVisible(false);
-        abaBotao4.setVisible(false);
-        //btn1
-        botao1Select.setVisible(false);
-        abaBotao1.setVisible(false);
-        //btn5
-        botao5Select.setVisible(false);
-        abaBotao5.setVisible(false);
-        //btn7
-        botao7Select.setVisible(false);
-        abaBotao7.setVisible(false);
-        //btn8
-        botao8Select.setVisible(false);
-        abaBotao8.setVisible(false);
-
-        //conteudo
-        painel6.setVisible(true);
-        painel2.setVisible(false);
-        painel1.setVisible(false);
-        painel4.setVisible(false);
-        painel5.setVisible(false);
-        painel3.setVisible(false);
-        painel7.setVisible(false);
-        painel8.setVisible(false);
-    }//GEN-LAST:event_botao6MouseClicked
-
-    private void botao6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao6MouseEntered
-        // TODO add your handling code here:
-        setarCorBotao(botao6);
-    }//GEN-LAST:event_botao6MouseEntered
-
-    private void botao6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao6MouseExited
-        resetarCorBotao(botao6);
-    }//GEN-LAST:event_botao6MouseExited
-
-    private void botao7SelectMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao7SelectMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_botao7SelectMouseClicked
-
-    private void botao7SelectMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao7SelectMouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_botao7SelectMouseEntered
-
-    private void botao7SelectMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao7SelectMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_botao7SelectMouseExited
-
-    private void botao7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao7MouseClicked
-
-        abaBotao7.setVisible(true);
-        setarCorBotao(botao7);
-        botao7Select.setVisible(true);
-
-        //outros botoes
-        //btn2
-        botao_aba_Triangulo.setVisible(false);
-        abaBotao2.setVisible(false);
-        //btn3
-        botao3Select.setVisible(false);
-        abaBotao3.setVisible(false);
-        //btn4
-        botao4Select.setVisible(false);
-        abaBotao4.setVisible(false);
-        //btn1
-        botao1Select.setVisible(false);
-        abaBotao1.setVisible(false);
-        //btn5
-        botao5Select.setVisible(false);
-        abaBotao5.setVisible(false);
-        //btn6
-        botao6Select.setVisible(false);
-        abaBotao6.setVisible(false);
-        //btn8
-        botao8Select.setVisible(false);
-        abaBotao8.setVisible(false);
-
-        //conteudo
-        painel7.setVisible(true);
-        painel2.setVisible(false);
-        painel1.setVisible(false);
-        painel4.setVisible(false);
-        painel5.setVisible(false);
-        painel6.setVisible(false);
-        painel3.setVisible(false);
-        painel8.setVisible(false);
-    }//GEN-LAST:event_botao7MouseClicked
-
-    private void botao7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao7MouseEntered
-        // TODO add your handling code here:
-        setarCorBotao(botao7);
-    }//GEN-LAST:event_botao7MouseEntered
-
-    private void botao7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao7MouseExited
-        // TODO add your handling code here:
-        resetarCorBotao(botao7);
-    }//GEN-LAST:event_botao7MouseExited
-
-    private void botao8SelectMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao8SelectMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_botao8SelectMouseClicked
-
-    private void botao8SelectMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao8SelectMouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_botao8SelectMouseEntered
-
-    private void botao8SelectMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao8SelectMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_botao8SelectMouseExited
-
-    private void botao8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao8MouseClicked
-        // TODO add your handling code here:
-
-        abaBotao8.setVisible(true);
-        setarCorBotao(botao8);
-        botao8Select.setVisible(true);
-
-        //outros botoes
-        //btn2
-        botao_aba_Triangulo.setVisible(false);
-        abaBotao2.setVisible(false);
-        //btn3
-        botao3Select.setVisible(false);
-        abaBotao3.setVisible(false);
-        //btn4
-        botao4Select.setVisible(false);
-        abaBotao4.setVisible(false);
-        //btn1
-        botao1Select.setVisible(false);
-        abaBotao1.setVisible(false);
-        //btn6
-        botao5Select.setVisible(false);
-        abaBotao5.setVisible(false);
-        //btn7
-        botao7Select.setVisible(false);
-        abaBotao7.setVisible(false);
-        //btn6
-        botao6Select.setVisible(false);
-        abaBotao6.setVisible(false);
-        //conteudo
-        painel8.setVisible(true);
-        painel2.setVisible(false);
-        painel1.setVisible(false);
-        painel4.setVisible(false);
-        painel5.setVisible(false);
-        painel6.setVisible(false);
-        painel7.setVisible(false);
-        painel3.setVisible(false);
-    }//GEN-LAST:event_botao8MouseClicked
-
-    private void botao8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao8MouseEntered
-        // TODO add your handling code here:
-        setarCorBotao(botao8);
-    }//GEN-LAST:event_botao8MouseEntered
-
-    private void botao8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botao8MouseExited
-        // TODO add your handling code here:
-        resetarCorBotao(botao8);
-    }//GEN-LAST:event_botao8MouseExited
-
-    private void respostaVolumeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_respostaVolumeActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_respostaVolumeActionPerformed
-
-    private void txtLarguraVolumeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtLarguraVolumeActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtLarguraVolumeActionPerformed
-
-    private void txtAlturaVolumeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAlturaVolumeActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtAlturaVolumeActionPerformed
-
-    private void botaoCalcularVolumeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoCalcularVolumeActionPerformed
-
-
-    }//GEN-LAST:event_botaoCalcularVolumeActionPerformed
-
-    private void botaoSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoSalvarActionPerformed
-        // TODO add your handling code here:
-
-
-    }//GEN-LAST:event_botaoSalvarActionPerformed
-
-    private void botaoVizualizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoVizualizarActionPerformed
-        // TODO add your handling code here:
-
-    }//GEN-LAST:event_botaoVizualizarActionPerformed
+        try {
+            double base = 0, altura = 0;
+            base = Double.parseDouble(triangulo_baseTxt.getText());
+            altura = Double.parseDouble(triangulo_alturaTxt.getText());
+            triangulo_respAreaTxt.setText(String.valueOf((menu.triangulo_calcularArea(base, altura))));
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e.getMessage());
+        }
+    }//GEN-LAST:event_triangulo_btn_calcAreaActionPerformed
 
     private void triangulo_btn_calcPerimetroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_triangulo_btn_calcPerimetroActionPerformed
         // TODO add your handling code here:
@@ -1872,79 +2824,34 @@ public class Janela extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, e.getMessage());
 
         }
-
-
     }//GEN-LAST:event_triangulo_btn_calcPerimetroActionPerformed
 
-    private void triangulo_btn_calcPerimetro1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_triangulo_btn_calcPerimetro1ActionPerformed
+    private void paralelepipedo_salvarObjetoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_paralelepipedo_salvarObjetoActionPerformed
         // TODO add your handling code here:
         try {
-            double base = 0, altura = 0;
-            base = Double.parseDouble(triangulo_baseTxt.getText());
-            altura = Double.parseDouble(triangulo_baseTxt.getText());
-            triangulo_respAreaTxt.setText(String.valueOf((menu.triangulo_calcularArea(base, altura))));
+            float pontoX = 0, pontoY = 0;
+            pontoX = Float.parseFloat(paralelepipedo_EixoX.getText());   // adiciona os eixos
+            pontoY = Float.parseFloat(paralelepipedo_EixoY.getText());
+            menu.adicionarEixos("Paralelepipedo", pontoX, pontoY);
+            menu.criarObjeto("Paralelepipedo");
+            JOptionPane.showMessageDialog(null, "Objeto salvo.");
+            limparCampos();
+
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, e.getMessage());
         }
-    }//GEN-LAST:event_triangulo_btn_calcPerimetro1ActionPerformed
+    }//GEN-LAST:event_paralelepipedo_salvarObjetoActionPerformed
 
-    private void btnCarregarObjetosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCarregarObjetosActionPerformed
+    private void criarParalelepipedoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_criarParalelepipedoActionPerformed
         // TODO add your handling code here:
-        try {
+        //Cria um paralelepipedo
+        menu.criarObjeto("Paralelepipedo");
+        JOptionPane.showMessageDialog(null, "Objeto criado.");
+    }//GEN-LAST:event_criarParalelepipedoActionPerformed
 
-            String caminho;
-            caminho = caminhoObjetos.getText();
-            menu.serializarArquivo(caminho);
-
-            telaObjetos.setText(menu.carregarArquivo());
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, e.getMessage());
-        }
-
-    }//GEN-LAST:event_btnCarregarObjetosActionPerformed
-
-    private void salvar_objetosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salvar_objetosActionPerformed
+    private void paralelepipedo_volAlturaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_paralelepipedo_volAlturaActionPerformed
         // TODO add your handling code here:
-        String caminho;
-        caminho = caminhoObjetos.getText();
-        menu.gravarObjeto(caminho);
-    }//GEN-LAST:event_salvar_objetosActionPerformed
-
-    private void limparCampoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_limparCampoActionPerformed
-        // TODO add your handling code here:
-        telaObjetos.setText("");
-    }//GEN-LAST:event_limparCampoActionPerformed
-
-    private void triangulo_salvarObjetoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_triangulo_salvarObjetoActionPerformed
-        // TODO add your handling code here:
-
-        float pontoX, pontoY;
-        pontoX = Float.parseFloat(triangulo_eixoX.getText());   // adiciona os eixos
-        pontoY = Float.parseFloat(triangulo_eixoY.getText());
-        menu.criarObjeto("Triangulo");
-        menu.adicionarEixos("Triangulo", pontoX, pontoY);
-        JOptionPane.showMessageDialog(null, "Objeto Salvo");
-        limparCampos();
-
-
-    }//GEN-LAST:event_triangulo_salvarObjetoActionPerformed
-
-    private void paralelepipedo_btnCalcAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_paralelepipedo_btnCalcAreaActionPerformed
-        // TODO add your handling code here:
-        try {
-            double altura, comprimento, largura;
-            altura = Double.parseDouble(paralelepipedo_alturaArea.getText());
-            comprimento = Double.parseDouble(paralelepipedo_compArea.getText());
-            largura = Double.parseDouble(paralelepipedo_largArea.getText());
-            paralelepipedo_respArea.setText(String.valueOf(menu.paralelepipedo_calcularArea(comprimento, altura, largura)));
-
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, e.getMessage());
-
-        }
-
-
-    }//GEN-LAST:event_paralelepipedo_btnCalcAreaActionPerformed
+    }//GEN-LAST:event_paralelepipedo_volAlturaActionPerformed
 
     private void paralelepipedo_btnCalcVolActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_paralelepipedo_btnCalcVolActionPerformed
         // TODO add your handling code here:
@@ -1959,43 +2866,26 @@ public class Janela extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, e.getMessage());
 
         }
-
-
     }//GEN-LAST:event_paralelepipedo_btnCalcVolActionPerformed
 
-    private void criarObjeto_TrianguloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_criarObjeto_TrianguloActionPerformed
+    private void paralelepipedo_respAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_paralelepipedo_respAreaActionPerformed
         // TODO add your handling code here:
-        menu.criarObjeto("Triangulo");
-        JOptionPane.showMessageDialog(null, "Objeto Criado");
+    }//GEN-LAST:event_paralelepipedo_respAreaActionPerformed
 
-
-    }//GEN-LAST:event_criarObjeto_TrianguloActionPerformed
-
-    private void criarParalelepipedoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_criarParalelepipedoActionPerformed
+    private void paralelepipedo_btnCalcAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_paralelepipedo_btnCalcAreaActionPerformed
         // TODO add your handling code here:
-        //Cria um paralelepipedo
-        menu.criarObjeto("Paralelepipedo");
-        JOptionPane.showMessageDialog(null, "Objeto Criado");
-    }//GEN-LAST:event_criarParalelepipedoActionPerformed
+        try {
+            double altura, comprimento, largura;
+            altura = Double.parseDouble(paralelepipedo_alturaArea.getText());
+            comprimento = Double.parseDouble(paralelepipedo_compArea.getText());
+            largura = Double.parseDouble(paralelepipedo_largArea.getText());
+            paralelepipedo_respArea.setText(String.valueOf(menu.paralelepipedo_calcularArea(comprimento, altura, largura)));
 
-    private void paralelepipedo_volAlturaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_paralelepipedo_volAlturaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_paralelepipedo_volAlturaActionPerformed
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e.getMessage());
 
-    private void paralelepipedo_salvarObjetoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_paralelepipedo_salvarObjetoActionPerformed
-        // TODO add your handling code here:
-        float pontoX, pontoY;
-        pontoX = Float.parseFloat(paralelepipedo_EixoX.getText());   // adiciona os eixos
-        pontoY = Float.parseFloat(paralelepipedo_EixoY.getText());
-        menu.adicionarEixos("Paralelepipedo", pontoX, pontoY);
-        menu.criarObjeto("Paralelepipedo");
-        JOptionPane.showMessageDialog(null, "Objeto Salvo");
-        limparCampos();
-    }//GEN-LAST:event_paralelepipedo_salvarObjetoActionPerformed
-
-    private void triangulo_eixoYActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_triangulo_eixoYActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_triangulo_eixoYActionPerformed
+        }
+    }//GEN-LAST:event_paralelepipedo_btnCalcAreaActionPerformed
 
     public void setarCorBotao(JPanel panel) {   //parte vizual apenas
         panel.setBackground(new Color(68, 68, 68));
@@ -2004,6 +2894,29 @@ public class Janela extends javax.swing.JFrame {
     public void resetarCorBotao(JPanel panel) {
         panel.setBackground(new Color(56, 55, 55));
 
+    }
+
+    public void mudarLookAndFeel() {
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Windows".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(Janela.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(Janela.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(Janela.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(Janela.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
     }
 
     public void limparCampos() {
@@ -2028,6 +2941,32 @@ public class Janela extends javax.swing.JFrame {
         triangulo_ladoCtxt.setText("");
         triangulo_respAreaTxt.setText("");
         triangulo_resp_perimetro.setText("");
+
+        quad_areaLadoA.setText((""));
+        quad_eixoX.setText((""));
+        quad_eixoY.setText((""));
+        quad_respArea.setText((""));
+        quad_respPer.setText((""));
+        quad_per_LadoA.setText((""));
+
+        cilindro_areaTxtArea.setText((""));
+        cilindro_areaTxtRaio.setText((""));
+        cilindro_eixoX.setText((""));
+        cilindro_eixoY.setText((""));
+        cilindro_respArea.setText((""));
+        cilindro_respVol.setText((""));
+        cilindro_volAlt.setText((""));
+        cilindro_volRaio.setText((""));
+
+        cone_alturaVol.setText((""));
+        cone_areaGeratriz.setText((""));
+        cone_areaRaio.setText((""));
+        cone_areaTotal.setText((""));
+        cone_eixoX.setText((""));
+        cone_eixoY.setText((""));
+        cone_raioVol.setText((""));
+        cone_respVol.setText((""));
+
     }
 
 
@@ -2056,14 +2995,44 @@ public class Janela extends javax.swing.JFrame {
     private javax.swing.JPanel botao7Select;
     private javax.swing.JPanel botao8;
     private javax.swing.JPanel botao8Select;
-    private javax.swing.JButton botaoCalcularVolume;
-    private javax.swing.JButton botaoSalvar;
-    private javax.swing.JButton botaoVizualizar;
     private javax.swing.JPanel botao_aba_Triangulo;
     private javax.swing.JButton btnCarregarObjetos;
     private javax.swing.JTextField caminhoObjetos;
+    private javax.swing.JTextField cilindro_areaTxtArea;
+    private javax.swing.JTextField cilindro_areaTxtRaio;
+    private javax.swing.JButton cilindro_btnArea;
+    private javax.swing.JButton cilindro_btnVolume;
+    private javax.swing.JButton cilindro_criarObj;
+    private javax.swing.JTextField cilindro_eixoX;
+    private javax.swing.JTextField cilindro_eixoY;
+    private javax.swing.JTextField cilindro_respArea;
+    private javax.swing.JTextField cilindro_respVol;
+    private javax.swing.JButton cilindro_salvarObj;
+    private javax.swing.JTextField cilindro_volAlt;
+    private javax.swing.JTextField cilindro_volRaio;
+    private javax.swing.JTextField cone_alturaVol;
+    private javax.swing.JTextField cone_areaGeratriz;
+    private javax.swing.JTextField cone_areaRaio;
+    private javax.swing.JTextField cone_areaTotal;
+    private javax.swing.JButton cone_btnAreaTot;
+    private javax.swing.JButton cone_btnVol;
+    private javax.swing.JButton cone_criarObjeto;
+    private javax.swing.JTextField cone_eixoX;
+    private javax.swing.JTextField cone_eixoY;
+    private javax.swing.JTextField cone_raioVol;
+    private javax.swing.JTextField cone_respVol;
+    private javax.swing.JButton cone_salvarObj;
     private javax.swing.JButton criarObjeto_Triangulo;
     private javax.swing.JButton criarParalelepipedo;
+    private javax.swing.JTextField equacao_A;
+    private javax.swing.JTextField equacao_B;
+    private javax.swing.JTextField equacao_C;
+    private javax.swing.JTextField equacao_Delta;
+    private javax.swing.JButton equacao_calcular;
+    private javax.swing.JButton equacao_criarObj;
+    private javax.swing.JButton equacao_salvarObj;
+    private javax.swing.JTextField equacao_x1;
+    private javax.swing.JTextField equacao_x2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -2088,14 +3057,63 @@ public class Janela extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel40;
+    private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel46;
+    private javax.swing.JLabel jLabel47;
+    private javax.swing.JLabel jLabel48;
+    private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel50;
+    private javax.swing.JLabel jLabel51;
+    private javax.swing.JLabel jLabel52;
+    private javax.swing.JLabel jLabel53;
+    private javax.swing.JLabel jLabel54;
+    private javax.swing.JLabel jLabel55;
+    private javax.swing.JLabel jLabel56;
+    private javax.swing.JLabel jLabel57;
+    private javax.swing.JLabel jLabel58;
+    private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel60;
+    private javax.swing.JLabel jLabel61;
+    private javax.swing.JLabel jLabel62;
+    private javax.swing.JLabel jLabel63;
+    private javax.swing.JLabel jLabel64;
+    private javax.swing.JLabel jLabel65;
+    private javax.swing.JLabel jLabel66;
+    private javax.swing.JLabel jLabel67;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JLabel labelcone;
+    private javax.swing.JLabel labelcone1;
+    private javax.swing.JLabel labelcone10;
+    private javax.swing.JLabel labelcone11;
+    private javax.swing.JLabel labelcone12;
+    private javax.swing.JLabel labelcone2;
+    private javax.swing.JLabel labelcone3;
+    private javax.swing.JLabel labelcone4;
+    private javax.swing.JLabel labelcone5;
+    private javax.swing.JLabel labelcone6;
+    private javax.swing.JLabel labelcone7;
+    private javax.swing.JLabel labelcone8;
+    private javax.swing.JLabel labelcone9;
     private javax.swing.JButton limparCampo;
     private javax.swing.JPanel linhaHorizontalPainel;
     private javax.swing.JPanel painel1;
@@ -2120,7 +3138,16 @@ public class Janela extends javax.swing.JFrame {
     private javax.swing.JTextField paralelepipedo_volAltura;
     private javax.swing.JTextField paralelepipedo_volLarg;
     private javax.swing.JTextField paralelepipedo_volResp;
-    private javax.swing.JTextField respostaVolume;
+    private javax.swing.JButton quad_CriarObj;
+    private javax.swing.JTextField quad_areaLadoA;
+    private javax.swing.JButton quad_btnArea;
+    private javax.swing.JButton quad_btnPerimetro;
+    private javax.swing.JTextField quad_eixoX;
+    private javax.swing.JTextField quad_eixoY;
+    private javax.swing.JTextField quad_per_LadoA;
+    private javax.swing.JTextField quad_respArea;
+    private javax.swing.JTextField quad_respPer;
+    private javax.swing.JButton quad_salvarObj;
     private javax.swing.JButton salvar_objetos;
     private javax.swing.JTextArea telaObjetos;
     private javax.swing.JLabel textoBotao1;
@@ -2138,8 +3165,8 @@ public class Janela extends javax.swing.JFrame {
     private javax.swing.JLabel titulo6;
     private javax.swing.JTextField triangulo_alturaTxt;
     private javax.swing.JTextField triangulo_baseTxt;
+    private javax.swing.JButton triangulo_btn_calcArea;
     private javax.swing.JButton triangulo_btn_calcPerimetro;
-    private javax.swing.JButton triangulo_btn_calcPerimetro1;
     private javax.swing.JTextField triangulo_eixoX;
     private javax.swing.JTextField triangulo_eixoY;
     private javax.swing.JTextField triangulo_ladoAtxt;
@@ -2148,7 +3175,6 @@ public class Janela extends javax.swing.JFrame {
     private javax.swing.JTextField triangulo_respAreaTxt;
     private javax.swing.JTextField triangulo_resp_perimetro;
     private javax.swing.JButton triangulo_salvarObjeto;
-    private javax.swing.JTextField txtAlturaVolume;
     private javax.swing.JLabel txtBotaoSelect1;
     private javax.swing.JLabel txtBotaoSelect2;
     private javax.swing.JLabel txtBotaoSelect3;
@@ -2157,7 +3183,5 @@ public class Janela extends javax.swing.JFrame {
     private javax.swing.JLabel txtBotaoSelect6;
     private javax.swing.JLabel txtBotaoSelect7;
     private javax.swing.JLabel txtBotaoSelect8;
-    private javax.swing.JTextField txtLarguraVolume;
-    private javax.swing.JTextPane txtMostrar;
     // End of variables declaration//GEN-END:variables
 }
