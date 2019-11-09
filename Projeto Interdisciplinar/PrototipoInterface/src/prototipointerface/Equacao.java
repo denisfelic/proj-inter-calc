@@ -1,6 +1,7 @@
 package prototipointerface;
 
 import java.io.Serializable;
+import javax.swing.JOptionPane;
 
 public class Equacao implements Serializable {
 
@@ -30,6 +31,9 @@ public class Equacao implements Serializable {
         this.delta = (b * b) - 4 * (a * c);
         this.x1 = (- (b +(Math.sqrt(this.delta))) / (2 * a));
         this.x2 = (- (b - (Math.sqrt(this.delta))) / (2 * a));
+        if(delta < 0){
+            JOptionPane.showMessageDialog(null,"Nâo é possivel calcular a raiz!", "[ERRO]", JOptionPane.WARNING_MESSAGE);
+        }
 
     }
 

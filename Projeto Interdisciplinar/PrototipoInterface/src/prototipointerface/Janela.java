@@ -1008,7 +1008,6 @@ public class Janela extends javax.swing.JFrame {
                     .addComponent(triangulo_eixoX, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(25, 25, 25)
                 .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
                 .addGroup(painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(painel2Layout.createSequentialGroup()
                         .addGroup(painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -1049,7 +1048,7 @@ public class Janela extends javax.swing.JFrame {
                             .addComponent(triangulo_btn_calcArea)
                             .addComponent(triangulo_salvarObjeto)))
                     .addComponent(jLabel50))
-                .addContainerGap(63, Short.MAX_VALUE))
+                .addContainerGap(81, Short.MAX_VALUE))
         );
 
         painelFundo.add(painel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 0, 820, 550));
@@ -1113,7 +1112,7 @@ public class Janela extends javax.swing.JFrame {
             }
         });
         painel3.add(cone_btnVol);
-        cone_btnVol.setBounds(198, 488, 73, 23);
+        cone_btnVol.setBounds(198, 488, 90, 23);
 
         jLabel31.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         jLabel31.setText("Geratriz: ");
@@ -1161,7 +1160,7 @@ public class Janela extends javax.swing.JFrame {
             }
         });
         painel3.add(cone_criarObjeto);
-        cone_criarObjeto.setBounds(213, 40, 89, 23);
+        cone_criarObjeto.setBounds(213, 40, 87, 23);
 
         cone_salvarObj.setText("Salvar Objeto");
         cone_salvarObj.addActionListener(new java.awt.event.ActionListener() {
@@ -1179,7 +1178,7 @@ public class Janela extends javax.swing.JFrame {
             }
         });
         painel3.add(cone_btnAreaTot);
-        cone_btnAreaTot.setBounds(213, 235, 73, 23);
+        cone_btnAreaTot.setBounds(213, 235, 90, 23);
 
         jLabel34.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         jLabel34.setText("Raio:");
@@ -1244,13 +1243,13 @@ public class Janela extends javax.swing.JFrame {
             }
         });
         painel4.add(paralelepipedo_btnCalcArea);
-        paralelepipedo_btnCalcArea.setBounds(56, 247, 105, 23);
+        paralelepipedo_btnCalcArea.setBounds(56, 247, 103, 23);
         painel4.add(paralelepipedo_alturaArea);
         paralelepipedo_alturaArea.setBounds(84, 144, 77, 20);
 
         jLabel20.setText("Altura:");
         painel4.add(jLabel20);
-        jLabel20.setBounds(46, 140, 34, 28);
+        jLabel20.setBounds(46, 140, 33, 28);
         painel4.add(paralelepipedo_largArea);
         paralelepipedo_largArea.setBounds(84, 212, 77, 20);
 
@@ -1262,7 +1261,7 @@ public class Janela extends javax.swing.JFrame {
 
         jLabel22.setText("Cumprimento:");
         painel4.add(jLabel22);
-        jLabel22.setBounds(10, 174, 70, 28);
+        jLabel22.setBounds(10, 174, 67, 28);
 
         jLabel23.setFont(new java.awt.Font("Calibri Light", 1, 18)); // NOI18N
         jLabel23.setText("Calcular Volume");
@@ -1279,7 +1278,7 @@ public class Janela extends javax.swing.JFrame {
 
         jLabel24.setText("Altura:");
         painel4.add(jLabel24);
-        jLabel24.setBounds(40, 350, 34, 28);
+        jLabel24.setBounds(40, 350, 33, 28);
         painel4.add(paralelepipedo_volLarg);
         paralelepipedo_volLarg.setBounds(80, 430, 77, 20);
 
@@ -1291,7 +1290,7 @@ public class Janela extends javax.swing.JFrame {
 
         jLabel26.setText("Cumprimento:");
         painel4.add(jLabel26);
-        jLabel26.setBounds(10, 390, 70, 28);
+        jLabel26.setBounds(10, 390, 67, 28);
 
         jLabel27.setText("Volume");
         painel4.add(jLabel27);
@@ -1306,7 +1305,7 @@ public class Janela extends javax.swing.JFrame {
             }
         });
         painel4.add(paralelepipedo_btnCalcVol);
-        paralelepipedo_btnCalcVol.setBounds(80, 460, 119, 23);
+        paralelepipedo_btnCalcVol.setBounds(80, 460, 113, 23);
 
         paralelepipedo_volAltura.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1323,7 +1322,7 @@ public class Janela extends javax.swing.JFrame {
             }
         });
         painel4.add(criarParalelepipedo);
-        criarParalelepipedo.setBounds(75, 36, 93, 23);
+        criarParalelepipedo.setBounds(75, 36, 91, 23);
 
         paralelepipedo_salvarObjeto.setText("Salvar Objeto");
         paralelepipedo_salvarObjeto.addActionListener(new java.awt.event.ActionListener() {
@@ -1427,7 +1426,7 @@ public class Janela extends javax.swing.JFrame {
             }
         });
         painel5.add(quad_btnPerimetro);
-        quad_btnPerimetro.setBounds(199, 482, 73, 23);
+        quad_btnPerimetro.setBounds(199, 482, 71, 23);
 
         labelcone9.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         labelcone9.setText("Eixo X:");
@@ -1462,7 +1461,7 @@ public class Janela extends javax.swing.JFrame {
             }
         });
         painel5.add(quad_CriarObj);
-        quad_CriarObj.setBounds(35, 71, 91, 23);
+        quad_CriarObj.setBounds(35, 71, 89, 23);
 
         labelcone11.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         labelcone11.setText("Lado A:");
@@ -1476,7 +1475,7 @@ public class Janela extends javax.swing.JFrame {
             }
         });
         painel5.add(quad_btnArea);
-        quad_btnArea.setBounds(230, 260, 73, 23);
+        quad_btnArea.setBounds(230, 260, 71, 23);
 
         jLabel49.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         jLabel49.setText("Calcular Area");
@@ -1820,7 +1819,7 @@ public class Janela extends javax.swing.JFrame {
             }
         });
         painel7.add(equacao_calcular);
-        equacao_calcular.setBounds(199, 482, 73, 23);
+        equacao_calcular.setBounds(199, 482, 71, 23);
 
         jLabel39.setFont(new java.awt.Font("Calibri", 0, 36)); // NOI18N
         jLabel39.setText("Equação de Segundo Grau");
@@ -1886,7 +1885,7 @@ public class Janela extends javax.swing.JFrame {
             }
         });
         painel7.add(equacao_criarObj);
-        equacao_criarObj.setBounds(288, 30, 89, 23);
+        equacao_criarObj.setBounds(288, 30, 87, 23);
 
         jLabel42.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         jLabel42.setText("Crie um objeto antes de iniciar.");
