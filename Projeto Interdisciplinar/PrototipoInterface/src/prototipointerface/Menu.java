@@ -25,6 +25,9 @@ public class Menu {
     public static void PrototipoInterface() {  // Método para deixar a interface Visivel
         Janela janela = new Janela();
         janela.setVisible(true);
+        janela.limparCampos();
+        janela.mudarLookAndFeel();
+        janela.iniciaVisivel();
 
     }
 
@@ -204,6 +207,9 @@ public class Menu {
 
         }
         return texto;
+    }
+    public void limparArraylist(){
+         ArrayObjetos.clear();
     }
 
     /*  public double calcularVolume(double a, double b){

@@ -48,6 +48,28 @@ public class Janela extends javax.swing.JFrame {
     private void initComponents() {
 
         painelFundo = new javax.swing.JPanel();
+        painel6 = new javax.swing.JPanel();
+        jLabel28 = new javax.swing.JLabel();
+        labelcone4 = new javax.swing.JLabel();
+        jLabel35 = new javax.swing.JLabel();
+        cilindro_respArea = new javax.swing.JTextField();
+        cilindro_areaTxtRaio = new javax.swing.JTextField();
+        cilindro_areaTxtArea = new javax.swing.JTextField();
+        cilindro_btnArea = new javax.swing.JButton();
+        cilindro_eixoX = new javax.swing.JTextField();
+        labelcone5 = new javax.swing.JLabel();
+        cilindro_eixoY = new javax.swing.JTextField();
+        labelcone6 = new javax.swing.JLabel();
+        jLabel45 = new javax.swing.JLabel();
+        cilindro_respVol = new javax.swing.JTextField();
+        jLabel58 = new javax.swing.JLabel();
+        jLabel59 = new javax.swing.JLabel();
+        jLabel62 = new javax.swing.JLabel();
+        jLabel63 = new javax.swing.JLabel();
+        labelcone7 = new javax.swing.JLabel();
+        labelcone13 = new javax.swing.JLabel();
+        labelcone14 = new javax.swing.JLabel();
+        labelcone15 = new javax.swing.JLabel();
         PainelBotoes = new javax.swing.JPanel();
         linhaHorizontalPainel = new javax.swing.JPanel();
         botao1 = new javax.swing.JPanel();
@@ -117,7 +139,6 @@ public class Janela extends javax.swing.JFrame {
         triangulo_resp_perimetro = new javax.swing.JTextField();
         triangulo_btn_calcPerimetro = new javax.swing.JButton();
         triangulo_alturaTxt = new javax.swing.JTextField();
-        triangulo_btn_calcArea = new javax.swing.JButton();
         jLabel14 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         triangulo_baseTxt = new javax.swing.JTextField();
@@ -128,37 +149,40 @@ public class Janela extends javax.swing.JFrame {
         jLabel18 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
         triangulo_eixoY = new javax.swing.JTextField();
-        triangulo_salvarObjeto = new javax.swing.JButton();
-        criarObjeto_Triangulo = new javax.swing.JButton();
-        jLabel43 = new javax.swing.JLabel();
         jLabel50 = new javax.swing.JLabel();
         jLabel53 = new javax.swing.JLabel();
+        labelcone21 = new javax.swing.JLabel();
+        labelcone22 = new javax.swing.JLabel();
+        labelcone23 = new javax.swing.JLabel();
+        labelcone24 = new javax.swing.JLabel();
+        labelcone25 = new javax.swing.JLabel();
+        labelcone26 = new javax.swing.JLabel();
+        labelcone27 = new javax.swing.JLabel();
         painel3 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        labelcone = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         cone_respVol = new javax.swing.JTextField();
-        cone_raioVol = new javax.swing.JTextField();
         cone_alturaVol = new javax.swing.JTextField();
-        cone_btnVol = new javax.swing.JButton();
         jLabel31 = new javax.swing.JLabel();
         jLabel33 = new javax.swing.JLabel();
         cone_areaTotal = new javax.swing.JTextField();
         cone_areaRaio = new javax.swing.JTextField();
         cone_areaGeratriz = new javax.swing.JTextField();
-        cone_criarObjeto = new javax.swing.JButton();
-        cone_salvarObj = new javax.swing.JButton();
         cone_btnAreaTot = new javax.swing.JButton();
         jLabel34 = new javax.swing.JLabel();
         cone_eixoY = new javax.swing.JTextField();
         cone_eixoX = new javax.swing.JTextField();
         jLabel36 = new javax.swing.JLabel();
         jLabel32 = new javax.swing.JLabel();
-        jLabel44 = new javax.swing.JLabel();
         jLabel47 = new javax.swing.JLabel();
         jLabel52 = new javax.swing.JLabel();
+        jLabel37 = new javax.swing.JLabel();
+        jLabel42 = new javax.swing.JLabel();
+        jLabel44 = new javax.swing.JLabel();
+        jLabel68 = new javax.swing.JLabel();
+        jLabel69 = new javax.swing.JLabel();
         painel4 = new javax.swing.JPanel();
         paralelepipedo_btnCalcArea = new javax.swing.JButton();
         paralelepipedo_alturaArea = new javax.swing.JTextField();
@@ -169,17 +193,8 @@ public class Janela extends javax.swing.JFrame {
         jLabel22 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
         paralelepipedo_respArea = new javax.swing.JTextField();
-        jLabel24 = new javax.swing.JLabel();
-        paralelepipedo_volLarg = new javax.swing.JTextField();
-        jLabel25 = new javax.swing.JLabel();
-        paralelepipedo_VolComp = new javax.swing.JTextField();
-        jLabel26 = new javax.swing.JLabel();
         jLabel27 = new javax.swing.JLabel();
         paralelepipedo_volResp = new javax.swing.JTextField();
-        paralelepipedo_btnCalcVol = new javax.swing.JButton();
-        paralelepipedo_volAltura = new javax.swing.JTextField();
-        criarParalelepipedo = new javax.swing.JButton();
-        paralelepipedo_salvarObjeto = new javax.swing.JButton();
         jLabel29 = new javax.swing.JLabel();
         paralelepipedo_EixoX = new javax.swing.JTextField();
         paralelepipedo_EixoY = new javax.swing.JTextField();
@@ -190,20 +205,19 @@ public class Janela extends javax.swing.JFrame {
         jLabel57 = new javax.swing.JLabel();
         jLabel60 = new javax.swing.JLabel();
         jLabel61 = new javax.swing.JLabel();
+        labelcone16 = new javax.swing.JLabel();
+        labelcone17 = new javax.swing.JLabel();
+        labelcone18 = new javax.swing.JLabel();
+        labelcone19 = new javax.swing.JLabel();
+        labelcone20 = new javax.swing.JLabel();
         painel5 = new javax.swing.JPanel();
         jLabel46 = new javax.swing.JLabel();
-        labelcone8 = new javax.swing.JLabel();
         jLabel48 = new javax.swing.JLabel();
-        quad_salvarObj = new javax.swing.JButton();
         quad_respPer = new javax.swing.JTextField();
-        quad_per_LadoA = new javax.swing.JTextField();
-        quad_btnPerimetro = new javax.swing.JButton();
         labelcone9 = new javax.swing.JLabel();
         quad_eixoX = new javax.swing.JTextField();
         labelcone10 = new javax.swing.JLabel();
         quad_eixoY = new javax.swing.JTextField();
-        quad_CriarObj = new javax.swing.JButton();
-        labelcone11 = new javax.swing.JLabel();
         quad_btnArea = new javax.swing.JButton();
         jLabel49 = new javax.swing.JLabel();
         jLabel51 = new javax.swing.JLabel();
@@ -212,38 +226,15 @@ public class Janela extends javax.swing.JFrame {
         quad_areaLadoA = new javax.swing.JTextField();
         jLabel66 = new javax.swing.JLabel();
         jLabel67 = new javax.swing.JLabel();
-        painel6 = new javax.swing.JPanel();
-        jLabel28 = new javax.swing.JLabel();
-        labelcone4 = new javax.swing.JLabel();
-        jLabel35 = new javax.swing.JLabel();
-        cilindro_salvarObj = new javax.swing.JButton();
-        cilindro_respArea = new javax.swing.JTextField();
-        cilindro_areaTxtRaio = new javax.swing.JTextField();
-        cilindro_areaTxtArea = new javax.swing.JTextField();
-        cilindro_btnArea = new javax.swing.JButton();
-        cilindro_eixoX = new javax.swing.JTextField();
-        labelcone5 = new javax.swing.JLabel();
-        cilindro_eixoY = new javax.swing.JTextField();
-        labelcone6 = new javax.swing.JLabel();
-        cilindro_criarObj = new javax.swing.JButton();
-        jLabel37 = new javax.swing.JLabel();
-        labelcone7 = new javax.swing.JLabel();
-        jLabel45 = new javax.swing.JLabel();
-        cilindro_respVol = new javax.swing.JTextField();
-        cilindro_volRaio = new javax.swing.JTextField();
-        cilindro_volAlt = new javax.swing.JTextField();
-        cilindro_btnVolume = new javax.swing.JButton();
-        jLabel58 = new javax.swing.JLabel();
-        jLabel59 = new javax.swing.JLabel();
-        jLabel62 = new javax.swing.JLabel();
-        jLabel63 = new javax.swing.JLabel();
+        labelcone28 = new javax.swing.JLabel();
+        labelcone29 = new javax.swing.JLabel();
+        labelcone30 = new javax.swing.JLabel();
         painel7 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         labelcone1 = new javax.swing.JLabel();
         jLabel38 = new javax.swing.JLabel();
         equacao_x1 = new javax.swing.JTextField();
         equacao_A = new javax.swing.JTextField();
-        equacao_salvarObj = new javax.swing.JButton();
         equacao_calcular = new javax.swing.JButton();
         jLabel39 = new javax.swing.JLabel();
         labelcone2 = new javax.swing.JLabel();
@@ -254,8 +245,6 @@ public class Janela extends javax.swing.JFrame {
         equacao_x2 = new javax.swing.JTextField();
         jLabel41 = new javax.swing.JLabel();
         equacao_Delta = new javax.swing.JTextField();
-        equacao_criarObj = new javax.swing.JButton();
-        jLabel42 = new javax.swing.JLabel();
         jLabel64 = new javax.swing.JLabel();
         jLabel65 = new javax.swing.JLabel();
         painel8 = new javax.swing.JPanel();
@@ -275,6 +264,138 @@ public class Janela extends javax.swing.JFrame {
         painelFundo.setMinimumSize(new java.awt.Dimension(820, 550));
         painelFundo.setPreferredSize(new java.awt.Dimension(820, 550));
         painelFundo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        painel6.setBackground(new java.awt.Color(220, 123, 103));
+        painel6.setLayout(null);
+
+        jLabel28.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        jLabel28.setText("Altura:");
+        painel6.add(jLabel28);
+        jLabel28.setBounds(50, 160, 49, 34);
+
+        labelcone4.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        labelcone4.setText("Raio:");
+        painel6.add(labelcone4);
+        labelcone4.setBounds(61, 124, 38, 39);
+
+        jLabel35.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        jLabel35.setText("Area Total:");
+        painel6.add(jLabel35);
+        jLabel35.setBounds(10, 287, 81, 39);
+
+        cilindro_respArea.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cilindro_respAreaActionPerformed(evt);
+            }
+        });
+        painel6.add(cilindro_respArea);
+        cilindro_respArea.setBounds(101, 295, 74, 20);
+
+        cilindro_areaTxtRaio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cilindro_areaTxtRaioActionPerformed(evt);
+            }
+        });
+        painel6.add(cilindro_areaTxtRaio);
+        cilindro_areaTxtRaio.setBounds(110, 130, 72, 20);
+
+        cilindro_areaTxtArea.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cilindro_areaTxtAreaActionPerformed(evt);
+            }
+        });
+        painel6.add(cilindro_areaTxtArea);
+        cilindro_areaTxtArea.setBounds(110, 160, 72, 20);
+
+        cilindro_btnArea.setText("Calcular");
+        cilindro_btnArea.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cilindro_btnAreaActionPerformed(evt);
+            }
+        });
+        painel6.add(cilindro_btnArea);
+        cilindro_btnArea.setBounds(237, 346, 90, 23);
+
+        cilindro_eixoX.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cilindro_eixoXActionPerformed(evt);
+            }
+        });
+        painel6.add(cilindro_eixoX);
+        cilindro_eixoX.setBounds(113, 30, 72, 20);
+
+        labelcone5.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        labelcone5.setText("m²");
+        painel6.add(labelcone5);
+        labelcone5.setBounds(190, 120, 41, 39);
+
+        cilindro_eixoY.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cilindro_eixoYActionPerformed(evt);
+            }
+        });
+        painel6.add(cilindro_eixoY);
+        cilindro_eixoY.setBounds(278, 30, 72, 20);
+
+        labelcone6.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        labelcone6.setText("Eixo Y: ");
+        painel6.add(labelcone6);
+        labelcone6.setBounds(211, 22, 63, 39);
+
+        jLabel45.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        jLabel45.setText("Volume:");
+        painel6.add(jLabel45);
+        jLabel45.setBounds(32, 339, 61, 39);
+
+        cilindro_respVol.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cilindro_respVolActionPerformed(evt);
+            }
+        });
+        painel6.add(cilindro_respVol);
+        cilindro_respVol.setBounds(103, 347, 74, 20);
+
+        jLabel58.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        jLabel58.setText("Formula Área");
+        painel6.add(jLabel58);
+        jLabel58.setBounds(275, 104, 199, 23);
+
+        jLabel59.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        jLabel59.setText("Formula Volume");
+        painel6.add(jLabel59);
+        jLabel59.setBounds(257, 235, 199, 23);
+
+        jLabel62.setFont(new java.awt.Font("Calibri Light", 3, 24)); // NOI18N
+        jLabel62.setText(" A = 2 . pi  . r ( r + h )");
+        painel6.add(jLabel62);
+        jLabel62.setBounds(244, 145, 223, 35);
+
+        jLabel63.setFont(new java.awt.Font("Calibri Light", 3, 24)); // NOI18N
+        jLabel63.setText("V = pi . r² . h");
+        painel6.add(jLabel63);
+        jLabel63.setBounds(277, 264, 179, 55);
+
+        labelcone7.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        labelcone7.setText("Eixo X: ");
+        painel6.add(labelcone7);
+        labelcone7.setBounds(50, 22, 59, 39);
+
+        labelcone13.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        labelcone13.setText("m³");
+        painel6.add(labelcone13);
+        labelcone13.setBounds(181, 340, 41, 39);
+
+        labelcone14.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        labelcone14.setText("m²");
+        painel6.add(labelcone14);
+        labelcone14.setBounds(190, 150, 41, 39);
+
+        labelcone15.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        labelcone15.setText("m²");
+        painel6.add(labelcone15);
+        labelcone15.setBounds(185, 288, 41, 39);
+
+        painelFundo.add(painel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 0, 560, 550));
 
         PainelBotoes.setBackground(new java.awt.Color(56, 55, 55));
 
@@ -342,7 +463,7 @@ public class Janela extends javax.swing.JFrame {
 
         titulo1.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
         titulo1.setForeground(new java.awt.Color(204, 204, 204));
-        titulo1.setText("v0.04");
+        titulo1.setText("v0.05");
 
         titulo2.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
         titulo2.setForeground(new java.awt.Color(204, 204, 204));
@@ -777,14 +898,14 @@ public class Janela extends javax.swing.JFrame {
             }
         });
 
-        limparCampo.setText("Limpar Campo");
+        limparCampo.setText("Apagar Objetos");
         limparCampo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 limparCampoActionPerformed(evt);
             }
         });
 
-        salvar_objetos.setText("Gravar Objeto");
+        salvar_objetos.setText("Salvar Objeto");
         salvar_objetos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 salvar_objetosActionPerformed(evt);
@@ -850,17 +971,36 @@ public class Janela extends javax.swing.JFrame {
         painel2.setMaximumSize(new java.awt.Dimension(820, 560));
         painel2.setMinimumSize(new java.awt.Dimension(820, 560));
         painel2.setPreferredSize(new java.awt.Dimension(820, 550));
+        painel2.setLayout(null);
 
         jLabel8.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
-        jLabel8.setText("Calcular Perimetro");
+        jLabel8.setText("Formula Perimetro");
+        painel2.add(jLabel8);
+        jLabel8.setBounds(310, 130, 162, 28);
 
         jLabel11.setText("Lado A:");
+        painel2.add(jLabel11);
+        jLabel11.setBounds(57, 141, 60, 40);
 
         jLabel12.setText("Lado C:");
+        painel2.add(jLabel12);
+        jLabel12.setBounds(57, 206, 60, 40);
 
         jLabel13.setText("Lado B:");
+        painel2.add(jLabel13);
+        jLabel13.setBounds(57, 172, 60, 40);
+        painel2.add(triangulo_ladoAtxt);
+        triangulo_ladoAtxt.setBounds(120, 150, 77, 20);
+        painel2.add(triangulo_ladoBtxt);
+        triangulo_ladoBtxt.setBounds(120, 180, 77, 20);
+        painel2.add(triangulo_ladoCtxt);
+        triangulo_ladoCtxt.setBounds(120, 210, 77, 20);
 
         jLabel9.setText("Perimetro:");
+        painel2.add(jLabel9);
+        jLabel9.setBounds(40, 370, 70, 20);
+        painel2.add(triangulo_resp_perimetro);
+        triangulo_resp_perimetro.setBounds(120, 360, 77, 20);
 
         triangulo_btn_calcPerimetro.setText("Calcular");
         triangulo_btn_calcPerimetro.addActionListener(new java.awt.event.ActionListener() {
@@ -868,188 +1008,93 @@ public class Janela extends javax.swing.JFrame {
                 triangulo_btn_calcPerimetroActionPerformed(evt);
             }
         });
-
-        triangulo_btn_calcArea.setText("Calcular");
-        triangulo_btn_calcArea.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                triangulo_btn_calcAreaActionPerformed(evt);
-            }
-        });
+        painel2.add(triangulo_btn_calcPerimetro);
+        triangulo_btn_calcPerimetro.setBounds(120, 310, 90, 23);
+        painel2.add(triangulo_alturaTxt);
+        triangulo_alturaTxt.setBounds(120, 240, 77, 20);
 
         jLabel14.setText("Altura:");
+        painel2.add(jLabel14);
+        jLabel14.setBounds(60, 240, 50, 40);
 
         jLabel16.setText("Base:");
+        painel2.add(jLabel16);
+        jLabel16.setBounds(60, 270, 50, 40);
+        painel2.add(triangulo_baseTxt);
+        triangulo_baseTxt.setBounds(120, 270, 77, 20);
+        painel2.add(triangulo_respAreaTxt);
+        triangulo_respAreaTxt.setBounds(120, 390, 77, 20);
 
         jLabel10.setText("Area:");
+        painel2.add(jLabel10);
+        jLabel10.setBounds(70, 390, 50, 20);
 
         jLabel17.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
-        jLabel17.setText("Calcular Area");
+        jLabel17.setText("Formula Area");
+        painel2.add(jLabel17);
+        jLabel17.setBounds(340, 250, 154, 28);
+        painel2.add(triangulo_eixoX);
+        triangulo_eixoX.setBounds(80, 60, 77, 20);
 
         jLabel18.setText("Eixo X: ");
+        painel2.add(jLabel18);
+        jLabel18.setBounds(30, 50, 50, 40);
 
         jLabel19.setText("Eixo Y: ");
+        painel2.add(jLabel19);
+        jLabel19.setBounds(170, 54, 60, 30);
 
         triangulo_eixoY.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 triangulo_eixoYActionPerformed(evt);
             }
         });
-
-        triangulo_salvarObjeto.setText("Salvar Objeto");
-        triangulo_salvarObjeto.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                triangulo_salvarObjetoActionPerformed(evt);
-            }
-        });
-
-        criarObjeto_Triangulo.setText("Criar Objeto");
-        criarObjeto_Triangulo.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                criarObjeto_TrianguloActionPerformed(evt);
-            }
-        });
-
-        jLabel43.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
-        jLabel43.setText("Crie um objeto antes de iniciar.");
+        painel2.add(triangulo_eixoY);
+        triangulo_eixoY.setBounds(230, 60, 77, 20);
 
         jLabel50.setIcon(new javax.swing.ImageIcon(getClass().getResource("/prototipointerface/formula_area-triangulo.png"))); // NOI18N
+        painel2.add(jLabel50);
+        jLabel50.setBounds(290, 270, 183, 78);
 
         jLabel53.setFont(new java.awt.Font("Calibri Light", 3, 24)); // NOI18N
         jLabel53.setText("P = ( a + b + c )");
+        painel2.add(jLabel53);
+        jLabel53.setBounds(310, 150, 163, 52);
 
-        javax.swing.GroupLayout painel2Layout = new javax.swing.GroupLayout(painel2);
-        painel2.setLayout(painel2Layout);
-        painel2Layout.setHorizontalGroup(
-            painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(painel2Layout.createSequentialGroup()
-                .addGroup(painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(painel2Layout.createSequentialGroup()
-                        .addGap(57, 57, 57)
-                        .addGroup(painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(painel2Layout.createSequentialGroup()
-                                .addGroup(painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel13)
-                                    .addComponent(jLabel12)
-                                    .addComponent(jLabel11, javax.swing.GroupLayout.Alignment.TRAILING))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(triangulo_ladoCtxt, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(painel2Layout.createSequentialGroup()
-                                        .addGroup(painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(triangulo_ladoAtxt, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(triangulo_ladoBtxt, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGap(48, 48, 48)
-                                        .addComponent(jLabel53, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                            .addGroup(painel2Layout.createSequentialGroup()
-                                .addComponent(triangulo_btn_calcPerimetro)
-                                .addGap(70, 70, 70)
-                                .addComponent(jLabel9)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(triangulo_resp_perimetro, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(painel2Layout.createSequentialGroup()
-                        .addGroup(painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(painel2Layout.createSequentialGroup()
-                                .addGap(39, 39, 39)
-                                .addGroup(painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(triangulo_btn_calcArea)
-                                    .addGroup(painel2Layout.createSequentialGroup()
-                                        .addGroup(painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addComponent(jLabel16)
-                                            .addComponent(jLabel14))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addGroup(painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(triangulo_baseTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(triangulo_alturaTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                                .addGap(38, 38, 38))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, painel2Layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)))
-                        .addComponent(jLabel50, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(painel2Layout.createSequentialGroup()
-                        .addGap(181, 181, 181)
-                        .addComponent(jLabel10)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(triangulo_respAreaTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(painel2Layout.createSequentialGroup()
-                        .addGap(375, 375, 375)
-                        .addComponent(triangulo_salvarObjeto))
-                    .addGroup(painel2Layout.createSequentialGroup()
-                        .addGap(47, 47, 47)
-                        .addGroup(painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel43)
-                            .addGroup(painel2Layout.createSequentialGroup()
-                                .addComponent(jLabel18)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(triangulo_eixoX, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel19)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(triangulo_eixoY, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(36, 36, 36)
-                        .addComponent(criarObjeto_Triangulo))
-                    .addGroup(painel2Layout.createSequentialGroup()
-                        .addGap(32, 32, 32)
-                        .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(346, Short.MAX_VALUE))
-        );
-        painel2Layout.setVerticalGroup(
-            painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(painel2Layout.createSequentialGroup()
-                .addGap(26, 26, 26)
-                .addGroup(painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(criarObjeto_Triangulo)
-                    .addComponent(jLabel43, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel19)
-                    .addComponent(triangulo_eixoY, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(triangulo_eixoX, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(25, 25, 25)
-                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(painel2Layout.createSequentialGroup()
-                        .addGroup(painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(triangulo_ladoAtxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(3, 3, 3)
-                        .addGroup(painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(triangulo_ladoBtxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(painel2Layout.createSequentialGroup()
-                        .addGap(7, 7, 7)
-                        .addComponent(jLabel53, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(triangulo_ladoCtxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(triangulo_btn_calcPerimetro)
-                    .addComponent(jLabel9)
-                    .addComponent(triangulo_resp_perimetro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(80, 80, 80)
-                .addGroup(painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(painel2Layout.createSequentialGroup()
-                        .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(triangulo_alturaTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(triangulo_baseTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(7, 7, 7)
-                        .addGroup(painel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(triangulo_respAreaTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel10)
-                            .addComponent(triangulo_btn_calcArea)
-                            .addComponent(triangulo_salvarObjeto)))
-                    .addComponent(jLabel50))
-                .addContainerGap(81, Short.MAX_VALUE))
-        );
+        labelcone21.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        labelcone21.setText("m²");
+        painel2.add(labelcone21);
+        labelcone21.setBounds(200, 380, 20, 40);
+
+        labelcone22.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        labelcone22.setText("m²");
+        painel2.add(labelcone22);
+        labelcone22.setBounds(200, 140, 20, 40);
+
+        labelcone23.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        labelcone23.setText("m²");
+        painel2.add(labelcone23);
+        labelcone23.setBounds(200, 170, 20, 40);
+
+        labelcone24.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        labelcone24.setText("m²");
+        painel2.add(labelcone24);
+        labelcone24.setBounds(200, 200, 20, 40);
+
+        labelcone25.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        labelcone25.setText("m²");
+        painel2.add(labelcone25);
+        labelcone25.setBounds(200, 230, 20, 40);
+
+        labelcone26.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        labelcone26.setText("m²");
+        painel2.add(labelcone26);
+        labelcone26.setBounds(200, 260, 20, 40);
+
+        labelcone27.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        labelcone27.setText("m²");
+        painel2.add(labelcone27);
+        labelcone27.setBounds(200, 350, 20, 40);
 
         painelFundo.add(painel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 0, 820, 550));
 
@@ -1057,29 +1102,24 @@ public class Janela extends javax.swing.JFrame {
         painel3.setLayout(null);
 
         jLabel3.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
-        jLabel3.setText("Calcular Volume");
+        jLabel3.setText("Formula Volume");
         painel3.add(jLabel3);
-        jLabel3.setBounds(40, 340, 170, 23);
+        jLabel3.setBounds(300, 280, 170, 23);
 
         jLabel4.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
-        jLabel4.setText("Calcular Area");
+        jLabel4.setText("Formula Area");
         painel3.add(jLabel4);
-        jLabel4.setBounds(40, 100, 160, 23);
+        jLabel4.setBounds(330, 150, 160, 23);
 
         jLabel5.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         jLabel5.setText("Altura:");
         painel3.add(jLabel5);
-        jLabel5.setBounds(41, 436, 49, 34);
-
-        labelcone.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
-        labelcone.setText("Raio:");
-        painel3.add(labelcone);
-        labelcone.setBounds(52, 391, 38, 39);
+        jLabel5.setBounds(40, 220, 49, 34);
 
         jLabel7.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         jLabel7.setText("Volume:");
         painel3.add(jLabel7);
-        jLabel7.setBounds(26, 481, 61, 39);
+        jLabel7.setBounds(40, 350, 70, 39);
 
         cone_respVol.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1087,15 +1127,7 @@ public class Janela extends javax.swing.JFrame {
             }
         });
         painel3.add(cone_respVol);
-        cone_respVol.setBounds(97, 489, 74, 20);
-
-        cone_raioVol.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cone_raioVolActionPerformed(evt);
-            }
-        });
-        painel3.add(cone_raioVol);
-        cone_raioVol.setBounds(94, 399, 72, 20);
+        cone_respVol.setBounds(110, 360, 74, 20);
 
         cone_alturaVol.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1103,16 +1135,7 @@ public class Janela extends javax.swing.JFrame {
             }
         });
         painel3.add(cone_alturaVol);
-        cone_alturaVol.setBounds(94, 442, 72, 20);
-
-        cone_btnVol.setText("Calcular");
-        cone_btnVol.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cone_btnVolActionPerformed(evt);
-            }
-        });
-        painel3.add(cone_btnVol);
-        cone_btnVol.setBounds(198, 488, 90, 23);
+        cone_alturaVol.setBounds(100, 220, 72, 20);
 
         jLabel31.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         jLabel31.setText("Geratriz: ");
@@ -1122,7 +1145,7 @@ public class Janela extends javax.swing.JFrame {
         jLabel33.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         jLabel33.setText("Area Total: ");
         painel3.add(jLabel33);
-        jLabel33.setBounds(26, 228, 85, 39);
+        jLabel33.setBounds(20, 320, 100, 39);
 
         cone_areaTotal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1130,7 +1153,7 @@ public class Janela extends javax.swing.JFrame {
             }
         });
         painel3.add(cone_areaTotal);
-        cone_areaTotal.setBounds(115, 236, 74, 20);
+        cone_areaTotal.setBounds(110, 330, 74, 20);
 
         cone_areaRaio.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1143,7 +1166,7 @@ public class Janela extends javax.swing.JFrame {
             }
         });
         painel3.add(cone_areaRaio);
-        cone_areaRaio.setBounds(107, 154, 72, 20);
+        cone_areaRaio.setBounds(100, 160, 72, 20);
 
         cone_areaGeratriz.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1151,25 +1174,7 @@ public class Janela extends javax.swing.JFrame {
             }
         });
         painel3.add(cone_areaGeratriz);
-        cone_areaGeratriz.setBounds(107, 189, 72, 20);
-
-        cone_criarObjeto.setText("criar objeto");
-        cone_criarObjeto.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cone_criarObjetoActionPerformed(evt);
-            }
-        });
-        painel3.add(cone_criarObjeto);
-        cone_criarObjeto.setBounds(213, 40, 87, 23);
-
-        cone_salvarObj.setText("Salvar Objeto");
-        cone_salvarObj.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cone_salvarObjActionPerformed(evt);
-            }
-        });
-        painel3.add(cone_salvarObj);
-        cone_salvarObj.setBounds(409, 488, 99, 23);
+        cone_areaGeratriz.setBounds(100, 190, 72, 20);
 
         cone_btnAreaTot.setText("Calcular");
         cone_btnAreaTot.addActionListener(new java.awt.event.ActionListener() {
@@ -1178,12 +1183,12 @@ public class Janela extends javax.swing.JFrame {
             }
         });
         painel3.add(cone_btnAreaTot);
-        cone_btnAreaTot.setBounds(213, 235, 90, 23);
+        cone_btnAreaTot.setBounds(100, 260, 90, 23);
 
         jLabel34.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         jLabel34.setText("Raio:");
         painel3.add(jLabel34);
-        jLabel34.setBounds(52, 154, 38, 23);
+        jLabel34.setBounds(50, 160, 38, 23);
 
         cone_eixoY.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1196,7 +1201,7 @@ public class Janela extends javax.swing.JFrame {
             }
         });
         painel3.add(cone_eixoY);
-        cone_eixoY.setBounds(416, 78, 72, 20);
+        cone_eixoY.setBounds(250, 40, 72, 20);
 
         cone_eixoX.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1204,31 +1209,51 @@ public class Janela extends javax.swing.JFrame {
             }
         });
         painel3.add(cone_eixoX);
-        cone_eixoX.setBounds(416, 41, 72, 20);
+        cone_eixoX.setBounds(110, 40, 72, 20);
 
         jLabel36.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         jLabel36.setText("Eixo Y:");
         painel3.add(jLabel36);
-        jLabel36.setBounds(352, 70, 49, 39);
+        jLabel36.setBounds(190, 30, 70, 39);
 
-        jLabel32.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
-        jLabel32.setText("Eixo X:");
+        jLabel32.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jLabel32.setText("m²");
         painel3.add(jLabel32);
-        jLabel32.setBounds(349, 41, 49, 23);
-
-        jLabel44.setFont(new java.awt.Font("Calibri Light", 0, 12)); // NOI18N
-        jLabel44.setText("Crie um objeto antes de iniciar.");
-        painel3.add(jLabel44);
-        jLabel44.setBounds(41, 43, 153, 20);
+        jLabel32.setBounds(190, 220, 30, 18);
 
         jLabel47.setIcon(new javax.swing.ImageIcon(getClass().getResource("/prototipointerface/formula_volumeCone.png"))); // NOI18N
         painel3.add(jLabel47);
-        jLabel47.setBounds(290, 390, 190, 60);
+        jLabel47.setBounds(290, 310, 190, 60);
 
         jLabel52.setIcon(new javax.swing.ImageIcon(getClass().getResource("/prototipointerface/formula_areaCone.png"))); // NOI18N
         jLabel52.setText("jLabel47");
         painel3.add(jLabel52);
         jLabel52.setBounds(300, 170, 190, 40);
+
+        jLabel37.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        jLabel37.setText("Eixo X:");
+        painel3.add(jLabel37);
+        jLabel37.setBounds(50, 40, 60, 23);
+
+        jLabel42.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jLabel42.setText("m³");
+        painel3.add(jLabel42);
+        jLabel42.setBounds(190, 360, 30, 18);
+
+        jLabel44.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jLabel44.setText("m²");
+        painel3.add(jLabel44);
+        jLabel44.setBounds(190, 190, 30, 18);
+
+        jLabel68.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jLabel68.setText("m²");
+        painel3.add(jLabel68);
+        jLabel68.setBounds(190, 160, 30, 18);
+
+        jLabel69.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jLabel69.setText("m²");
+        painel3.add(jLabel69);
+        jLabel69.setBounds(190, 330, 30, 18);
 
         painelFundo.add(painel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 0, 560, 550));
 
@@ -1236,37 +1261,40 @@ public class Janela extends javax.swing.JFrame {
         painel4.setPreferredSize(new java.awt.Dimension(710, 810));
         painel4.setLayout(null);
 
-        paralelepipedo_btnCalcArea.setText(" Calcular  Area");
+        paralelepipedo_btnCalcArea.setText(" Calcular");
         paralelepipedo_btnCalcArea.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 paralelepipedo_btnCalcAreaActionPerformed(evt);
             }
         });
         painel4.add(paralelepipedo_btnCalcArea);
-        paralelepipedo_btnCalcArea.setBounds(56, 247, 103, 23);
+        paralelepipedo_btnCalcArea.setBounds(110, 250, 90, 23);
         painel4.add(paralelepipedo_alturaArea);
-        paralelepipedo_alturaArea.setBounds(84, 144, 77, 20);
+        paralelepipedo_alturaArea.setBounds(120, 140, 77, 20);
 
+        jLabel20.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         jLabel20.setText("Altura:");
         painel4.add(jLabel20);
-        jLabel20.setBounds(46, 140, 33, 28);
+        jLabel20.setBounds(60, 140, 90, 28);
         painel4.add(paralelepipedo_largArea);
-        paralelepipedo_largArea.setBounds(84, 212, 77, 20);
+        paralelepipedo_largArea.setBounds(120, 210, 77, 20);
 
+        jLabel21.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         jLabel21.setText("Largura:");
         painel4.add(jLabel21);
-        jLabel21.setBounds(39, 208, 41, 28);
+        jLabel21.setBounds(50, 210, 100, 28);
         painel4.add(paralelepipedo_compArea);
-        paralelepipedo_compArea.setBounds(84, 178, 77, 20);
+        paralelepipedo_compArea.setBounds(120, 180, 77, 20);
 
+        jLabel22.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         jLabel22.setText("Cumprimento:");
         painel4.add(jLabel22);
-        jLabel22.setBounds(10, 174, 67, 28);
+        jLabel22.setBounds(10, 174, 120, 28);
 
         jLabel23.setFont(new java.awt.Font("Calibri Light", 1, 18)); // NOI18N
-        jLabel23.setText("Calcular Volume");
+        jLabel23.setText("Formula Volume");
         painel4.add(jLabel23);
-        jLabel23.setBounds(70, 320, 170, 23);
+        jLabel23.setBounds(250, 260, 170, 23);
 
         paralelepipedo_respArea.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1274,105 +1302,83 @@ public class Janela extends javax.swing.JFrame {
             }
         });
         painel4.add(paralelepipedo_respArea);
-        paralelepipedo_respArea.setBounds(245, 212, 77, 20);
+        paralelepipedo_respArea.setBounds(120, 310, 77, 20);
 
-        jLabel24.setText("Altura:");
-        painel4.add(jLabel24);
-        jLabel24.setBounds(40, 350, 33, 28);
-        painel4.add(paralelepipedo_volLarg);
-        paralelepipedo_volLarg.setBounds(80, 430, 77, 20);
-
-        jLabel25.setText("Largura:");
-        painel4.add(jLabel25);
-        jLabel25.setBounds(40, 420, 41, 28);
-        painel4.add(paralelepipedo_VolComp);
-        paralelepipedo_VolComp.setBounds(80, 390, 77, 20);
-
-        jLabel26.setText("Cumprimento:");
-        painel4.add(jLabel26);
-        jLabel26.setBounds(10, 390, 67, 28);
-
-        jLabel27.setText("Volume");
+        jLabel27.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        jLabel27.setText("Volume:");
         painel4.add(jLabel27);
-        jLabel27.setBounds(190, 420, 40, 28);
+        jLabel27.setBounds(50, 340, 90, 28);
         painel4.add(paralelepipedo_volResp);
-        paralelepipedo_volResp.setBounds(240, 430, 77, 20);
+        paralelepipedo_volResp.setBounds(120, 340, 77, 20);
 
-        paralelepipedo_btnCalcVol.setText(" Calcular  Volume");
-        paralelepipedo_btnCalcVol.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                paralelepipedo_btnCalcVolActionPerformed(evt);
-            }
-        });
-        painel4.add(paralelepipedo_btnCalcVol);
-        paralelepipedo_btnCalcVol.setBounds(80, 460, 113, 23);
-
-        paralelepipedo_volAltura.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                paralelepipedo_volAlturaActionPerformed(evt);
-            }
-        });
-        painel4.add(paralelepipedo_volAltura);
-        paralelepipedo_volAltura.setBounds(80, 360, 77, 20);
-
-        criarParalelepipedo.setText("Criar Objeto");
-        criarParalelepipedo.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                criarParalelepipedoActionPerformed(evt);
-            }
-        });
-        painel4.add(criarParalelepipedo);
-        criarParalelepipedo.setBounds(75, 36, 91, 23);
-
-        paralelepipedo_salvarObjeto.setText("Salvar Objeto");
-        paralelepipedo_salvarObjeto.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                paralelepipedo_salvarObjetoActionPerformed(evt);
-            }
-        });
-        painel4.add(paralelepipedo_salvarObjeto);
-        paralelepipedo_salvarObjeto.setBounds(370, 480, 99, 23);
-
+        jLabel29.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         jLabel29.setText("Eixo X: ");
         painel4.add(jLabel29);
-        jLabel29.setBounds(214, 36, 36, 28);
+        jLabel29.setBounds(60, 50, 100, 28);
         painel4.add(paralelepipedo_EixoX);
-        paralelepipedo_EixoX.setBounds(254, 40, 77, 20);
+        paralelepipedo_EixoX.setBounds(120, 50, 77, 20);
         painel4.add(paralelepipedo_EixoY);
-        paralelepipedo_EixoY.setBounds(389, 40, 77, 20);
+        paralelepipedo_EixoY.setBounds(270, 50, 77, 20);
 
+        jLabel30.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         jLabel30.setText("Eixo Y: ");
         painel4.add(jLabel30);
-        jLabel30.setBounds(349, 36, 36, 28);
+        jLabel30.setBounds(200, 50, 70, 28);
 
+        jLabel54.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         jLabel54.setText("Area:");
         painel4.add(jLabel54);
-        jLabel54.setBounds(202, 200, 27, 28);
+        jLabel54.setBounds(60, 310, 80, 28);
 
         jLabel55.setFont(new java.awt.Font("Calibri Light", 1, 18)); // NOI18N
-        jLabel55.setText("Calcular Area");
+        jLabel55.setText("Formula Area");
         painel4.add(jLabel55);
-        jLabel55.setBounds(70, 90, 170, 23);
+        jLabel55.setBounds(290, 120, 170, 23);
 
         jLabel56.setFont(new java.awt.Font("Calibri Light", 3, 24)); // NOI18N
         jLabel56.setText(" .");
         painel4.add(jLabel56);
-        jLabel56.setBounds(350, 360, 60, 30);
+        jLabel56.setBounds(360, 290, 60, 30);
 
         jLabel57.setFont(new java.awt.Font("Calibri Light", 3, 24)); // NOI18N
         jLabel57.setText("V = ( a    b     c  )");
         painel4.add(jLabel57);
-        jLabel57.setBounds(240, 350, 180, 50);
+        jLabel57.setBounds(250, 280, 180, 50);
 
         jLabel60.setFont(new java.awt.Font("Calibri Light", 3, 24)); // NOI18N
         jLabel60.setText("AT = 2    (ab +ac + bc)");
         painel4.add(jLabel60);
-        jLabel60.setBounds(230, 140, 270, 50);
+        jLabel60.setBounds(260, 140, 270, 50);
 
         jLabel61.setFont(new java.awt.Font("Calibri Light", 3, 24)); // NOI18N
         jLabel61.setText(" .");
         painel4.add(jLabel61);
-        jLabel61.setBounds(310, 360, 60, 30);
+        jLabel61.setBounds(320, 290, 60, 30);
+
+        labelcone16.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        labelcone16.setText("m³");
+        painel4.add(labelcone16);
+        labelcone16.setBounds(200, 330, 20, 40);
+
+        labelcone17.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        labelcone17.setText("m²");
+        painel4.add(labelcone17);
+        labelcone17.setBounds(200, 140, 20, 30);
+
+        labelcone18.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        labelcone18.setText("m²");
+        painel4.add(labelcone18);
+        labelcone18.setBounds(200, 170, 20, 30);
+
+        labelcone19.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        labelcone19.setText("m²");
+        painel4.add(labelcone19);
+        labelcone19.setBounds(200, 210, 20, 30);
+
+        labelcone20.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        labelcone20.setText("m²");
+        painel4.add(labelcone20);
+        labelcone20.setBounds(200, 300, 20, 40);
 
         painelFundo.add(painel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 0, 560, 550));
 
@@ -1380,28 +1386,14 @@ public class Janela extends javax.swing.JFrame {
         painel5.setLayout(null);
 
         jLabel46.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
-        jLabel46.setText("Calcular Perimetro");
+        jLabel46.setText("Formula Perimetro");
         painel5.add(jLabel46);
-        jLabel46.setBounds(30, 360, 139, 23);
-
-        labelcone8.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
-        labelcone8.setText("Crie um objeto antes de iniciar os calculos");
-        painel5.add(labelcone8);
-        labelcone8.setBounds(35, 35, 306, 23);
+        jLabel46.setBounds(250, 230, 141, 23);
 
         jLabel48.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         jLabel48.setText("Perimetro:");
         painel5.add(jLabel48);
-        jLabel48.setBounds(16, 475, 78, 39);
-
-        quad_salvarObj.setText("Salvar Objeto");
-        quad_salvarObj.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                quad_salvarObjActionPerformed(evt);
-            }
-        });
-        painel5.add(quad_salvarObj);
-        quad_salvarObj.setBounds(399, 480, 120, 23);
+        jLabel48.setBounds(20, 260, 78, 39);
 
         quad_respPer.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1409,29 +1401,12 @@ public class Janela extends javax.swing.JFrame {
             }
         });
         painel5.add(quad_respPer);
-        quad_respPer.setBounds(98, 483, 74, 20);
-
-        quad_per_LadoA.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                quad_per_LadoAActionPerformed(evt);
-            }
-        });
-        painel5.add(quad_per_LadoA);
-        quad_per_LadoA.setBounds(100, 410, 72, 20);
-
-        quad_btnPerimetro.setText("Calcular");
-        quad_btnPerimetro.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                quad_btnPerimetroActionPerformed(evt);
-            }
-        });
-        painel5.add(quad_btnPerimetro);
-        quad_btnPerimetro.setBounds(199, 482, 71, 23);
+        quad_respPer.setBounds(110, 270, 74, 20);
 
         labelcone9.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         labelcone9.setText("Eixo X:");
         painel5.add(labelcone9);
-        labelcone9.setBounds(164, 64, 49, 39);
+        labelcone9.setBounds(50, 60, 49, 39);
 
         quad_eixoX.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1439,12 +1414,12 @@ public class Janela extends javax.swing.JFrame {
             }
         });
         painel5.add(quad_eixoX);
-        quad_eixoX.setBounds(217, 72, 72, 20);
+        quad_eixoX.setBounds(100, 70, 72, 20);
 
         labelcone10.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         labelcone10.setText("Eixo Y:");
         painel5.add(labelcone10);
-        labelcone10.setBounds(299, 64, 49, 39);
+        labelcone10.setBounds(180, 60, 49, 39);
 
         quad_eixoY.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1452,21 +1427,7 @@ public class Janela extends javax.swing.JFrame {
             }
         });
         painel5.add(quad_eixoY);
-        quad_eixoY.setBounds(352, 72, 72, 20);
-
-        quad_CriarObj.setText("Criar objeto");
-        quad_CriarObj.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                quad_CriarObjActionPerformed(evt);
-            }
-        });
-        painel5.add(quad_CriarObj);
-        quad_CriarObj.setBounds(35, 71, 89, 23);
-
-        labelcone11.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
-        labelcone11.setText("Lado A:");
-        painel5.add(labelcone11);
-        labelcone11.setBounds(40, 400, 55, 39);
+        quad_eixoY.setBounds(240, 70, 72, 20);
 
         quad_btnArea.setText("Calcular");
         quad_btnArea.addActionListener(new java.awt.event.ActionListener() {
@@ -1475,22 +1436,22 @@ public class Janela extends javax.swing.JFrame {
             }
         });
         painel5.add(quad_btnArea);
-        quad_btnArea.setBounds(230, 260, 71, 23);
+        quad_btnArea.setBounds(90, 190, 90, 23);
 
         jLabel49.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
-        jLabel49.setText("Calcular Area");
+        jLabel49.setText("Formula Area");
         painel5.add(jLabel49);
-        jLabel49.setBounds(45, 121, 99, 29);
+        jLabel49.setBounds(250, 130, 140, 29);
 
         jLabel51.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         jLabel51.setText("Area Total:");
         painel5.add(jLabel51);
-        jLabel51.setBounds(30, 250, 81, 39);
+        jLabel51.setBounds(20, 230, 81, 39);
 
         labelcone12.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         labelcone12.setText("Lado A:");
         painel5.add(labelcone12);
-        labelcone12.setBounds(63, 168, 55, 39);
+        labelcone12.setBounds(30, 140, 55, 39);
 
         quad_respArea.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1498,7 +1459,7 @@ public class Janela extends javax.swing.JFrame {
             }
         });
         painel5.add(quad_respArea);
-        quad_respArea.setBounds(130, 260, 74, 20);
+        quad_respArea.setBounds(110, 240, 74, 20);
 
         quad_areaLadoA.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1506,267 +1467,34 @@ public class Janela extends javax.swing.JFrame {
             }
         });
         painel5.add(quad_areaLadoA);
-        quad_areaLadoA.setBounds(128, 176, 72, 20);
+        quad_areaLadoA.setBounds(90, 150, 72, 20);
 
         jLabel66.setFont(new java.awt.Font("Calibri Light", 3, 24)); // NOI18N
         jLabel66.setText("A =  ( L . L . L . L)");
         painel5.add(jLabel66);
-        jLabel66.setBounds(230, 400, 210, 50);
+        jLabel66.setBounds(250, 260, 210, 50);
 
         jLabel67.setFont(new java.awt.Font("Calibri Light", 3, 24)); // NOI18N
         jLabel67.setText("P = ( L . L )");
         painel5.add(jLabel67);
         jLabel67.setBounds(260, 160, 120, 50);
 
+        labelcone28.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        labelcone28.setText("m²");
+        painel5.add(labelcone28);
+        labelcone28.setBounds(190, 260, 20, 40);
+
+        labelcone29.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        labelcone29.setText("m²");
+        painel5.add(labelcone29);
+        labelcone29.setBounds(170, 140, 20, 40);
+
+        labelcone30.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        labelcone30.setText("m²");
+        painel5.add(labelcone30);
+        labelcone30.setBounds(190, 230, 20, 40);
+
         painelFundo.add(painel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 0, 560, 550));
-
-        painel6.setBackground(new java.awt.Color(220, 123, 103));
-
-        jLabel28.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
-        jLabel28.setText("Altura:");
-
-        labelcone4.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
-        labelcone4.setText("Raio:");
-
-        jLabel35.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
-        jLabel35.setText("Area Total:");
-
-        cilindro_salvarObj.setText("Salvar Objeto");
-        cilindro_salvarObj.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cilindro_salvarObjActionPerformed(evt);
-            }
-        });
-
-        cilindro_respArea.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cilindro_respAreaActionPerformed(evt);
-            }
-        });
-
-        cilindro_areaTxtRaio.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cilindro_areaTxtRaioActionPerformed(evt);
-            }
-        });
-
-        cilindro_areaTxtArea.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cilindro_areaTxtAreaActionPerformed(evt);
-            }
-        });
-
-        cilindro_btnArea.setText("Calcular");
-        cilindro_btnArea.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cilindro_btnAreaActionPerformed(evt);
-            }
-        });
-
-        cilindro_eixoX.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cilindro_eixoXActionPerformed(evt);
-            }
-        });
-
-        labelcone5.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
-        labelcone5.setText("Eixo X: ");
-
-        cilindro_eixoY.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cilindro_eixoYActionPerformed(evt);
-            }
-        });
-
-        labelcone6.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
-        labelcone6.setText("Eixo Y: ");
-
-        cilindro_criarObj.setText("Criar Objeto");
-        cilindro_criarObj.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cilindro_criarObjActionPerformed(evt);
-            }
-        });
-
-        jLabel37.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
-        jLabel37.setText("Altura:");
-
-        labelcone7.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
-        labelcone7.setText("Raio:");
-
-        jLabel45.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
-        jLabel45.setText("Volume:");
-
-        cilindro_respVol.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cilindro_respVolActionPerformed(evt);
-            }
-        });
-
-        cilindro_volRaio.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cilindro_volRaioActionPerformed(evt);
-            }
-        });
-
-        cilindro_volAlt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cilindro_volAltActionPerformed(evt);
-            }
-        });
-
-        cilindro_btnVolume.setText("Calcular");
-        cilindro_btnVolume.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cilindro_btnVolumeActionPerformed(evt);
-            }
-        });
-
-        jLabel58.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
-        jLabel58.setText("Calcular Area");
-
-        jLabel59.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
-        jLabel59.setText("Calcular Volume");
-
-        jLabel62.setFont(new java.awt.Font("Calibri Light", 3, 24)); // NOI18N
-        jLabel62.setText(" A = 2 . pi  . r ( r + h )");
-
-        jLabel63.setFont(new java.awt.Font("Calibri Light", 3, 24)); // NOI18N
-        jLabel63.setText("V = pi . r² . h");
-
-        javax.swing.GroupLayout painel6Layout = new javax.swing.GroupLayout(painel6);
-        painel6.setLayout(painel6Layout);
-        painel6Layout.setHorizontalGroup(
-            painel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(painel6Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(painel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(painel6Layout.createSequentialGroup()
-                        .addGroup(painel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(painel6Layout.createSequentialGroup()
-                                .addGroup(painel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(jLabel28, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(labelcone4))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(painel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(cilindro_areaTxtRaio, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(cilindro_areaTxtArea, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(painel6Layout.createSequentialGroup()
-                                .addComponent(jLabel35)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(cilindro_respArea, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGroup(painel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(painel6Layout.createSequentialGroup()
-                                .addGap(27, 27, 27)
-                                .addComponent(cilindro_btnArea))
-                            .addGroup(painel6Layout.createSequentialGroup()
-                                .addGap(41, 41, 41)
-                                .addComponent(jLabel62, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, painel6Layout.createSequentialGroup()
-                        .addComponent(cilindro_criarObj)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 87, Short.MAX_VALUE)
-                        .addComponent(labelcone5)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(cilindro_eixoX, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(26, 26, 26)
-                        .addComponent(labelcone6)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(cilindro_eixoY, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(86, 86, 86))))
-            .addGroup(painel6Layout.createSequentialGroup()
-                .addGap(31, 31, 31)
-                .addComponent(jLabel58, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(painel6Layout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addGroup(painel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(painel6Layout.createSequentialGroup()
-                        .addComponent(jLabel59, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())
-                    .addGroup(painel6Layout.createSequentialGroup()
-                        .addGroup(painel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(painel6Layout.createSequentialGroup()
-                                .addGroup(painel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(jLabel37, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(labelcone7))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(painel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(cilindro_volRaio, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(cilindro_volAlt, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(painel6Layout.createSequentialGroup()
-                                .addComponent(jLabel45)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(cilindro_respVol, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGroup(painel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(painel6Layout.createSequentialGroup()
-                                .addGap(27, 27, 27)
-                                .addComponent(cilindro_btnVolume)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(cilindro_salvarObj)
-                                .addGap(26, 26, 26))
-                            .addGroup(painel6Layout.createSequentialGroup()
-                                .addGap(54, 54, 54)
-                                .addComponent(jLabel63, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))))
-        );
-        painel6Layout.setVerticalGroup(
-            painel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(painel6Layout.createSequentialGroup()
-                .addGap(15, 15, 15)
-                .addGroup(painel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(cilindro_criarObj)
-                    .addComponent(cilindro_eixoX, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(labelcone5, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cilindro_eixoY, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(labelcone6, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(41, 41, 41)
-                .addComponent(jLabel58)
-                .addGroup(painel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(painel6Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(painel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(cilindro_areaTxtRaio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(labelcone4, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(painel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel28, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(cilindro_areaTxtArea, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(painel6Layout.createSequentialGroup()
-                        .addGap(27, 27, 27)
-                        .addComponent(jLabel62, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(painel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel35, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cilindro_respArea, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cilindro_btnArea))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 83, Short.MAX_VALUE)
-                .addComponent(jLabel59)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(painel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(cilindro_salvarObj)
-                    .addGroup(painel6Layout.createSequentialGroup()
-                        .addGroup(painel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(painel6Layout.createSequentialGroup()
-                                .addGroup(painel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(cilindro_volRaio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(labelcone7, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(painel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel37, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(cilindro_volAlt, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, painel6Layout.createSequentialGroup()
-                                .addGap(9, 9, 9)
-                                .addComponent(jLabel63, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(painel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel45, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(cilindro_respVol, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(cilindro_btnVolume))))
-                .addGap(51, 51, 51))
-        );
-
-        painelFundo.add(painel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 0, 560, 550));
 
         painel7.setBackground(new java.awt.Color(220, 123, 103));
         painel7.setPreferredSize(new java.awt.Dimension(710, 560));
@@ -1775,17 +1503,17 @@ public class Janela extends javax.swing.JFrame {
         jLabel6.setFont(new java.awt.Font("Calibri", 0, 36)); // NOI18N
         jLabel6.setText("(Bhaskara)");
         painel7.add(jLabel6);
-        jLabel6.setBounds(107, 142, 155, 54);
+        jLabel6.setBounds(120, 70, 155, 54);
 
         labelcone1.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         labelcone1.setText("A: ");
         painel7.add(labelcone1);
-        labelcone1.setBounds(50, 240, 19, 20);
+        labelcone1.setBounds(60, 170, 19, 20);
 
         jLabel38.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         jLabel38.setText("X1:");
         painel7.add(jLabel38);
-        jLabel38.setBounds(54, 453, 23, 23);
+        jLabel38.setBounds(60, 390, 23, 23);
 
         equacao_x1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1793,7 +1521,7 @@ public class Janela extends javax.swing.JFrame {
             }
         });
         painel7.add(equacao_x1);
-        equacao_x1.setBounds(87, 453, 74, 20);
+        equacao_x1.setBounds(100, 390, 74, 20);
 
         equacao_A.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1801,16 +1529,7 @@ public class Janela extends javax.swing.JFrame {
             }
         });
         painel7.add(equacao_A);
-        equacao_A.setBounds(90, 240, 72, 20);
-
-        equacao_salvarObj.setText("Salvar Objeto");
-        equacao_salvarObj.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                equacao_salvarObjActionPerformed(evt);
-            }
-        });
-        painel7.add(equacao_salvarObj);
-        equacao_salvarObj.setBounds(358, 482, 99, 23);
+        equacao_A.setBounds(100, 170, 72, 20);
 
         equacao_calcular.setText("Calcular");
         equacao_calcular.addActionListener(new java.awt.event.ActionListener() {
@@ -1819,17 +1538,17 @@ public class Janela extends javax.swing.JFrame {
             }
         });
         painel7.add(equacao_calcular);
-        equacao_calcular.setBounds(199, 482, 71, 23);
+        equacao_calcular.setBounds(100, 260, 100, 23);
 
         jLabel39.setFont(new java.awt.Font("Calibri", 0, 36)); // NOI18N
         jLabel39.setText("Equação de Segundo Grau");
         painel7.add(jLabel39);
-        jLabel39.setBounds(72, 82, 385, 54);
+        jLabel39.setBounds(80, 10, 385, 54);
 
         labelcone2.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         labelcone2.setText("B: ");
         painel7.add(labelcone2);
-        labelcone2.setBounds(50, 270, 19, 20);
+        labelcone2.setBounds(60, 200, 19, 20);
 
         equacao_B.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1837,7 +1556,7 @@ public class Janela extends javax.swing.JFrame {
             }
         });
         painel7.add(equacao_B);
-        equacao_B.setBounds(90, 270, 72, 20);
+        equacao_B.setBounds(100, 200, 72, 20);
 
         equacao_C.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1845,17 +1564,17 @@ public class Janela extends javax.swing.JFrame {
             }
         });
         painel7.add(equacao_C);
-        equacao_C.setBounds(90, 300, 72, 20);
+        equacao_C.setBounds(100, 230, 72, 20);
 
         labelcone3.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         labelcone3.setText("C: ");
         painel7.add(labelcone3);
-        labelcone3.setBounds(50, 300, 19, 20);
+        labelcone3.setBounds(60, 230, 19, 20);
 
         jLabel40.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         jLabel40.setText("X2:");
         painel7.add(jLabel40);
-        jLabel40.setBounds(54, 484, 23, 20);
+        jLabel40.setBounds(60, 420, 23, 20);
 
         equacao_x2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1863,12 +1582,12 @@ public class Janela extends javax.swing.JFrame {
             }
         });
         painel7.add(equacao_x2);
-        equacao_x2.setBounds(87, 483, 74, 20);
+        equacao_x2.setBounds(100, 420, 74, 20);
 
         jLabel41.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         jLabel41.setText("Delta:");
         painel7.add(jLabel41);
-        jLabel41.setBounds(33, 422, 44, 20);
+        jLabel41.setBounds(40, 350, 44, 20);
 
         equacao_Delta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1876,29 +1595,15 @@ public class Janela extends javax.swing.JFrame {
             }
         });
         painel7.add(equacao_Delta);
-        equacao_Delta.setBounds(87, 421, 74, 20);
-
-        equacao_criarObj.setText("criar objeto");
-        equacao_criarObj.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                equacao_criarObjActionPerformed(evt);
-            }
-        });
-        painel7.add(equacao_criarObj);
-        equacao_criarObj.setBounds(288, 30, 87, 23);
-
-        jLabel42.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
-        jLabel42.setText("Crie um objeto antes de iniciar.");
-        painel7.add(jLabel42);
-        jLabel42.setBounds(51, 32, 227, 20);
+        equacao_Delta.setBounds(100, 350, 74, 20);
 
         jLabel64.setIcon(new javax.swing.ImageIcon(getClass().getResource("/prototipointerface/bhaskara.png"))); // NOI18N
         painel7.add(jLabel64);
-        jLabel64.setBounds(180, 240, 360, 98);
+        jLabel64.setBounds(190, 170, 360, 98);
 
         jLabel65.setIcon(new javax.swing.ImageIcon(getClass().getResource("/prototipointerface/delta.png"))); // NOI18N
         painel7.add(jLabel65);
-        jLabel65.setBounds(250, 350, 280, 60);
+        jLabel65.setBounds(260, 280, 280, 60);
 
         painelFundo.add(painel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 0, 820, 550));
 
@@ -1941,6 +1646,7 @@ public class Janela extends javax.swing.JFrame {
     private void limparCampoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_limparCampoActionPerformed
         // TODO add your handling code here:
         telaObjetos.setText("");
+        menu.limparArraylist();
     }//GEN-LAST:event_limparCampoActionPerformed
 
     private void btnCarregarObjetosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCarregarObjetosActionPerformed
@@ -1957,29 +1663,9 @@ public class Janela extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btnCarregarObjetosActionPerformed
 
-    private void cone_btnVolActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cone_btnVolActionPerformed
-        try {
-            double altura = 0, raio = 0;
-
-            raio = Double.parseDouble(cone_raioVol.getText());
-            altura = Double.parseDouble(cone_alturaVol.getText());
-            cone_respVol.setText(String.valueOf(menu.cone_calcularVolume(raio, altura)));
-
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, e.getMessage());
-
-        }
-
-
-    }//GEN-LAST:event_cone_btnVolActionPerformed
-
     private void cone_alturaVolActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cone_alturaVolActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_cone_alturaVolActionPerformed
-
-    private void cone_raioVolActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cone_raioVolActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cone_raioVolActionPerformed
 
     private void cone_respVolActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cone_respVolActionPerformed
         // TODO add your handling code here:
@@ -2506,40 +2192,19 @@ public class Janela extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_cone_areaGeratrizActionPerformed
 
-    private void cone_criarObjetoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cone_criarObjetoActionPerformed
-        // TODO add your handling code here:
-        menu.criarObjeto(("Cone"));
-        JOptionPane.showMessageDialog(null, "Objeto criado.");
-    }//GEN-LAST:event_cone_criarObjetoActionPerformed
-
-    private void cone_salvarObjActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cone_salvarObjActionPerformed
-        // TODO add your handling code here:
-        try {
-            float pontoX = 0, pontoY = 0;
-            pontoX = Float.parseFloat(cone_eixoX.getText());   // adiciona os eixos
-            pontoY = Float.parseFloat(cone_eixoY.getText());
-            menu.criarObjeto("Cone");
-            menu.adicionarEixos("Cone", pontoX, pontoY);
-            JOptionPane.showMessageDialog(null, "Objeto salvo.");
-            limparCampos();
-        } catch (Exception e) {
-
-            JOptionPane.showMessageDialog(null, e.getMessage());
-
-        }
-
-    }//GEN-LAST:event_cone_salvarObjActionPerformed
-
     private void cone_btnAreaTotActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cone_btnAreaTotActionPerformed
         // TODO add your handling code here:
-        try {
-            double raio = 0, geratriz = 0;
-            raio = Double.parseDouble(cone_areaRaio.getText());
-            geratriz = Double.parseDouble(cone_areaGeratriz.getText());
-            cone_areaTotal.setText(String.valueOf((menu.cone_calcularArea(raio, geratriz))));
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, e.getMessage());
-        }
+        menu.criarObjeto(("Cone"));
+        float pontoX = 0, pontoY = 0;
+        pontoX = Float.parseFloat(cone_eixoX.getText());   // adiciona os eixos
+        pontoY = Float.parseFloat(cone_eixoY.getText());
+        double raio = 0, geratriz = 0, altura = 0;
+        raio = Double.parseDouble(cone_areaRaio.getText());
+        geratriz = Double.parseDouble(cone_areaGeratriz.getText());
+        altura = Double.parseDouble(cone_alturaVol.getText());
+        cone_respVol.setText(String.valueOf(menu.cone_calcularVolume(raio, altura)));
+        cone_areaTotal.setText(String.valueOf((menu.cone_calcularArea(raio, geratriz))));
+
 
     }//GEN-LAST:event_cone_btnAreaTotActionPerformed
 
@@ -2567,31 +2232,18 @@ public class Janela extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_equacao_AActionPerformed
 
-    private void equacao_salvarObjActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_equacao_salvarObjActionPerformed
-        // TODO add your handling code here: menu.criarObjeto("Cone");
-        try {
-            menu.criarObjeto("Equacao");
-            JOptionPane.showMessageDialog(null, "Objeto salvo.");
-            limparCampos();
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, e.getMessage());
-        }
-    }//GEN-LAST:event_equacao_salvarObjActionPerformed
-
     private void equacao_calcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_equacao_calcularActionPerformed
         // TODO add your handling code here:
-        try {
-            double x1, x2, delta, a, b, c;
-            a = Double.parseDouble(equacao_A.getText());
-            b = Double.parseDouble(equacao_B.getText());
-            c = Double.parseDouble(equacao_C.getText());
+        menu.criarObjeto("Equacao");
+        double x1, x2, delta, a, b, c;
+        a = Double.parseDouble(equacao_A.getText());
+        b = Double.parseDouble(equacao_B.getText());
+        c = Double.parseDouble(equacao_C.getText());
 
-            equacao_x1.setText(String.valueOf(menu.calcularEquacao("x1", a, b, c)));
-            equacao_x2.setText(String.valueOf(menu.calcularEquacao("x2", a, b, c)));
-            equacao_Delta.setText(String.valueOf(menu.calcularEquacao("Delta", a, b, c)));
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, e.getMessage());
-        }
+        equacao_x1.setText(String.valueOf(menu.calcularEquacao("x1", a, b, c)));
+        equacao_x2.setText(String.valueOf(menu.calcularEquacao("x2", a, b, c)));
+        equacao_Delta.setText(String.valueOf(menu.calcularEquacao("Delta", a, b, c)));
+
     }//GEN-LAST:event_equacao_calcularActionPerformed
 
     private void equacao_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_equacao_BActionPerformed
@@ -2610,132 +2262,9 @@ public class Janela extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_equacao_DeltaActionPerformed
 
-    private void equacao_criarObjActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_equacao_criarObjActionPerformed
-
-        menu.criarObjeto("Equacao");
-        JOptionPane.showMessageDialog(null, "Objeto criado");
-    }//GEN-LAST:event_equacao_criarObjActionPerformed
-
-    private void cilindro_salvarObjActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cilindro_salvarObjActionPerformed
-        // TODO add your handling code here:
-
-        try {
-            float pontoX = 0, pontoY = 0;
-            pontoX = Float.parseFloat(cilindro_eixoX.getText());   // adiciona os eixos
-            pontoY = Float.parseFloat(cilindro_eixoY.getText());
-            menu.adicionarEixos("Cilindro", pontoX, pontoY);
-            menu.criarObjeto("Cilindro");
-            JOptionPane.showMessageDialog(null, "Objeto salvo.");
-            limparCampos();
-
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, e.getMessage());
-        }
-    }//GEN-LAST:event_cilindro_salvarObjActionPerformed
-
-    private void cilindro_respAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cilindro_respAreaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cilindro_respAreaActionPerformed
-
-    private void cilindro_areaTxtRaioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cilindro_areaTxtRaioActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cilindro_areaTxtRaioActionPerformed
-
-    private void cilindro_areaTxtAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cilindro_areaTxtAreaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cilindro_areaTxtAreaActionPerformed
-
-    private void cilindro_btnAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cilindro_btnAreaActionPerformed
-
-        // TODO add your handling code here:
-        try {
-            double area, raio;
-            area = Double.parseDouble(cilindro_areaTxtArea.getText());
-            raio = Double.parseDouble(cilindro_areaTxtRaio.getText());
-
-            cilindro_respArea.setText(String.valueOf(menu.cilindro_calcularArea(raio, area)));
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, e.getMessage());
-        }
-    }//GEN-LAST:event_cilindro_btnAreaActionPerformed
-
-    private void cilindro_eixoXActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cilindro_eixoXActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cilindro_eixoXActionPerformed
-
-    private void cilindro_eixoYActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cilindro_eixoYActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cilindro_eixoYActionPerformed
-
-    private void cilindro_criarObjActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cilindro_criarObjActionPerformed
-        // TODO add your handling code here:
-        menu.criarObjeto("Cilindro");
-        JOptionPane.showMessageDialog(null, "Objeto Criado");
-
-
-    }//GEN-LAST:event_cilindro_criarObjActionPerformed
-
-    private void cilindro_respVolActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cilindro_respVolActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cilindro_respVolActionPerformed
-
-    private void cilindro_volRaioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cilindro_volRaioActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cilindro_volRaioActionPerformed
-
-    private void cilindro_volAltActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cilindro_volAltActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cilindro_volAltActionPerformed
-
-    private void cilindro_btnVolumeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cilindro_btnVolumeActionPerformed
-        // TODO add your handling code here:
-        try {
-            double altura, raio;
-            altura = Double.parseDouble(cilindro_volAlt.getText());
-            raio = Double.parseDouble(cilindro_volRaio.getText());
-            cilindro_respVol.setText(String.valueOf(menu.cilindro_calcularVolume(raio, altura)));
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, e.getMessage());
-        }
-
-    }//GEN-LAST:event_cilindro_btnVolumeActionPerformed
-
-    private void quad_salvarObjActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quad_salvarObjActionPerformed
-        // TODO add your handling code here:
-        try {
-            float pontoX = 0, pontoY = 0;
-            pontoX = Float.parseFloat(quad_eixoX.getText());   // adiciona os eixos
-            pontoY = Float.parseFloat(quad_eixoY.getText());
-            menu.criarObjeto("Quadrado");
-            menu.adicionarEixos("Quadrado", pontoX, pontoY);
-            JOptionPane.showMessageDialog(null, "Objeto salvo.");
-            limparCampos();
-
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, e.getMessage());
-        }
-    }//GEN-LAST:event_quad_salvarObjActionPerformed
-
     private void quad_respPerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quad_respPerActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_quad_respPerActionPerformed
-
-    private void quad_per_LadoAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quad_per_LadoAActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_quad_per_LadoAActionPerformed
-
-    private void quad_btnPerimetroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quad_btnPerimetroActionPerformed
-        // TODO add your handling code here:
-        try {
-            double ladoA;
-            ladoA = Double.parseDouble(quad_per_LadoA.getText());
-
-            quad_respPer.setText(String.valueOf(menu.quadrado_calcularPerimetro(ladoA)));
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, e.getMessage());
-        }
-
-    }//GEN-LAST:event_quad_btnPerimetroActionPerformed
 
     private void quad_eixoXActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quad_eixoXActionPerformed
         // TODO add your handling code here:
@@ -2745,22 +2274,19 @@ public class Janela extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_quad_eixoYActionPerformed
 
-    private void quad_CriarObjActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quad_CriarObjActionPerformed
-        // TODO add your handling code here:
-        menu.criarObjeto("Quadrado");
-        JOptionPane.showMessageDialog(null, "Objeto criado.");
-
-    }//GEN-LAST:event_quad_CriarObjActionPerformed
-
     private void quad_btnAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quad_btnAreaActionPerformed
         // TODO add your handling code here:
-        try {
-            double ladoA;
-            ladoA = Double.parseDouble(quad_areaLadoA.getText());
-            quad_respArea.setText(String.valueOf(menu.quadrado_calcularArea(ladoA)));
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, e.getMessage());
-        }
+        menu.criarObjeto("Quadrado");
+        double ladoA;
+        float x, y;
+        x = Float.parseFloat(quad_eixoX.getText());
+        y = Float.parseFloat(quad_eixoY.getText());
+        menu.adicionarEixos("Quadrado", x, y);
+        ladoA = Double.parseDouble(quad_areaLadoA.getText());
+        quad_respArea.setText(String.valueOf(menu.quadrado_calcularArea(ladoA)));
+        quad_respPer.setText(String.valueOf(menu.quadrado_calcularPerimetro(ladoA)));
+
+
     }//GEN-LAST:event_quad_btnAreaActionPerformed
 
     private void quad_respAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quad_respAreaActionPerformed
@@ -2771,101 +2297,27 @@ public class Janela extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_quad_areaLadoAActionPerformed
 
-    private void criarObjeto_TrianguloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_criarObjeto_TrianguloActionPerformed
-        // TODO add your handling code here:
-        menu.criarObjeto("Triangulo");
-        JOptionPane.showMessageDialog(null, "Objeto criado.");
-    }//GEN-LAST:event_criarObjeto_TrianguloActionPerformed
-
-    private void triangulo_salvarObjetoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_triangulo_salvarObjetoActionPerformed
-        // TODO add your handling code here:
-
-        try {
-            float pontoX = 0, pontoY = 0;
-            pontoX = Float.parseFloat(triangulo_eixoX.getText());   // adiciona os eixos
-            pontoY = Float.parseFloat(triangulo_eixoY.getText());
-            menu.criarObjeto("Triangulo");
-            menu.adicionarEixos("Triangulo", pontoX, pontoY);
-            JOptionPane.showMessageDialog(null, "Objeto salvo.");
-            limparCampos();
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, e.getMessage());
-        }
-    }//GEN-LAST:event_triangulo_salvarObjetoActionPerformed
-
     private void triangulo_eixoYActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_triangulo_eixoYActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_triangulo_eixoYActionPerformed
 
-    private void triangulo_btn_calcAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_triangulo_btn_calcAreaActionPerformed
-        // TODO add your handling code here:
-        try {
-            double base = 0, altura = 0;
-            base = Double.parseDouble(triangulo_baseTxt.getText());
-            altura = Double.parseDouble(triangulo_alturaTxt.getText());
-            triangulo_respAreaTxt.setText(String.valueOf((menu.triangulo_calcularArea(base, altura))));
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, e.getMessage());
-        }
-    }//GEN-LAST:event_triangulo_btn_calcAreaActionPerformed
-
     private void triangulo_btn_calcPerimetroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_triangulo_btn_calcPerimetroActionPerformed
         // TODO add your handling code here:
-        try {
-            double valorA = 0, valorB = 0, valorC = 0;
+        menu.criarObjeto("Triangulo");
+        double valorA = 0, valorB = 0, valorC = 0, base = 0, altura = 0;
+        float pontoX = 0, pontoY = 0;
+        pontoX = Float.parseFloat(triangulo_eixoX.getText());   // adiciona os eixos
+        pontoY = Float.parseFloat(triangulo_eixoY.getText());
+        menu.adicionarEixos("Triangulo", pontoX, pontoY);
+        valorA = Double.parseDouble(triangulo_ladoAtxt.getText());
+        valorB = Double.parseDouble(triangulo_ladoBtxt.getText());
+        valorC = Double.parseDouble(triangulo_ladoCtxt.getText());
+        triangulo_resp_perimetro.setText(String.valueOf(menu.triangulo_calcularPerimetro(valorA, valorB, valorC)));
+        base = Double.parseDouble(triangulo_baseTxt.getText());
+        altura = Double.parseDouble(triangulo_alturaTxt.getText());
+        triangulo_respAreaTxt.setText(String.valueOf((menu.triangulo_calcularArea(base, altura))));
 
-            valorA = Double.parseDouble(triangulo_ladoAtxt.getText());
-            valorB = Double.parseDouble(triangulo_ladoBtxt.getText());
-            valorC = Double.parseDouble(triangulo_ladoCtxt.getText());
-            triangulo_resp_perimetro.setText(String.valueOf(menu.triangulo_calcularPerimetro(valorA, valorB, valorC)));
-
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, e.getMessage());
-
-        }
     }//GEN-LAST:event_triangulo_btn_calcPerimetroActionPerformed
-
-    private void paralelepipedo_salvarObjetoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_paralelepipedo_salvarObjetoActionPerformed
-        // TODO add your handling code here:
-        try {
-            float pontoX = 0, pontoY = 0;
-            pontoX = Float.parseFloat(paralelepipedo_EixoX.getText());   // adiciona os eixos
-            pontoY = Float.parseFloat(paralelepipedo_EixoY.getText());
-            menu.adicionarEixos("Paralelepipedo", pontoX, pontoY);
-            menu.criarObjeto("Paralelepipedo");
-            JOptionPane.showMessageDialog(null, "Objeto salvo.");
-            limparCampos();
-
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, e.getMessage());
-        }
-    }//GEN-LAST:event_paralelepipedo_salvarObjetoActionPerformed
-
-    private void criarParalelepipedoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_criarParalelepipedoActionPerformed
-        // TODO add your handling code here:
-        //Cria um paralelepipedo
-        menu.criarObjeto("Paralelepipedo");
-        JOptionPane.showMessageDialog(null, "Objeto criado.");
-    }//GEN-LAST:event_criarParalelepipedoActionPerformed
-
-    private void paralelepipedo_volAlturaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_paralelepipedo_volAlturaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_paralelepipedo_volAlturaActionPerformed
-
-    private void paralelepipedo_btnCalcVolActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_paralelepipedo_btnCalcVolActionPerformed
-        // TODO add your handling code here:
-        try {
-            double altura, comprimento, largura;
-            altura = Double.parseDouble(paralelepipedo_volAltura.getText());
-            comprimento = Double.parseDouble(paralelepipedo_VolComp.getText());
-            largura = Double.parseDouble(paralelepipedo_volLarg.getText());
-            paralelepipedo_volResp.setText(String.valueOf(menu.paralelepide_calcularVolume(comprimento, altura, largura)));
-
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, e.getMessage());
-
-        }
-    }//GEN-LAST:event_paralelepipedo_btnCalcVolActionPerformed
 
     private void paralelepipedo_respAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_paralelepipedo_respAreaActionPerformed
         // TODO add your handling code here:
@@ -2873,18 +2325,58 @@ public class Janela extends javax.swing.JFrame {
 
     private void paralelepipedo_btnCalcAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_paralelepipedo_btnCalcAreaActionPerformed
         // TODO add your handling code here:
-        try {
-            double altura, comprimento, largura;
-            altura = Double.parseDouble(paralelepipedo_alturaArea.getText());
-            comprimento = Double.parseDouble(paralelepipedo_compArea.getText());
-            largura = Double.parseDouble(paralelepipedo_largArea.getText());
-            paralelepipedo_respArea.setText(String.valueOf(menu.paralelepipedo_calcularArea(comprimento, altura, largura)));
+        menu.criarObjeto("Paralelepipedo");
+        float x, y;
+        x = Float.parseFloat(paralelepipedo_EixoX.getText());
+        y = Float.parseFloat(paralelepipedo_EixoY.getText());
+        menu.adicionarEixos("Paralelepipedo", x, y);
+        double altura, comprimento, largura;
+        altura = Double.parseDouble(paralelepipedo_alturaArea.getText());
+        comprimento = Double.parseDouble(paralelepipedo_compArea.getText());
+        largura = Double.parseDouble(paralelepipedo_largArea.getText());
+        paralelepipedo_volResp.setText(String.valueOf(menu.paralelepide_calcularVolume(comprimento, altura, largura)));
+        paralelepipedo_respArea.setText(String.valueOf(menu.paralelepipedo_calcularArea(comprimento, altura, largura)));
 
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, e.getMessage());
 
-        }
     }//GEN-LAST:event_paralelepipedo_btnCalcAreaActionPerformed
+
+    private void cilindro_respVolActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cilindro_respVolActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cilindro_respVolActionPerformed
+
+    private void cilindro_eixoYActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cilindro_eixoYActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cilindro_eixoYActionPerformed
+
+    private void cilindro_eixoXActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cilindro_eixoXActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cilindro_eixoXActionPerformed
+
+    private void cilindro_btnAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cilindro_btnAreaActionPerformed
+
+        // TODO add your handling code here:
+        menu.criarObjeto("Cilindro");
+        double area, raio;
+        area = Double.parseDouble(cilindro_areaTxtArea.getText());
+        raio = Double.parseDouble(cilindro_areaTxtRaio.getText());
+
+        cilindro_respArea.setText(String.valueOf(menu.cilindro_calcularArea(raio, area)));
+        cilindro_respVol.setText(String.valueOf(menu.cilindro_calcularVolume(raio, area)));
+
+
+    }//GEN-LAST:event_cilindro_btnAreaActionPerformed
+
+    private void cilindro_areaTxtAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cilindro_areaTxtAreaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cilindro_areaTxtAreaActionPerformed
+
+    private void cilindro_areaTxtRaioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cilindro_areaTxtRaioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cilindro_areaTxtRaioActionPerformed
+
+    private void cilindro_respAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cilindro_respAreaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cilindro_respAreaActionPerformed
 
     public void setarCorBotao(JPanel panel) {   //parte vizual apenas
         panel.setBackground(new Color(68, 68, 68));
@@ -2920,51 +2412,55 @@ public class Janela extends javax.swing.JFrame {
 
     public void limparCampos() {
         //limpa os campos 
-        paralelepipedo_VolComp.setText("");
-        paralelepipedo_alturaArea.setText("");
-        paralelepipedo_compArea.setText((""));
-        paralelepipedo_largArea.setText("");
+        paralelepipedo_alturaArea.setText("0");
+        paralelepipedo_compArea.setText(("0"));
+        paralelepipedo_largArea.setText("0");
         paralelepipedo_respArea.setText("");
-        paralelepipedo_volAltura.setText("");
-        paralelepipedo_volLarg.setText("");
         paralelepipedo_volResp.setText("");
-        paralelepipedo_EixoX.setText("");
-        paralelepipedo_EixoY.setText("");
+        paralelepipedo_EixoX.setText("0");
+        paralelepipedo_EixoY.setText("0");
 
-        triangulo_eixoX.setText("");
-        triangulo_eixoY.setText("");
-        triangulo_alturaTxt.setText("");
-        triangulo_baseTxt.setText("");
-        triangulo_ladoAtxt.setText("");
-        triangulo_ladoBtxt.setText("");
-        triangulo_ladoCtxt.setText("");
+        triangulo_eixoX.setText("0");
+        triangulo_eixoY.setText("0");
+        triangulo_alturaTxt.setText("0");
+        triangulo_baseTxt.setText("0");
+        triangulo_ladoAtxt.setText("0");
+        triangulo_ladoBtxt.setText("0");
+        triangulo_ladoCtxt.setText("0");
         triangulo_respAreaTxt.setText("");
         triangulo_resp_perimetro.setText("");
 
-        quad_areaLadoA.setText((""));
-        quad_eixoX.setText((""));
-        quad_eixoY.setText((""));
+        quad_areaLadoA.setText(("0"));
+        quad_eixoX.setText(("0"));
+        quad_eixoY.setText(("0"));
         quad_respArea.setText((""));
         quad_respPer.setText((""));
-        quad_per_LadoA.setText((""));
 
-        cilindro_areaTxtArea.setText((""));
-        cilindro_areaTxtRaio.setText((""));
-        cilindro_eixoX.setText((""));
-        cilindro_eixoY.setText((""));
+        cilindro_areaTxtArea.setText(("0"));
+        cilindro_areaTxtRaio.setText(("0"));
+        cilindro_eixoX.setText(("0"));
+        cilindro_eixoY.setText(("0"));
         cilindro_respArea.setText((""));
         cilindro_respVol.setText((""));
-        cilindro_volAlt.setText((""));
-        cilindro_volRaio.setText((""));
 
-        cone_alturaVol.setText((""));
-        cone_areaGeratriz.setText((""));
-        cone_areaRaio.setText((""));
+        cone_alturaVol.setText(("0"));
+        cone_areaGeratriz.setText(("0"));
+        cone_areaRaio.setText(("0"));
         cone_areaTotal.setText((""));
-        cone_eixoX.setText((""));
-        cone_eixoY.setText((""));
-        cone_raioVol.setText((""));
+        cone_eixoX.setText(("0"));
+        cone_eixoY.setText(("0"));
         cone_respVol.setText((""));
+    }
+
+    public void iniciaVisivel() {
+        painel2.setVisible(false);
+        painel1.setVisible(true);
+        painel4.setVisible(false);
+        painel5.setVisible(false);
+        painel6.setVisible(false);
+        painel7.setVisible(false);
+        painel3.setVisible(false);
+        painel8.setVisible(false);
 
     }
 
@@ -3000,36 +2496,23 @@ public class Janela extends javax.swing.JFrame {
     private javax.swing.JTextField cilindro_areaTxtArea;
     private javax.swing.JTextField cilindro_areaTxtRaio;
     private javax.swing.JButton cilindro_btnArea;
-    private javax.swing.JButton cilindro_btnVolume;
-    private javax.swing.JButton cilindro_criarObj;
     private javax.swing.JTextField cilindro_eixoX;
     private javax.swing.JTextField cilindro_eixoY;
     private javax.swing.JTextField cilindro_respArea;
     private javax.swing.JTextField cilindro_respVol;
-    private javax.swing.JButton cilindro_salvarObj;
-    private javax.swing.JTextField cilindro_volAlt;
-    private javax.swing.JTextField cilindro_volRaio;
     private javax.swing.JTextField cone_alturaVol;
     private javax.swing.JTextField cone_areaGeratriz;
     private javax.swing.JTextField cone_areaRaio;
     private javax.swing.JTextField cone_areaTotal;
     private javax.swing.JButton cone_btnAreaTot;
-    private javax.swing.JButton cone_btnVol;
-    private javax.swing.JButton cone_criarObjeto;
     private javax.swing.JTextField cone_eixoX;
     private javax.swing.JTextField cone_eixoY;
-    private javax.swing.JTextField cone_raioVol;
     private javax.swing.JTextField cone_respVol;
-    private javax.swing.JButton cone_salvarObj;
-    private javax.swing.JButton criarObjeto_Triangulo;
-    private javax.swing.JButton criarParalelepipedo;
     private javax.swing.JTextField equacao_A;
     private javax.swing.JTextField equacao_B;
     private javax.swing.JTextField equacao_C;
     private javax.swing.JTextField equacao_Delta;
     private javax.swing.JButton equacao_calcular;
-    private javax.swing.JButton equacao_criarObj;
-    private javax.swing.JButton equacao_salvarObj;
     private javax.swing.JTextField equacao_x1;
     private javax.swing.JTextField equacao_x2;
     private javax.swing.JLabel jLabel1;
@@ -3048,9 +2531,6 @@ public class Janela extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
@@ -3069,7 +2549,6 @@ public class Janela extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel42;
-    private javax.swing.JLabel jLabel43;
     private javax.swing.JLabel jLabel44;
     private javax.swing.JLabel jLabel45;
     private javax.swing.JLabel jLabel46;
@@ -3096,22 +2575,39 @@ public class Janela extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel65;
     private javax.swing.JLabel jLabel66;
     private javax.swing.JLabel jLabel67;
+    private javax.swing.JLabel jLabel68;
+    private javax.swing.JLabel jLabel69;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JLabel labelcone;
     private javax.swing.JLabel labelcone1;
     private javax.swing.JLabel labelcone10;
-    private javax.swing.JLabel labelcone11;
     private javax.swing.JLabel labelcone12;
+    private javax.swing.JLabel labelcone13;
+    private javax.swing.JLabel labelcone14;
+    private javax.swing.JLabel labelcone15;
+    private javax.swing.JLabel labelcone16;
+    private javax.swing.JLabel labelcone17;
+    private javax.swing.JLabel labelcone18;
+    private javax.swing.JLabel labelcone19;
     private javax.swing.JLabel labelcone2;
+    private javax.swing.JLabel labelcone20;
+    private javax.swing.JLabel labelcone21;
+    private javax.swing.JLabel labelcone22;
+    private javax.swing.JLabel labelcone23;
+    private javax.swing.JLabel labelcone24;
+    private javax.swing.JLabel labelcone25;
+    private javax.swing.JLabel labelcone26;
+    private javax.swing.JLabel labelcone27;
+    private javax.swing.JLabel labelcone28;
+    private javax.swing.JLabel labelcone29;
     private javax.swing.JLabel labelcone3;
+    private javax.swing.JLabel labelcone30;
     private javax.swing.JLabel labelcone4;
     private javax.swing.JLabel labelcone5;
     private javax.swing.JLabel labelcone6;
     private javax.swing.JLabel labelcone7;
-    private javax.swing.JLabel labelcone8;
     private javax.swing.JLabel labelcone9;
     private javax.swing.JButton limparCampo;
     private javax.swing.JPanel linhaHorizontalPainel;
@@ -3126,27 +2622,18 @@ public class Janela extends javax.swing.JFrame {
     private javax.swing.JPanel painelFundo;
     private javax.swing.JTextField paralelepipedo_EixoX;
     private javax.swing.JTextField paralelepipedo_EixoY;
-    private javax.swing.JTextField paralelepipedo_VolComp;
     private javax.swing.JTextField paralelepipedo_alturaArea;
     private javax.swing.JButton paralelepipedo_btnCalcArea;
-    private javax.swing.JButton paralelepipedo_btnCalcVol;
     private javax.swing.JTextField paralelepipedo_compArea;
     private javax.swing.JTextField paralelepipedo_largArea;
     private javax.swing.JTextField paralelepipedo_respArea;
-    private javax.swing.JButton paralelepipedo_salvarObjeto;
-    private javax.swing.JTextField paralelepipedo_volAltura;
-    private javax.swing.JTextField paralelepipedo_volLarg;
     private javax.swing.JTextField paralelepipedo_volResp;
-    private javax.swing.JButton quad_CriarObj;
     private javax.swing.JTextField quad_areaLadoA;
     private javax.swing.JButton quad_btnArea;
-    private javax.swing.JButton quad_btnPerimetro;
     private javax.swing.JTextField quad_eixoX;
     private javax.swing.JTextField quad_eixoY;
-    private javax.swing.JTextField quad_per_LadoA;
     private javax.swing.JTextField quad_respArea;
     private javax.swing.JTextField quad_respPer;
-    private javax.swing.JButton quad_salvarObj;
     private javax.swing.JButton salvar_objetos;
     private javax.swing.JTextArea telaObjetos;
     private javax.swing.JLabel textoBotao1;
@@ -3164,7 +2651,6 @@ public class Janela extends javax.swing.JFrame {
     private javax.swing.JLabel titulo6;
     private javax.swing.JTextField triangulo_alturaTxt;
     private javax.swing.JTextField triangulo_baseTxt;
-    private javax.swing.JButton triangulo_btn_calcArea;
     private javax.swing.JButton triangulo_btn_calcPerimetro;
     private javax.swing.JTextField triangulo_eixoX;
     private javax.swing.JTextField triangulo_eixoY;
@@ -3173,7 +2659,6 @@ public class Janela extends javax.swing.JFrame {
     private javax.swing.JTextField triangulo_ladoCtxt;
     private javax.swing.JTextField triangulo_respAreaTxt;
     private javax.swing.JTextField triangulo_resp_perimetro;
-    private javax.swing.JButton triangulo_salvarObjeto;
     private javax.swing.JLabel txtBotaoSelect1;
     private javax.swing.JLabel txtBotaoSelect2;
     private javax.swing.JLabel txtBotaoSelect3;
